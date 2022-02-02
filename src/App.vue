@@ -61,11 +61,6 @@
                   <select id="mobile-languages" name="language" class="bg-none border-transparent rounded-md py-0.5 pl-2 pr-5 flex items-center text-sm font-medium text-gray-700 group-hover:text-gray-800 focus:outline-none focus:ring-0 focus:border-transparent">
                     <option v-for="language in languages" :key="language">{{ language }}</option>
                   </select>
-<!--                  <div class="absolute right-0 inset-y-0 flex items-center pointer-events-none">-->
-<!--                    <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20" class="w-5 h-5 text-gray-500">-->
-<!--                      <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M6 8l4 4 4-4" />-->
-<!--                    </svg>-->
-<!--                  </div>-->
                 </div>
               </div>
             </form>
@@ -76,7 +71,7 @@
   </TransitionRoot>
 
   <!-- Hero section -->
-  <div class="relative bg-gray-900">
+  <div class="fixed z-50 w-full bg-gray-900">
     <!-- Decorative image and overlay -->
     <div aria-hidden="true" class="absolute inset-0 overflow-hidden">
       <img src="https://tailwindui.com/img/ecommerce-images/home-page-01-hero-full-width.jpg" alt="" class="w-full h-full object-center object-cover" />
@@ -97,11 +92,6 @@
                   <select id="desktop-language" name="language" class="bg-none bg-gray-900 border-transparent rounded-md py-0.5 pl-2 pr-5 flex items-center text-sm font-medium text-white group-hover:text-gray-100 focus:outline-none focus:ring-0 focus:border-transparent">
                     <option v-for="language in languages" :key="language">{{ language}}</option>
                   </select>
-<!--                  <div class="absolute right-0 inset-y-0 flex items-center pointer-events-none">-->
-<!--                    <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20" class="w-5 h-5 text-gray-300">-->
-<!--                      <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M6 8l4 4 4-4" />-->
-<!--                    </svg>-->
-<!--                  </div>-->
                 </div>
               </div>
             </form>
@@ -334,7 +324,7 @@ const navigation = {
     },
   ],
   pages: [
-    { name: 'About', href: '#' },
+    { name: 'About', href: '/about' },
     { name: 'Contact', href: '/contact' },
   ],
 }
