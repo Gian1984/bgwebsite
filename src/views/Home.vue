@@ -5,8 +5,8 @@
       <div class="absolute inset-0 bg-gray-900 opacity-50" aria-hidden="true" />
     </div>
     <div class="relative max-w-7xl mx-auto py-24 px-4 sm:py-32 sm:px-6 lg:px-8">
-      <h1 class="text-4xl font-extrabold tracking-tight text-white md:text-5xl lg:text-6xl">Web Development Company</h1>
-      <p class="mt-6 max-w-3xl text-xl text-gray-300">Take the software path to your digital future.</p>
+      <h1 class="text-4xl font-extrabold tracking-tight text-white md:text-5xl lg:text-6xl text1" ref="box">Web Development Company</h1>
+      <p class="mt-6 max-w-3xl text-xl text-gray-300 text2">Take the software path to your digital future.</p>
     </div>
   </div>
 
@@ -51,7 +51,7 @@
 
 
   <div>
-    <div class="relative mb-22">
+    <div class="relative mb-22 box2">
       <div class="absolute inset-x-0 bottom-0" />
       <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
         <div class="relative  sm:rounded-2xl sm:overflow-hidden">
@@ -77,11 +77,11 @@
 
 <!--  second block what we do-->
 
-  <div class="bg-white">
+  <div class="bg-white box2">
     <div class="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:py-24 lg:px-8 lg:grid lg:grid-cols-3 lg:gap-x-8">
       <div>
-        <h2 class="text-base font-semibold text-teal-500 uppercase tracking-wide">Everything you need</h2>
-        <p class="mt-2 text-3xl font-extrabold text-gray-900">Areas of tech expertise</p>
+        <h2 class="text-base font-semibold text-teal-500 uppercase tracking-wide text4">Everything you need</h2>
+        <p class="mt-2 text-3xl font-extrabold text-gray-900 text5">Areas of tech expertise</p>
         <p class="mt-4 text-lg text-gray-500">Our team is also highly experienced with working with a wide variety of frameworks and languages such as PHP, Laravel, TailwindCSS, Bootstrap, JS and Vue.js.</p>
       </div>
       <div class="mt-12 lg:mt-0 lg:col-span-2">
@@ -101,11 +101,22 @@
   </div>
 
 
+
+
+
+
+
+
+
 </template>
 
 
 <script>
 import { CheckIcon } from '@heroicons/vue/outline'
+import gsap from 'gsap'
+
+
+
 
 
 const galleries = [
@@ -218,11 +229,54 @@ const posts = [
 
 ]
 
+
+
 export default {
+
+  mounted() {
+    // const timeline = new TimelineLite()
+    this.scrollAnimation()
+    // const { box } = this.$refs
+    // timeline.to(box, 5, { rotation: 360 })
+  },
+
+  methods: {
+    scrollAnimation() {
+      gsap.timeline({
+        scrollTrigger: {
+
+          trigger: ".box",
+          start: "center center",
+          end: "bottom top",
+          markers: true,
+          scrub: true,
+          pin: true,
+        }
+      })
+          .from(".text1", { x : innerWidth * 1, opacity: 0, duration:5 })
+          .to(".text1", {  opacity: 50 })
+          .from(".text2", { x : innerWidth * 1, opacity: 0 })
+
+      gsap.timeline({
+        scrollTrigger: {
+          trigger: ".box2",
+          start: "center center",
+          end: "bottom top",
+          markers: true,
+          scrub: true,
+          pin: true,
+        }
+      })
+          .from(".text4", { x : innerWidth * 1, opacity: 0, duration:3 })
+          .from(".text5", { x : innerWidth * 1, opacity: 0 })
+    },
+  },
+
+
+
   components: {
     CheckIcon,
   },
-
 
   setup() {
     return {
@@ -233,3 +287,13 @@ export default {
   },
 }
 </script>
+
+<style>
+
+
+
+
+</style>
+
+
+

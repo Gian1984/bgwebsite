@@ -21,14 +21,14 @@
           <div class="grid grid-cols-1 gap-y-20 lg:grid-cols-3 lg:gap-y-0 lg:gap-x-8">
             <div v-for="link in supportLinks" :key="link.name" class="flex flex-col bg-white rounded-2xl shadow-xl">
               <div class="flex-1 relative pt-16 px-6 pb-8 md:px-8">
-                <div class="absolute top-0 p-5 inline-block bg-blue-600 rounded-xl shadow-lg transform -translate-y-1/2">
+                <div class="absolute top-0 p-5 inline-block bg-teal-500 rounded-xl shadow-lg transform -translate-y-1/2">
                   <component :is="link.icon" class="h-6 w-6 text-white" aria-hidden="true" />
                 </div>
                 <h3 class="text-xl font-medium text-blue-gray-900">{{ link.name }}</h3>
                 <p class="mt-4 text-base text-blue-gray-500">{{ link.description }}</p>
               </div>
               <div class="p-6 bg-blue-gray-50 rounded-bl-2xl rounded-br-2xl md:px-8">
-                <a :href="link.href" class="text-base font-medium text-blue-700 hover:text-blue-600">Contact us<span aria-hidden="true"> &rarr;</span></a>
+                <a :href="link.href" class="text-base font-medium text-teal-500 hover:text-teal-600">Contact us<span aria-hidden="true"> &rarr;</span></a>
               </div>
             </div>
           </div>
