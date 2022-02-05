@@ -108,7 +108,7 @@
                 <div class="hidden lg:flex-1 lg:flex lg:items-center">
                   <router-link to="/">
                     <span class="sr-only">Workflow</span>
-                    <img class="h-8 w-auto" src="https://tailwindui.com/img/logos/workflow-mark.svg?color=white" alt="" />
+                    <img class="h-10 w-auto" src="img/artexa_logo_anime.svg" alt="" />
                   </router-link>
                 </div>
 
@@ -171,7 +171,7 @@
                 <!-- Logo (lg-) -->
                 <router-link to="/" class="lg:hidden">
                   <span class="sr-only">Workflow</span>
-                  <img src="https://tailwindui.com/img/logos/workflow-mark.svg?color=white" alt="" class="h-8 w-auto" />
+                  <img src="img/artexa_logo_anime.svg" alt="artexa_logo" class="h-8 w-auto" />
                 </router-link>
 
                 <div class="flex-1 flex items-center justify-end">

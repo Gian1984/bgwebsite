@@ -5,8 +5,27 @@
       <div class="absolute inset-0 bg-gray-900 opacity-50" aria-hidden="true" />
     </div>
     <div class="relative max-w-7xl mx-auto py-24 px-4 sm:py-32 sm:px-6 lg:px-8">
-      <h1 class="text-4xl font-extrabold tracking-tight text-white md:text-5xl lg:text-6xl text1" ref="box">Web Development Company</h1>
-      <p class="mt-6 max-w-3xl text-xl text-gray-300 text2">Take the software path to your digital future.</p>
+      <transition
+          appear
+          @before-enter="beforeSlide"
+          @enter="slide"
+      >
+      <img class="h-24" src="img/artexa.png"/>
+      </transition>
+      <transition
+          appear
+          @before-enter="beforeEnter"
+          @enter="enter"
+      >
+      <h1 class="text-4xl font-extrabold tracking-tight text-white md:text-5xl lg:text-6xl text1">Web Development Company</h1>
+      </transition>
+      <transition
+          appear
+          @before-enter="beforeEnter"
+          @enter="enter"
+      >
+      <p class="mt-6 ml-4 max-w-3xl text-xl text-gray-300 text2 ">Take the software path to your digital future.</p>
+      </transition>
     </div>
   </div>
 
@@ -21,7 +40,7 @@
         <h2 class="text-3xl tracking-tight font-extrabold text-gray-900 sm:text-4xl">
           Websites & Apps
         </h2>
-        <p class="mt-3 max-w-2xl mx-auto text-xl text-gray-500 sm:mt-4">
+        <p class="mt-3 max-w-2xl mx-auto text-xl text-gray-500 sm:mt-4 ">
           We are a world class digital agency, who can develop a wide range of websites such as brochure, e-commerce and multilingual websites for B2B and B2C audiences. All the websites we create are responsive websites which automatically adjust to the device they are being viewed on. We create custom websites that are linked to a back end that can be easily updated by you or your team.
         </p>
       </div>
@@ -77,7 +96,7 @@
 
 <!--  second block what we do-->
 
-  <div class="bg-white box2">
+  <div class="bg-white">
     <div class="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:py-24 lg:px-8 lg:grid lg:grid-cols-3 lg:gap-x-8">
       <div>
         <h2 class="text-base font-semibold text-teal-500 uppercase tracking-wide text4">Everything you need</h2>
@@ -114,6 +133,7 @@
 <script>
 import { CheckIcon } from '@heroicons/vue/outline'
 import gsap from 'gsap'
+import {ScrollTrigger} from 'gsap/ScrollTrigger'
 
 
 
@@ -229,46 +249,36 @@ const posts = [
 
 ]
 
+gsap.registerPlugin(ScrollTrigger)
+
 
 
 export default {
 
   mounted() {
-    // const timeline = new TimelineLite()
     this.scrollAnimation()
-    // const { box } = this.$refs
-    // timeline.to(box, 5, { rotation: 360 })
+
   },
 
   methods: {
     scrollAnimation() {
-      gsap.timeline({
-        scrollTrigger: {
 
-          trigger: ".box",
-          start: "center center",
-          end: "bottom top",
-          markers: true,
-          scrub: true,
-          pin: true,
-        }
-      })
-          .from(".text1", { x : innerWidth * 1, opacity: 0, duration:5 })
-          .to(".text1", {  opacity: 50 })
-          .from(".text2", { x : innerWidth * 1, opacity: 0 })
 
       gsap.timeline({
         scrollTrigger: {
           trigger: ".box2",
-          start: "center center",
+          start: "top top",
           end: "bottom top",
-          markers: true,
-          scrub: true,
-          pin: true,
+          // markers: true,
+          // scrub: true,
+          // pin: true,
         }
       })
-          .from(".text4", { x : innerWidth * 1, opacity: 0, duration:3 })
-          .from(".text5", { x : innerWidth * 1, opacity: 0 })
+          .from(".text4", { x : -50, opacity: 0, duration:0.5 })
+          .to( ".text4",{ x : 0 , opacity : 50})
+          .from(".text5", { x : -50, opacity: 0, duration:0.5 })
+          .to( ".text5",{ x : 0 , opacity : 50})
+          // .from(".text5", { x : innerWidth * 1, opacity: 0 })
     },
   },
 
@@ -279,10 +289,47 @@ export default {
   },
 
   setup() {
+
+
+    const beforeEnter = (el) => {
+      el.style.opacity = 0
+      el.style.transform = 'translateX(400px)'
+    }
+    const enter = (el, done) => {
+      gsap.to(el, {
+        opacity: 1,
+        x: 0,
+        duration: 2.5,
+        onComplete: done,
+        delay: el.dataset.index * 0.5
+      })
+    }
+
+    const beforeSlide = (el) => {
+      el.style.opacity = 0
+      el.style.transform = 'translateY(400px)'
+    }
+
+    const slide = (el, done) => {
+      gsap.to(el, {
+        opacity: 1,
+        y: 0,
+        duration: 1.5,
+        onComplete: done,
+        delay: el.dataset.index * 0.2,
+        rotation: 360,
+      })
+    }
+
+
     return {
       posts,
       features,
       galleries,
+      beforeEnter,
+      enter,
+      slide,
+      beforeSlide,
     }
   },
 }
