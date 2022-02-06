@@ -17,7 +17,7 @@
           @before-enter="beforeEnter"
           @enter="enter"
       >
-      <h1 class="text-4xl font-extrabold tracking-tight text-white md:text-5xl lg:text-6xl text1">Web Development Company</h1>
+      <h1 class="mt-6 text-4xl font-extrabold tracking-tight text-white md:text-5xl lg:text-6xl text1">Web Development Company</h1>
       </transition>
       <transition
           appear

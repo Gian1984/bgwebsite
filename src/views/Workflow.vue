@@ -18,7 +18,7 @@
             >
               <img class="h-24" src="img/artexa.png"/>
             </transition>
-            <h1 class="mt-4 text-4xl tracking-tight font-extrabold text-white sm:mt-5 sm:text-6xl lg:mt-6 xl:text-6xl">
+            <h1 class="mt-6 text-4xl tracking-tight font-extrabold text-white sm:mt-5 sm:text-6xl lg:mt-6 xl:text-6xl">
               <transition
                   appear
                   @before-enter="beforeEnter"
