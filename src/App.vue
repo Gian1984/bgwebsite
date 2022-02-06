@@ -108,7 +108,7 @@
                 <div class="hidden lg:flex-1 lg:flex lg:items-center">
                   <router-link to="/">
                     <span class="sr-only">Workflow</span>
-                    <img class="h-10 w-auto" src="img/artexa_logo_anime.svg" alt="" />
+                    <img class="h-12 w-auto" src="img/artexa_logo_anime.svg" alt="artexa_logo" />
                   </router-link>
                 </div>
 
@@ -171,7 +171,7 @@
                 <!-- Logo (lg-) -->
                 <router-link to="/" class="lg:hidden">
                   <span class="sr-only">Workflow</span>
-                  <img src="img/artexa_logo_anime.svg" alt="artexa_logo" class="h-8 w-auto" />
+                  <img src="img/artexa_logo_anime.svg" alt="artexa_logo" class="h-12 w-auto" />
                 </router-link>
 
                 <div class="flex-1 flex items-center justify-end">
@@ -263,10 +263,10 @@ const navigation = {
       name: 'Company',
       featured: [
         {
-          name: 'BG company S.R.L.',
+          name: 'Artexa Web',
           role:'',
           href: '/about',
-          imageSrc: 'https://tailwindui.com/img/ecommerce-images/mega-menu-category-01.jpg',
+          imageSrc: 'img/artexa_round_anime_logo.svg',
           imageAlt: 'Models sitting back to back, wearing Basic Tee in black and bone.',
         },
         {
