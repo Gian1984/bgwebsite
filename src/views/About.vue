@@ -1,7 +1,7 @@
 <template>
   <div class="relative pb-32 bg-gray-800 pt-40">
     <div class="absolute inset-0">
-      <img class="w-full h-full object-cover" src="https://tailwindui.com/img/ecommerce-images/home-page-01-hero-full-width.jpg" alt="web-dev-home" />
+      <img class="w-full h-full object-cover" src="img/header_one.png" />
       <div class="absolute inset-0 bg-gray-900 opacity-50" aria-hidden="true" />
     </div>
     <div class="relative max-w-7xl mx-auto py-24 px-4 sm:py-32 sm:px-6 lg:px-8">
@@ -15,7 +15,7 @@
 
 
   <!-- Hero section -->
-  <div class="bg-white relative overflow-hidden">
+  <div class="bg-white relative overflow-hidden py-36">
     <div class="pt-16 pb-80 sm:pt-24 sm:pb-40 lg:pt-40 lg:pb-48">
       <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 sm:static">
         <div class="sm:max-w-lg">
@@ -27,7 +27,7 @@
         <div>
           <div class="mt-10">
             <!-- Decorative image grid -->
-            <div aria-hidden="true" class="pointer-events-none lg:absolute lg:inset-y-0 lg:max-w-7xl lg:mx-auto lg:w-full">
+            <div aria-hidden="true" class="pointer-events-none lg:absolute lg:inset-y-0 lg:max-w-7xl lg:mx-auto lg:w-full py-20 mb-10">
               <div class="absolute transform sm:left-1/2 sm:top-0 sm:translate-x-8 lg:left-1/2 lg:top-1/2 lg:-translate-y-1/2 lg:translate-x-8">
                 <div class="flex items-center space-x-6 lg:space-x-8">
                   <div class="flex-shrink-0 grid grid-cols-1 gap-y-6 lg:gap-y-8">

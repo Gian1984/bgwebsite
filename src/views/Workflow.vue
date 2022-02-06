@@ -2,49 +2,42 @@
   <div class="bg-white">
     <div class="relative overflow-hidden">
       <main>
-        <div class="pt-10 bg-gray-900 sm:pt-16 lg:pt-8 lg:pb-14 lg:overflow-hidden">
-          <div class="mx-auto max-w-7xl lg:px-8">
-            <div class="lg:grid lg:grid-cols-2 lg:gap-8">
-              <div class="mx-auto max-w-md px-4 sm:max-w-2xl sm:px-6 sm:text-center lg:px-0 lg:text-left lg:flex lg:items-center">
-                <div class="lg:py-24">
-                  <h1 class="mt-4 text-4xl tracking-tight font-extrabold text-white sm:mt-5 sm:text-6xl lg:mt-6 xl:text-6xl">
-                    <transition
-                        appear
-                        @before-enter="beforeEnter"
-                        @enter="enter"
-                    >
-                      <span class="block">We believe in</span>
-                    </transition>
-                    <transition
-                        appear
-                        @before-enter="beforeEnter"
-                        @enter="enter"
-                    >
-                      <span class="pb-3 block bg-clip-text text-transparent bg-gradient-to-r from-teal-400 sm:pb-5"> design</span>
-                    </transition>
-                  </h1>
-                  <p class="text-base text-gray-300 sm:text-xl lg:text-lg xl:text-xl">
-                    We design fluid user experience and anticipate the user journey with creative solutions as well as creating brand recognition with design systems.<br>
-                    Our team is capable of delivering custom websites, mobile apps, e-commerces with a variety of tools & skill sets that allows you to be on top of the digital world.<br>
-                    Optimizations & reviews are part of our culture. We constantly improve our products to increase conversion rates and our client happiness.
-                  </p>
-                </div>
-              </div>
-              <div class="mt-12 -mb-16 sm:-mb-48 lg:m-0 lg:relative">
-                <div class="mx-auto max-w-md px-4 sm:max-w-2xl sm:px-6 lg:max-w-none lg:px-0">
-                  <!-- Illustration taken from Lucid Illustrations: https://lucid.pixsellz.io/ -->
-                  <transition
-                      appear
-                      @before-enter="beforeSlide"
-                      @enter="slide"
-                  >
-                    <img class="w-full lg:absolute lg:inset-y-0 lg:left-0 lg:h-full lg:w-auto lg:max-w-none" src="img/Illustration.svg" alt="" />
-                  </transition>
-                </div>
-              </div>
-            </div>
+
+
+
+        <div class="relative pb-32 bg-gray-800 pt-40">
+          <div class="absolute inset-0">
+            <img class="w-full h-full object-cover" src="img/red_header.png" />
+            <div class="absolute inset-0 bg-gray-900 opacity-50" aria-hidden="true" />
+          </div>
+          <div class="relative max-w-7xl mx-auto py-24 px-4 sm:py-32 sm:px-6 lg:px-8">
+
+
+            <h1 class="mt-4 text-4xl tracking-tight font-extrabold text-white sm:mt-5 sm:text-6xl lg:mt-6 xl:text-6xl">
+              <transition
+                  appear
+                  @before-enter="beforeEnter"
+                  @enter="enter"
+              >
+                <h1 class="text-4xl font-extrabold tracking-tight text-white md:text-5xl lg:text-6xl">We believe in design</h1>
+              </transition>
+            </h1>
+              <transition
+                  appear
+                  @before-enter="beforeEnter"
+                  @enter="enter"
+              >
+                <p class="mt-6 max-w-3xl text-xl text-gray-300">
+                  We design fluid user experience and anticipate the user journey with creative solutions as well as creating brand recognition with design systems.<br>
+                  Our team is capable of delivering custom websites, mobile apps, e-commerces with a variety of tools & skill sets that allows you to be on top of the digital world.<br>
+                  Optimizations & reviews are part of our culture. We constantly improve our products to increase conversion rates and our client happiness.
+                </p>
+              </transition>
+
           </div>
         </div>
+
+
 
         <!-- Feature section with screenshot -->
         <div class="relative  pt-16 sm:pt-24 lg:pt-24">
@@ -58,14 +51,14 @@
                 We create successful responsive website that are fast, easy to use, and build with the best practices. The main area of expertise is full-stack development HTMl, CSS, JS, PHP, building small and medium web apps, animations. We have also experience with popular open-source CMS like Wordpress.
               </p>
             </div>
-            <div class="mt-12 ">
-              <img class="rounded-lg shadow-xl ring-1 ring-black ring-opacity-5 h-full w-full" src="img/bulb.jpeg" alt="" />
+            <div class="mt-12 shadow-2xl mb-24">
+              <img class="rounded-lg ring-1 ring-black ring-opacity-5 h-full w-full" src="img/header_main.png" alt="strategy_image" />
             </div>
           </div>
         </div>
 
         <!-- Feature section with grid -->
-        <div class="relative bg-white py-16 sm:py-24 lg:py-32">
+        <div class="relative bg-white py-16 sm:py-24 lg:py-24">
           <div class="mx-auto max-w-md px-4 text-center sm:max-w-3xl sm:px-6 lg:px-8 lg:max-w-7xl">
             <h2 class="text-base font-semibold tracking-wider text-cyan-600 uppercase">Deploy faster</h2>
             <p class="mt-2 text-3xl font-extrabold text-gray-900 tracking-tight sm:text-4xl">
