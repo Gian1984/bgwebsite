@@ -1,13 +1,20 @@
 <template>
   <div>
     <!-- Header -->
-    <div class="relative pb-32 bg-gray-800">
+    <div class="relative pb-32 bg-gray-800 pt-24">
       <div class="absolute inset-0">
-        <img class="w-full h-full object-cover" src="img/coding_glass.jpg" alt="coding" />
-        <div class="absolute inset-0 bg-gray-800 mix-blend-multiply" aria-hidden="true" />
+        <img class="w-full h-full object-cover" src="img/header_tower.png" alt="coding" />
+        <div class="absolute inset-0 bg-teal-600 mix-blend-multiply" aria-hidden="true" />
       </div>
       <div class="relative max-w-7xl mx-auto py-32 px-4 sm:py-36 sm:px-6 lg:px-8">
-        <h1 class="text-4xl font-extrabold tracking-tight text-white md:text-5xl lg:text-6xl">Get in touch</h1>
+        <transition
+            appear
+            @before-enter="beforeSlide"
+            @enter="slide"
+        >
+          <img class="h-24" src="img/artexa.png"/>
+        </transition>
+        <h1 class="mt-2 text-4xl font-extrabold tracking-tight text-white md:text-5xl lg:text-6xl">Get in touch</h1>
         <p class="mt-6 max-w-3xl text-xl text-gray-300">Varius facilisi mauris sed sit. Non sed et duis dui leo, vulputate id malesuada non. Cras aliquet purus dui laoreet diam sed lacus, fames. Dui, amet, nec sit pulvinar.</p>
       </div>
     </div>
@@ -205,15 +212,21 @@
 
           <!-- Contact grid -->
           <section aria-labelledby="offices-heading">
-            <div class=" mx-auto py-24 mt-24 px-4 sm:py-32 sm:px-6 lg:px-8 bg-gray-900">
-              <h2 id="office-heading" class="text-3xl font-extrabold text-gray-400">Our offices</h2>
+            <div class="relative pb-32 bg-gray-800 mt-32">
+              <div class="absolute inset-0">
+                <img class="w-full h-full object-cover" src="img/where.png" alt="coding" />
+                <div class="absolute inset-0 bg-gray-600 mix-blend-multiply" aria-hidden="true" />
+              </div>
+              <div class="relative max-w-7xl mx-auto py-32 px-4 sm:py-36 sm:px-6 lg:px-8">
+              <h2 id="office-heading" class="text-3xl font-extrabold text-white">OUR OFFICE</h2>
               <p class="mt-6 text-lg text-gray-400 max-w-3xl">Varius facilisi mauris sed sit. Non sed et duis dui leo, vulputate id malesuada non. Cras aliquet purus dui laoreet diam sed lacus, fames.</p>
-              <div class="mt-10 grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-4">
-                <div v-for="office in offices" :key="office.id">
-                  <h3 class="text-lg font-medium text-gray-400">{{ office.city }}</h3>
-                  <p class="mt-2 text-base text-warm-gray-500">
-                    <span v-for="line in office.address" :key="line" class="block">{{ line }}</span>
-                  </p>
+                <div class="mt-10 grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-4">
+                  <div v-for="office in offices" :key="office.id">
+                    <h3 class="text-lg font-medium text-gray-400">{{ office.city }}</h3>
+                    <p class="mt-2 text-base text-white">
+                      <span v-for="line in office.address" :key="line" class="block">{{ line }}</span>
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -287,6 +300,7 @@
 <script>
 import { Popover, PopoverButton, PopoverPanel } from '@headlessui/vue'
 import { MenuIcon, NewspaperIcon, PhoneIcon, SupportIcon, XIcon,  MailIcon, } from '@heroicons/vue/outline'
+import gsap from 'gsap'
 
 const offices = [
   { id: 1, city: 'Los Angeles', address: ['4556 Brendan Ferry', 'Los Angeles, CA 90210'] },
@@ -374,11 +388,48 @@ export default {
     PhoneIcon
   },
   setup() {
+
+
+    const beforeEnter = (el) => {
+      el.style.opacity = 0
+      el.style.transform = 'translateX(400px)'
+    }
+    const enter = (el, done) => {
+      gsap.to(el, {
+        opacity: 1,
+        x: 0,
+        duration: 2.5,
+        onComplete: done,
+        delay: el.dataset.index * 0.5
+      })
+    }
+
+    const beforeSlide = (el) => {
+      el.style.opacity = 0
+      el.style.transform = 'translateY(400px)'
+    }
+
+    const slide = (el, done) => {
+      gsap.to(el, {
+        opacity: 1,
+        y: 0,
+        duration: 1.5,
+        onComplete: done,
+        delay: el.dataset.index * 0.2,
+        rotation: 360,
+      })
+    }
+
+
     return {
       navigation,
       supportLinks,
       faqs,
-      offices
+      offices,
+      beforeEnter,
+      enter,
+      slide,
+      beforeSlide,
     }
   },
 }

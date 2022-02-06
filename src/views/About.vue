@@ -5,6 +5,13 @@
       <div class="absolute inset-0 bg-gray-900 opacity-50" aria-hidden="true" />
     </div>
     <div class="relative max-w-7xl mx-auto py-24 px-4 sm:py-32 sm:px-6 lg:px-8">
+      <transition
+          appear
+          @before-enter="beforeSlide"
+          @enter="slide"
+      >
+        <img class="h-24" src="img/artexa.png"/>
+      </transition>
       <h1 class="text-4xl font-extrabold tracking-tight text-white md:text-5xl lg:text-6xl">Web Development Company</h1>
       <p class="mt-6 max-w-3xl text-xl text-gray-300">Take the software path to your digital future.</p>
     </div>
@@ -67,9 +74,53 @@
       </div>
     </div>
   </div>
-
-
-
-
-
 </template>
+
+<script>
+import gsap from 'gsap'
+
+export default {
+
+  setup() {
+
+
+    const beforeEnter = (el) => {
+    el.style.opacity = 0
+    el.style.transform = 'translateX(400px)'
+    }
+    const enter = (el, done) => {
+    gsap.to(el, {
+    opacity: 1,
+    x: 0,
+    duration: 2.5,
+    onComplete: done,
+    delay: el.dataset.index * 0.5
+    })
+    }
+
+    const beforeSlide = (el) => {
+    el.style.opacity = 0
+    el.style.transform = 'translateY(400px)'
+    }
+
+    const slide = (el, done) => {
+    gsap.to(el, {
+    opacity: 1,
+    y: 0,
+    duration: 1.5,
+    onComplete: done,
+    delay: el.dataset.index * 0.2,
+    rotation: 360,
+    })
+  }
+
+  return {
+    beforeEnter,
+    enter,
+    slide,
+    beforeSlide,
+    }
+  },
+
+}
+</script>

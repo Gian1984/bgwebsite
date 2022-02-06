@@ -11,8 +11,13 @@
             <div class="absolute inset-0 bg-gray-900 opacity-50" aria-hidden="true" />
           </div>
           <div class="relative max-w-7xl mx-auto py-24 px-4 sm:py-32 sm:px-6 lg:px-8">
-
-
+            <transition
+                appear
+                @before-enter="beforeSlide"
+                @enter="slide"
+            >
+              <img class="h-24" src="img/artexa.png"/>
+            </transition>
             <h1 class="mt-4 text-4xl tracking-tight font-extrabold text-white sm:mt-5 sm:text-6xl lg:mt-6 xl:text-6xl">
               <transition
                   appear

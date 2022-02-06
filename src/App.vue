@@ -7,7 +7,7 @@
       </TransitionChild>
 
       <TransitionChild as="template" enter="transition ease-in-out duration-300 transform" enter-from="-translate-x-full" enter-to="translate-x-0" leave="transition ease-in-out duration-300 transform" leave-from="translate-x-0" leave-to="-translate-x-full">
-        <div class="relative max-w-xs w-full bg-white shadow-xl pb-12 flex flex-col overflow-y-auto">
+        <div class="relative max-w-xs w-full bg-gray-600 bg-opacity-90 shadow-xl pb-12 pt-12 flex flex-col overflow-y-auto">
           <div class="px-4 pt-5 pb-2 flex">
             <button type="button" class="-m-2 p-2 rounded-md inline-flex items-center justify-center text-gray-400" @click="mobileMenuOpen = false">
               <span class="sr-only">Close menu</span>
@@ -20,7 +20,7 @@
             <div class="border-b border-gray-200">
               <TabList class="-mb-px flex px-4 space-x-8">
                 <Tab as="template" v-for="category in navigation.categories" :key="category.name" v-slot="{ selected }">
-                  <button :class="[selected ? 'text-indigo-600 border-indigo-600' : 'text-gray-900 border-transparent', 'flex-1 whitespace-nowrap py-4 px-1 border-b-2 text-base font-medium']">
+                  <button :class="[selected ? 'text-teal-600 border-teal-600' : 'text-white border-transparent', 'flex-1 whitespace-nowrap py-4 px-1 border-b-2 text-base font-medium']">
                     {{ category.name }}
                   </button>
                 </Tab>
@@ -33,7 +33,7 @@
                     <div class="aspect-w-1 aspect-h-1  rounded-md bg-gray-100 overflow-hidden group-hover:opacity-75">
                       <img :src="item.imageSrc" :alt="item.imageAlt" class="object-center object-cover" />
                     </div>
-                    <a :href="item.href" class="mt-6 block text-sm font-medium text-gray-900">
+                    <a :href="item.href" class="mt-6 block text-sm font-medium text-white">
                       <span class="absolute z-10 inset-0" aria-hidden="true" />
                       {{ item.name }}
                     </a>
