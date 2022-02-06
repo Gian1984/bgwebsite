@@ -4,7 +4,7 @@
     <div class="relative pb-32 bg-gray-800 pt-24">
       <div class="absolute inset-0">
         <img class="w-full h-full object-cover" src="img/header_tower.png" alt="coding" />
-        <div class="absolute inset-0 bg-teal-600 mix-blend-multiply" aria-hidden="true" />
+        <div class="absolute inset-0 bg-gray-200 mix-blend-multiply" aria-hidden="true" />
       </div>
       <div class="relative max-w-7xl mx-auto py-32 px-4 sm:py-36 sm:px-6 lg:px-8">
         <transition
@@ -14,8 +14,8 @@
         >
           <img class="h-24" src="img/artexa.png"/>
         </transition>
-        <h1 class="mt-2 text-4xl font-extrabold tracking-tight text-white md:text-5xl lg:text-6xl">Get in touch</h1>
-        <p class="mt-6 max-w-3xl text-xl text-gray-300">Varius facilisi mauris sed sit. Non sed et duis dui leo, vulputate id malesuada non. Cras aliquet purus dui laoreet diam sed lacus, fames. Dui, amet, nec sit pulvinar.</p>
+        <h1 class="mt-4 text-4xl font-extrabold tracking-tight text-gray-700 md:text-5xl lg:text-6xl">Get in touch</h1>
+        <p class="mt-6 max-w-3xl text-xl text-gray-600">Varius facilisi mauris sed sit. Non sed et duis dui leo, vulputate id malesuada non. Cras aliquet purus dui laoreet diam sed lacus, fames. Dui, amet, nec sit pulvinar.</p>
       </div>
     </div>
 
@@ -215,14 +215,14 @@
             <div class="relative pb-32 bg-gray-800 mt-32">
               <div class="absolute inset-0">
                 <img class="w-full h-full object-cover" src="img/where.png" alt="coding" />
-                <div class="absolute inset-0 bg-gray-600 mix-blend-multiply" aria-hidden="true" />
+                <div class="absolute inset-0 bg-gray-300 mix-blend-multiply" aria-hidden="true" />
               </div>
               <div class="relative max-w-7xl mx-auto py-32 px-4 sm:py-36 sm:px-6 lg:px-8">
               <h2 id="office-heading" class="text-3xl font-extrabold text-white">OUR OFFICE</h2>
-              <p class="mt-6 text-lg text-gray-400 max-w-3xl">Varius facilisi mauris sed sit. Non sed et duis dui leo, vulputate id malesuada non. Cras aliquet purus dui laoreet diam sed lacus, fames.</p>
+              <p class="mt-6 text-lg text-gray-700 max-w-3xl">Varius facilisi mauris sed sit. Non sed et duis dui leo, vulputate id malesuada non. Cras aliquet purus dui laoreet diam sed lacus, fames.</p>
                 <div class="mt-10 grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-4">
                   <div v-for="office in offices" :key="office.id">
-                    <h3 class="text-lg font-medium text-gray-400">{{ office.city }}</h3>
+                    <h3 class="text-lg font-medium text-gray-700">{{ office.city }}</h3>
                     <p class="mt-2 text-base text-white">
                       <span v-for="line in office.address" :key="line" class="block">{{ line }}</span>
                     </p>
@@ -254,12 +254,6 @@
           </div>
         </section>
       </div>
-
-
-
-
-
-
 
 
 
