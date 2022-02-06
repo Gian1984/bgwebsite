@@ -19,7 +19,7 @@
                   @before-enter="beforeEnter"
                   @enter="enter"
               >
-                <h1 class="text-4xl font-extrabold tracking-tight text-white md:text-5xl lg:text-6xl">We believe in design</h1>
+                <h1 class="text-4xl font-extrabold tracking-tight text-teal-500 md:text-5xl lg:text-6xl">We believe in design</h1>
               </transition>
             </h1>
               <transition
