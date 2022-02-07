@@ -23,10 +23,10 @@
     <div class="space-y-12">
       <div class="text-center">
         <h2 class="text-3xl tracking-tight font-extrabold text-gray-900 sm:text-4xl">
-          Websites & Apps
+          Our Team
         </h2>
         <p class="mt-3 max-w-2xl mx-auto text-xl text-gray-500 sm:mt-4 ">
-          We are a world class digital agency, who can develop a wide range of websites such as brochure, e-commerce and multilingual websites for B2B and B2C audiences. All the websites we create are responsive websites which automatically adjust to the device they are being viewed on. We create custom websites that are linked to a back end that can be easily updated by you or your team.
+          Artexa is a Luxembourg-based creative team working with ambitious tech companies around the world. Every day, we build products, brands and websites that help our partners stand out, connect with customers and grow faster.
         </p>
       </div>
       <ul role="list" class="space-y-4 sm:grid sm:grid-cols-2 sm:gap-6 sm:space-y-0 lg:grid-cols-2 lg:gap-24">
@@ -36,18 +36,18 @@
             <div class="space-y-2 xl:flex xl:items-center xl:justify-between">
               <div class="font-medium text-lg leading-6 space-y-1">
                 <h2 class="max-w-lg text-xl text-black sm:max-w-3xl">{{ person.name }}</h2>
-                <p class="text-indigo-400 pb-10">{{ person.role }}</p>
-                <p class="hidden lg:block max-w-lg text-base text-gray-700 sm:max-w-3xl pr-2  lg:border-r lg:border-gray-700 text-left">
+                <p class="text-artexa-teal-400 pb-10">{{ person.role }}</p>
+                <p class="hidden lg:block max-w-lg font-extralight text-base text-gray-700 sm:max-w-3xl pr-2  lg:border-r lg:border-gray-700 text-left">
                   {{ person.description }}
                 </p>
-                <p class="lg:hidden max-w-lg text-base text-gray-700 sm:max-w-3xl pr-2 pt-2 pb-2 border-b border-gray-700 text-left">
+                <p class="lg:hidden max-w-lg font-extralight text-base text-gray-700 sm:max-w-3xl pr-2 pt-2 pb-2 border-b border-gray-700 text-left">
                   {{ person.description }}
                 </p>
               </div>
 
               <ul role="list" class="flex justify-center space-x-5 pl-2 mt-4">
                 <li>
-                  <a :href="person.linkedinUrl" class="text-gray-400 hover:text-blue-700">
+                  <a :href="person.linkedinUrl" target="_blank" class="text-gray-400 hover:text-blue-700">
                     <span class="sr-only">LinkedIn</span>
                     <svg class="w-5 h-5" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20">
                       <path fill-rule="evenodd" d="M16.338 16.338H13.67V12.16c0-.995-.017-2.277-1.387-2.277-1.39 0-1.601 1.086-1.601 2.207v4.248H8.014v-8.59h2.559v1.174h.037c.356-.675 1.227-1.387 2.526-1.387 2.703 0 3.203 1.778 3.203 4.092v4.711zM5.005 6.575a1.548 1.548 0 11-.003-3.096 1.548 1.548 0 01.003 3.096zm-1.337 9.763H6.34v-8.59H3.667v8.59zM17.668 1H2.328C1.595 1 1 1.581 1 2.298v15.403C1 18.418 1.595 19 2.328 19h15.34c.734 0 1.332-.582 1.332-1.299V2.298C19 1.581 18.402 1 17.668 1z" clip-rule="evenodd" />
@@ -74,7 +74,7 @@ const team = [
     name: 'Bryan Gustin',
     role: 'Founder',
     imageSrc:
-        'img/bryan.jpeg',
+        'img/bryanfond.png',
     imageAlt:"Bryan Gustin photo",
     description:"Having been brought up in a small community, I started to ask myself about other ways of living at an early age. At 18, I started to travel. New cultures, new landscapes and languages soon sparked my curiosity exponentially. Curiosity became passion. Slowly, technologies started to fascinate me, but I didn't realise it immediately. In the meantime, I tried to find a profession that suited me, a profession in which I could find myself. All I knew is that I wanted freedom to move and live where I wanted, to continue to learn more and live new experiences. Whilst brainstorming with my close ones, I realised coding is a language and a sub-culture in itself, which I could learn, and apply all around the world while earning my life. As I became conscious of that, my career path became clear... to learn and pursue a career as a web developper.",
     linkedinUrl: 'https://www.linkedin.com/in/bryangustin/',

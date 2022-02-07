@@ -33,10 +33,10 @@
                     <div class="aspect-w-1 aspect-h-1  rounded-md bg-gray-100 overflow-hidden group-hover:opacity-75">
                       <img :src="item.imageSrc" :alt="item.imageAlt" class="object-center object-cover" />
                     </div>
-                    <a :href="item.href" class="mt-6 block text-sm font-medium text-white">
+                    <router-link :to="item.href" class="mt-6 block text-sm font-medium text-white">
                       <span class="absolute z-10 inset-0" aria-hidden="true" />
                       {{ item.name }}
-                    </a>
+                    </router-link>
                     <p aria-hidden="true" class="mt-1 text-sm text-gray-500">{{ item.role }}</p>
                   </div>
                 </div>
@@ -46,7 +46,7 @@
 
           <div class="border-t border-gray-200 py-6 px-4 space-y-6">
             <div v-for="page in navigation.pages" :key="page.name" class="flow-root">
-              <a :href="page.href" class="-m-2 p-2 block font-medium text-gray-900">{{ page.name }}</a>
+              <router-link :to="page.href" class="-m-2 p-2 block font-medium text-gray-900">{{ page.name }}</router-link>
             </div>
           </div>
 
@@ -136,10 +136,10 @@
                                     <div class="h-40 w-40 rounded-md bg-gray-100 overflow-hidden group-hover:opacity-75">
                                       <img :src="item.imageSrc" :alt="item.imageAlt" class="object-center object-cover" />
                                     </div>
-                                    <a :href="item.href" class="mt-4 block font-medium text-gray-900">
+                                    <router-link :to="item.href" class="mt-4 block font-medium text-gray-900">
                                       <span class="absolute z-10 inset-0" aria-hidden="true" />
                                       {{ item.name }}
-                                    </a>
+                                    </router-link>
                                     <p aria-hidden="true" class="mt-1">{{ item.role }}</p>
                                   </div>
                                 </div>
