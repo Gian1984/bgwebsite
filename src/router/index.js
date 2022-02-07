@@ -45,12 +45,9 @@ const router = createRouter({
   routes,
   /*eslint-disable */
   scrollBehavior (to, from, savedPosition) {
-    if (to.hash) {
-      return {el: to.hash}
-    } else {
-      return { x: 0, y: 0 }
-    }
+    return { x: 0, y: 0 }
   }
+
 })
 
 export default router

@@ -173,7 +173,7 @@ const slides =[
     desc:"Our working environment is relaxed and light-hearted. We listen to good tunes and eat good biscuits."
   },
   {
-    imageSrc:"img/integrity.webp",
+    imageSrc:"img/integrity.png",
     name:"Integrity",
     desc:"We care about our work, our clients and our people. We treat everyone with honesty and respect and expect to be treated in the same way."
   },
