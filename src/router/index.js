@@ -44,7 +44,7 @@ const router = createRouter({
   routes,
   /*eslint-disable */
   scrollBehavior (to, from, savedPosition) {
-    return { x: 0, y: 0 }
+    window.scrollTo(0, 0);
   }
 
 })
