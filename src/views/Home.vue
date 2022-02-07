@@ -73,6 +73,14 @@
     <div class="relative mb-22 box2">
       <div class="absolute inset-x-0 bottom-0" />
       <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
+        <div class="text-center">
+          <h2 class="text-3xl tracking-tight font-extrabold text-gray-900 sm:text-4xl">
+            Our technologies
+          </h2>
+          <p class="mt-3 max-w-2xl mx-auto text-xl text-gray-500 sm:mt-4 ">
+            The development of advanced web applications is our specialty, and we will successfully fulfill all your web application development requirements, from small-sized to wider-ranged projects. To maintain and improve our high-quality web apps, we have expertise in various web development technologies.
+          </p>
+        </div>
         <div class="relative  sm:rounded-2xl sm:overflow-hidden">
           <div class=" flow-root">
             <div class="-my-2">
