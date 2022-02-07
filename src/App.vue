@@ -20,7 +20,7 @@
             <div class="border-b border-gray-200">
               <TabList class="-mb-px flex px-4 space-x-8">
                 <Tab as="template" v-for="category in navigation.categories" :key="category.name" v-slot="{ selected }">
-                  <button :class="[selected ? 'text-teal-600 border-teal-600' : 'text-white border-transparent', 'flex-1 whitespace-nowrap py-4 px-1 border-b-2 text-base font-medium']">
+                  <button :class="[selected ? 'text-teal-600 border-teal-600' : 'text-artexa-white border-transparent', 'flex-1 whitespace-nowrap py-4 px-1 border-b-2 text-base font-medium']">
                     {{ category.name }}
                   </button>
                 </Tab>
@@ -227,7 +227,7 @@
         </a>
       </div>
       <p class="mt-8 text-center text-base text-gray-400">
-        &copy; 2022 Artexa. All rights reserved.
+        &copy; {{new Date().getFullYear()}} Artexa. All rights reserved.
       </p>
     </div>
   </footer>
@@ -263,7 +263,7 @@ const navigation = {
       name: 'Company',
       featured: [
         {
-          name: 'Artexa Web',
+          name: 'About',
           role:'',
           href: '/about',
           imageSrc: 'img/artexa_round_anime_logo.svg',
@@ -303,16 +303,16 @@ const navigation = {
         },
         {
           name: 'Fernelmove',
-          href: 'http://fernelmove.be/registration',
+          href: 'http://fernelmove.be',
           imageSrc: 'https://tailwindui.com/img/ecommerce-images/mega-menu-01-men-category-02.jpg',
-          imageAlt: 'Model wearing light heather gray t-shirt.',
+          imageAlt: 'social application developped for the municipality of Fernelmont.',
         },
         {
-          name: 'Accessories',
-          href: '#',
+          name: 'Fava Claudio architect',
+          href: 'https://www.favaclaudio.com',
           imageSrc: 'https://tailwindui.com/img/ecommerce-images/mega-menu-01-men-category-03.jpg',
           imageAlt:
-              'Grey 6-panel baseball hat with black brim, black mountain graphic on front, and light heather gray body.',
+              'Fava Claudio architect website.',
         },
         {
           name: 'Carry',
@@ -333,7 +333,7 @@ const footernavigation = {
   main: [
     { name: 'About', href: '/about' },
     { name: 'Services', href: '/workflow' },
-    { name: 'Team', href: '#' },
+    { name: 'Team', href: '/team' },
     { name: 'Contact', href: '/contact' },
   ],
   social: [

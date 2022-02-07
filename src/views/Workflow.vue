@@ -53,7 +53,7 @@
                 Skills & Experience
               </p>
               <p class="mt-5 max-w-prose mx-auto text-xl text-gray-500">
-                We create successful responsive website that are fast, easy to use, and build with the best practices. The main area of expertise is full-stack development HTMl, CSS, JS, PHP, building small and medium web apps, animations. We have also experience with popular open-source CMS like Wordpress.
+                We create successful responsive website that are fast, easy to use, and build with the best practices. The main area of expertise is full-stack development HTML, CSS, JS, PHP, building small and medium web apps, animations. We have also experience with popular open-source CMS like Wordpress.
               </p>
             </div>
             <div class="mt-12 shadow-2xl mb-24">

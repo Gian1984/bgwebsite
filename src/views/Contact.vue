@@ -222,7 +222,7 @@
               <p class="mt-6 text-lg text-gray-700 max-w-3xl"></p>
                 <div class="mt-10 grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-4">
                   <div v-for="office in offices" :key="office.id">
-                    <h3 class="text-lg font-medium text-gray-700">{{ office.city }}</h3>
+                    <h3 class="text-lg font-medium text-artexa-red">{{ office.city }}</h3>
                     <p class="mt-2 text-base text-white">
                       <span v-for="line in office.address" :key="line" class="block">{{ line }}</span>
                     </p>
@@ -273,7 +273,7 @@
             <label for="email-address" class="sr-only">Email address</label>
             <input id="email-address" name="email-address" type="email" autocomplete="email" required="" class="w-full px-5 py-3 border border-blue-gray-300 shadow-sm placeholder-artexa-teal-400 text-artexa-teal-400 focus:outline-none sm:max-w-xs rounded-md" placeholder="Enter your email" />
             <div class="mt-3 rounded-md shadow sm:mt-0 sm:ml-3 sm:flex-shrink-0">
-              <button type="submit" class="w-full flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-artexa-teal-300 hover:bg-artexa-teal-200 focus:outline-none">
+              <button type="submit" class="w-full flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-artexa-red focus:outline-none">
                 Subscribe
               </button>
             </div>
