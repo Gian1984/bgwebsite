@@ -258,23 +258,23 @@
 
 
       <!-- Newsletter Section -->
-      <div class="max-w-full bg-artexa-teal-100">
+      <div class="max-w-full bg-artexa-teal-400">
       <section class="max-w-md mx-auto py-4 px-4 sm:max-w-3xl sm:px-6 lg:max-w-7xl lg:py-6 lg:px-8 lg:flex lg:items-center text-artexa-white" aria-labelledby="newsletter-heading">
         <div class="lg:w-0 lg:flex-1">
-          <h2 class="text-3xl font-extrabold text-blue-gray-900 sm:text-4xl uppercase" id="newsletter-heading">
+          <h2 class="text-3xl font-extrabold sm:text-4xl uppercase" id="newsletter-heading">
             Newsletter
           </h2>
-          <p class="mt-3 max-w-3xl text-lg text-blue-gray-500">
+          <p class="max-w-3xl text-lg text-blue-gray-500">
             Sign up here to get the latest news, updates and special offers.
           </p>
         </div>
         <div class="mt-8 lg:mt-0 lg:ml-8">
           <form class="sm:flex">
             <label for="email-address" class="sr-only">Email address</label>
-            <input id="email-address" name="email-address" type="email" autocomplete="email" required="" class="w-full px-5 py-3 border border-blue-gray-300 shadow-sm placeholder-blue-gray-400 focus:ring-1 focus:ring-blue-500 focus:border-blue-500 sm:max-w-xs rounded-md" placeholder="Enter your email" />
+            <input id="email-address" name="email-address" type="email" autocomplete="email" required="" class="w-full px-5 py-3 border border-blue-gray-300 shadow-sm placeholder-artexa-teal-400 text-artexa-teal-400 focus:outline-none sm:max-w-xs rounded-md" placeholder="Enter your email" />
             <div class="mt-3 rounded-md shadow sm:mt-0 sm:ml-3 sm:flex-shrink-0">
-              <button type="submit" class="w-full flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">
-                Notify me
+              <button type="submit" class="w-full flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-artexa-teal-300 hover:bg-artexa-teal-200 focus:outline-none">
+                Subscribe
               </button>
             </div>
           </form>
