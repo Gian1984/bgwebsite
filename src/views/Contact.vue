@@ -15,7 +15,7 @@
           <img class="h-24" src="img/artexa.png"/>
         </transition>
         <h1 class="mt-4 text-4xl font-extrabold tracking-tight text-gray-700 md:text-5xl lg:text-6xl">Get in touch</h1>
-        <p class="mt-6 max-w-3xl text-xl text-gray-600">Varius facilisi mauris sed sit. Non sed et duis dui leo, vulputate id malesuada non. Cras aliquet purus dui laoreet diam sed lacus, fames. Dui, amet, nec sit pulvinar.</p>
+        <p class="mt-6 max-w-3xl text-xl text-gray-600">We're here to help and answer any question you might have.<br>We look forward to hearing from you.</p>
       </div>
     </div>
 
@@ -49,7 +49,7 @@
           <div class="bg-white">
             <div class="py-24 lg:py-32">
               <div class="relative z-10 max-w-7xl mx-auto pl-4 pr-8 sm:px-6 lg:px-8">
-                <h2 id="offices-heading" class="text-3xl font-extrabold text-warm-gray-900">Need more informatins?</h2>
+                <h2 id="offices-heading" class="text-3xl font-extrabold text-warm-gray-900">Need more informations?</h2>
                 <p class="mt-6 text-xl text-warm-gray-500 max-w-3xl">Our inbox is always open. Whether you have a question or just want to say hi, We'll try our best to get back to you soon as possible!</p>
               </div>
             </div>
@@ -111,17 +111,17 @@
                       </svg>
                     </div>
                     <h3 class="text-lg font-medium text-white">Contact information</h3>
-                    <p class="mt-6 text-base text-grey-50 max-w-3xl">Nullam risus blandit ac aliquam justo ipsum. Quam mauris volutpat massa dictumst amet. Sapien tortor lacus arcu.</p>
+                    <p class="mt-6 text-base text-grey-50 max-w-3xl text-white">Please fill out this form,<br>we'll get in touch shortly.</p>
                     <dl class="mt-8 space-y-6">
                       <dt><span class="sr-only">Phone number</span></dt>
                       <dd class="flex text-base text-gray-50">
                         <PhoneIcon class="flex-shrink-0 w-6 h-6 text-gray-200" aria-hidden="true" />
-                        <span class="ml-3">+1 (555) 123-4567</span>
+                        <span class="ml-3">+32 (491) 089-936</span>
                       </dd>
                       <dt><span class="sr-only">Email</span></dt>
                       <dd class="flex text-base text-gray-50">
                         <MailIcon class="flex-shrink-0 w-6 h-6 text-gray-200" aria-hidden="true" />
-                        <span class="ml-3">support@workcation.com</span>
+                        <span class="ml-3">info@artexa.agency</span>
                       </dd>
                     </dl>
                     <ul role="list" class="mt-8 flex space-x-12">
@@ -219,7 +219,7 @@
               </div>
               <div class="relative max-w-7xl mx-auto py-32 px-4 sm:py-36 sm:px-6 lg:px-8">
               <h2 id="office-heading" class="text-3xl font-extrabold text-white">OUR OFFICE</h2>
-              <p class="mt-6 text-lg text-gray-700 max-w-3xl">Varius facilisi mauris sed sit. Non sed et duis dui leo, vulputate id malesuada non. Cras aliquet purus dui laoreet diam sed lacus, fames.</p>
+              <p class="mt-6 text-lg text-gray-700 max-w-3xl"></p>
                 <div class="mt-10 grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-4">
                   <div v-for="office in offices" :key="office.id">
                     <h3 class="text-lg font-medium text-gray-700">{{ office.city }}</h3>
@@ -258,13 +258,14 @@
 
 
       <!-- Newsletter Section -->
-      <section class="max-w-md mx-auto py-24 px-4 sm:max-w-3xl sm:px-6 lg:max-w-7xl lg:py-32 lg:px-8 lg:flex lg:items-center" aria-labelledby="newsletter-heading">
+      <div class="max-w-full bg-artexa-teal-100">
+      <section class="max-w-md mx-auto py-4 px-4 sm:max-w-3xl sm:px-6 lg:max-w-7xl lg:py-6 lg:px-8 lg:flex lg:items-center text-artexa-white" aria-labelledby="newsletter-heading">
         <div class="lg:w-0 lg:flex-1">
-          <h2 class="text-3xl font-extrabold text-blue-gray-900 sm:text-4xl" id="newsletter-heading">
-            Sign up for our newsletter
+          <h2 class="text-3xl font-extrabold text-blue-gray-900 sm:text-4xl uppercase" id="newsletter-heading">
+            Newsletter
           </h2>
           <p class="mt-3 max-w-3xl text-lg text-blue-gray-500">
-            Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui Lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat fugiat.
+            Sign up here to get the latest news, updates and special offers.
           </p>
         </div>
         <div class="mt-8 lg:mt-0 lg:ml-8">
@@ -286,6 +287,7 @@
           </p>
         </div>
       </section>
+      </div>
     </main>
   </div>
 
@@ -297,10 +299,7 @@ import { MenuIcon, NewspaperIcon, PhoneIcon, SupportIcon, XIcon,  MailIcon, } fr
 import gsap from 'gsap'
 
 const offices = [
-  { id: 1, city: 'Los Angeles', address: ['4556 Brendan Ferry', 'Los Angeles, CA 90210'] },
-  { id: 2, city: 'New York', address: ['886 Walter Streets', 'New York, NY 12345'] },
-  { id: 3, city: 'Toronto', address: ['7363 Cynthia Pass', 'Toronto, ON N3Y 4H8'] },
-  { id: 4, city: 'London', address: ['114 Cobble Lane', 'London N1 2EF'] },
+  { id: 1, city: 'Luxembourg', address: ['34 Rue principale', 'L8814 Bigonville'] },
 ]
 
 const navigation = [
@@ -311,25 +310,25 @@ const navigation = [
 ]
 const supportLinks = [
   {
+    name: 'Product advice',
+    href: '#',
+    description:
+        'Evaluating our products and need advice before you buy?',
+    icon: NewspaperIcon,
+  },
+  {
     name: 'Sales',
     href: '#',
     description:
-        'Varius facilisi mauris sed sit. Non sed et duis dui leo, vulputate id malesuada non. Cras aliquet purus dui laoreet diam sed lacus, fames.',
+      'We\'ll help you find the right products and pricing for your business.',
     icon: PhoneIcon,
   },
   {
     name: 'Technical Support',
     href: '#',
     description:
-        'Varius facilisi mauris sed sit. Non sed et duis dui leo, vulputate id malesuada non. Cras aliquet purus dui laoreet diam sed lacus, fames.',
+        'Already using our products and experiencing technical issues?',
     icon: SupportIcon,
-  },
-  {
-    name: 'Media Inquiries',
-    href: '#',
-    description:
-        'Varius facilisi mauris sed sit. Non sed et duis dui leo, vulputate id malesuada non. Cras aliquet purus dui laoreet diam sed lacus, fames.',
-    icon: NewspaperIcon,
   },
 ]
 const faqs = [
@@ -428,3 +427,8 @@ export default {
   },
 }
 </script>
+<style>
+  .content-custom-section-newsletter{
+
+  }
+</style>
