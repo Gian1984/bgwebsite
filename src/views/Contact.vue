@@ -50,7 +50,7 @@
             <div class="py-24 lg:py-32">
               <div class="relative z-10 max-w-7xl mx-auto pl-4 pr-8 sm:px-6 lg:px-8">
                 <h2 id="offices-heading" class="text-3xl font-extrabold text-warm-gray-900">Need more informations?</h2>
-                <p class="mt-6 text-xl text-warm-gray-500 max-w-3xl">Our inbox is always open. Whether you have a question or just want to say hi, We'll try our best to get back to you soon as possible!</p>
+                <p class="mt-6 text-xl text-warm-gray-500 max-w-3xl">Our inbox is always open. Whether you have a question or just want to say hi, We'll try our best to get back to you as soon as possible!</p>
               </div>
             </div>
           </div>
@@ -427,8 +427,3 @@ export default {
   },
 }
 </script>
-<style>
-  .content-custom-section-newsletter{
-
-  }
-</style>

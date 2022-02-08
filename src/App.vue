@@ -82,22 +82,7 @@
     <header class="relative z-10">
       <nav aria-label="Top">
         <!-- Top navigation -->
-        <div class="bg-gray-900">
-          <div class="max-w-7xl mx-auto h-10 px-4 flex items-center justify-between sm:px-6 lg:px-8">
-            <!-- languages selector -->
-            <form>
-              <div>
-                <label for="desktop-language" class="sr-only">Languages</label>
-                <div class="-ml-2 group relative bg-gray-900 border-transparent rounded-md focus-within:ring-2 focus-within:ring-white">
-                  <select id="desktop-language" name="language" class="bg-none bg-gray-900 border-transparent rounded-md py-0.5 pl-2 pr-5 flex items-center text-sm font-medium text-artexa-white group-hover:text-gray-100 focus:outline-none focus:ring-0 focus:border-transparent">
-                    <option v-for="language in languages" :key="language">{{ language}}</option>
-                  </select>
-                </div>
-              </div>
-            </form>
-
-          </div>
-        </div>
+        
 
         <!-- Secondary navigation -->
         <div class="backdrop-blur-md backdrop-filter bg-opacity-10 bg-artexa-white">
@@ -205,6 +190,22 @@
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+        <div class="bg-gray-900">
+          <div class="max-w-7xl mx-auto h-10 px-4 flex items-center justify-between sm:px-6 lg:px-8">
+            <!-- languages selector -->
+            <form>
+              <div>
+                <label for="desktop-language" class="sr-only">Languages</label>
+                <div class="-ml-2 group relative bg-gray-900 border-transparent rounded-md focus-within:ring-2 focus-within:ring-white">
+                  <select id="desktop-language" name="language" class="bg-none bg-gray-900 border-transparent rounded-md py-0.5 pl-2 pr-5 flex items-center text-sm font-medium text-artexa-white group-hover:text-gray-100 focus:outline-none focus:ring-0 focus:border-transparent">
+                    <option v-for="language in languages" :key="language">{{ language}}</option>
+                  </select>
+                </div>
+              </div>
+            </form>
+
           </div>
         </div>
       </nav>
