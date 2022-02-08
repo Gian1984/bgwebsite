@@ -24,9 +24,19 @@
           @before-enter="beforeEnter"
           @enter="enter"
       >
-      <p class="mt-6 ml-4 max-w-3xl text-xl text-gray-300 text2 ">Take the software path to your digital future.</p>
+      <p class="mt-6 max-w-3xl text-xl text-gray-300 text2 ">Take the software path to your digital future.</p>
       </transition>
-    </div>
+      <transition
+          appear
+          @before-enter="beforeEnter"
+          @enter="enter"
+      >
+      <a href="/contact" class="mt-4 inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md shadow-sm text-artexa-white bg-artexa-teal-400 hover:bg-artexa-red focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+        <PlusSmIcon class="-ml-1 mr-2 h-5 w-5" aria-hidden="true" />
+        <span>New Project</span>
+      </a>
+      </transition>
+         </div>
   </div>
 
 <!--  first block post  -->
@@ -142,6 +152,8 @@
 import { CheckIcon } from '@heroicons/vue/outline'
 import gsap from 'gsap'
 import {ScrollTrigger} from 'gsap/ScrollTrigger'
+import { PlusSmIcon } from '@heroicons/vue/solid'
+
 
 
 
@@ -294,6 +306,7 @@ export default {
 
   components: {
     CheckIcon,
+    PlusSmIcon,
   },
 
   setup() {
@@ -307,25 +320,25 @@ export default {
       gsap.to(el, {
         opacity: 1,
         x: 0,
-        duration: 2.5,
+        duration: 1,
         onComplete: done,
-        delay: el.dataset.index * 0.5
+        delay: el.dataset.index * 0.5,
       })
     }
 
     const beforeSlide = (el) => {
       el.style.opacity = 0
-      el.style.transform = 'translateY(400px)'
+      el.style.transform = 'translateY(0px)'
     }
 
     const slide = (el, done) => {
       gsap.to(el, {
         opacity: 1,
         y: 0,
-        duration: 1.5,
+        duration: 3,
         onComplete: done,
-        delay: el.dataset.index * 0.2,
-        rotation: 360,
+        delay: el.dataset.index * 0.1,
+        rotation: 0,
       })
     }
 

@@ -72,7 +72,7 @@ import gsap from "gsap";
 const team = [
   {
     name: 'Bryan Gustin',
-    role: 'Founder',
+    role: 'Project manager',
     imageSrc:
         'img/bryanfond.png',
     imageAlt:"Bryan Gustin photo",
@@ -81,7 +81,7 @@ const team = [
   },
   {
     name: 'Gianluca Tiengo',
-    role: 'Co-Founder',
+    role: 'Fullstack developer',
     imageSrc:
         'img/gian.jpg',
     imageAlt:"Gianluca Tiengo photo",

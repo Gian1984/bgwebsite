@@ -28,14 +28,14 @@
           <div class="grid grid-cols-1 gap-y-20 lg:grid-cols-3 lg:gap-y-0 lg:gap-x-8">
             <div v-for="link in supportLinks" :key="link.name" class="flex flex-col bg-artexa-white rounded-2xl shadow-xl">
               <div class="flex-1 relative pt-16 px-6 pb-8 md:px-8">
-                <div class="absolute top-0 p-5 inline-block bg-teal-500 rounded-xl shadow-lg transform -translate-y-1/2">
+                <div class="absolute top-0 p-5 inline-block bg-artexa-teal-400 rounded-xl shadow-lg transform -translate-y-1/2">
                   <component :is="link.icon" class="h-6 w-6 text-artexa-white" aria-hidden="true" />
                 </div>
                 <h3 class="text-xl font-medium text-blue-gray-900">{{ link.name }}</h3>
                 <p class="mt-4 text-base text-blue-gray-500">{{ link.description }}</p>
               </div>
               <div class="p-6 bg-blue-gray-50 rounded-bl-2xl rounded-br-2xl md:px-8">
-                <a :href="link.href" class="text-base font-medium text-teal-500 hover:text-teal-600">Contact us<span aria-hidden="true"> &rarr;</span></a>
+                <a :href="link.href" class="text-base font-medium text-artexa-teal-400 hover:text-teal-600">Contact us<span aria-hidden="true"> &rarr;</span></a>
               </div>
             </div>
           </div>
@@ -159,19 +159,19 @@
                       <div>
                         <label for="first-name" class="block text-sm font-medium text-warm-gray-900">First name</label>
                         <div class="mt-1">
-                          <input type="text" name="first-name" id="first-name" autocomplete="given-name" class="py-3 px-4 block w-full shadow-sm text-warm-gray-900 focus:ring-teal-500 focus:border-teal-500 border-artexa-white rounded-md" />
+                          <input type="text" name="first-name" id="first-name" autocomplete="given-name" class="py-3 px-4 block w-full shadow-sm text-warm-gray-900 focus:ring-artexa-teal-400 focus:border-artexa-teal-400 border-artexa-white rounded-md" />
                         </div>
                       </div>
                       <div>
                         <label for="last-name" class="block text-sm font-medium text-warm-gray-900">Last name</label>
                         <div class="mt-1">
-                          <input type="text" name="last-name" id="last-name" autocomplete="family-name" class="py-3 px-4 block w-full shadow-sm text-warm-gray-900 focus:ring-teal-500 focus:border-teal-500 border-artexa-white rounded-md" />
+                          <input type="text" name="last-name" id="last-name" autocomplete="family-name" class="py-3 px-4 block w-full shadow-sm text-warm-gray-900 focus:ring-artexa-teal-400 focus:border-artexa-teal-400 border-artexa-white rounded-md" />
                         </div>
                       </div>
                       <div>
                         <label for="email" class="block text-sm font-medium text-warm-gray-900">Email</label>
                         <div class="mt-1">
-                          <input id="email" name="email" type="email" autocomplete="email" class="py-3 px-4 block w-full shadow-sm text-warm-gray-900 focus:ring-teal-500 focus:border-teal-500 border-artexa-white rounded-md" />
+                          <input id="email" name="email" type="email" autocomplete="email" class="py-3 px-4 block w-full shadow-sm text-warm-gray-900 focus:ring-artexa-teal-400 focus:border-artexa-teal-400 border-artexa-white rounded-md" />
                         </div>
                       </div>
                       <div>
@@ -180,13 +180,13 @@
                           <span id="phone-optional" class="text-sm text-warm-gray-500">Optional</span>
                         </div>
                         <div class="mt-1">
-                          <input type="text" name="phone" id="phone" autocomplete="tel" class="py-3 px-4 block w-full shadow-sm text-warm-gray-900 focus:ring-teal-500 focus:border-teal-500 border-artexa-white rounded-md" aria-describedby="phone-optional" />
+                          <input type="text" name="phone" id="phone" autocomplete="tel" class="py-3 px-4 block w-full shadow-sm text-warm-gray-900 focus:ring-artexa-teal-400 focus:border-artexa-teal-400 border-artexa-white rounded-md" aria-describedby="phone-optional" />
                         </div>
                       </div>
                       <div class="sm:col-span-2">
                         <label for="subject" class="block text-sm font-medium text-warm-gray-900">Subject</label>
                         <div class="mt-1">
-                          <input type="text" name="subject" id="subject" class="py-3 px-4 block w-full shadow-sm text-warm-gray-900 focus:ring-teal-500 focus:border-teal-500 border-artexa-white rounded-md" />
+                          <input type="text" name="subject" id="subject" class="py-3 px-4 block w-full shadow-sm text-warm-gray-900 focus:ring-artexa-teal-400 focus:border-artexa-teal-400 border-artexa-white rounded-md" />
                         </div>
                       </div>
                       <div class="sm:col-span-2">
@@ -199,7 +199,7 @@
                         </div>
                       </div>
                       <div class="sm:col-span-2 sm:flex sm:justify-end">
-                        <button type="submit" class="mt-2 w-full inline-flex items-center justify-center px-6 py-3 border border-transparent rounded-md shadow-sm text-base font-medium text-artexa-white bg-gray-800 hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-teal-500 sm:w-auto">
+                        <button type="submit" class="mt-2 w-full inline-flex items-center justify-center px-6 py-3 border border-transparent rounded-md shadow-sm text-base font-medium text-artexa-white bg-gray-800 hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-artexa-teal-400 sm:w-auto">
                           Submit
                         </button>
                       </div>
