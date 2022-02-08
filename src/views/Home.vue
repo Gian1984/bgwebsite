@@ -320,7 +320,7 @@ export default {
       gsap.to(el, {
         opacity: 1,
         x: 0,
-        duration: 1,
+        duration: 1.5,
         onComplete: done,
         delay: el.dataset.index * 0.5,
       })
@@ -328,17 +328,17 @@ export default {
 
     const beforeSlide = (el) => {
       el.style.opacity = 0
-      el.style.transform = 'translateY(0px)'
+      el.style.transform = 'translateY(400px)'
     }
 
     const slide = (el, done) => {
       gsap.to(el, {
         opacity: 1,
         y: 0,
-        duration: 3,
+        duration: 1.5,
         onComplete: done,
         delay: el.dataset.index * 0.1,
-        rotation: 0,
+        rotation: 360,
       })
     }
 
