@@ -33,7 +33,7 @@
                     <div class="aspect-w-1 aspect-h-1  rounded-md bg-gray-100 overflow-hidden group-hover:opacity-75">
                       <img :src="item.imageSrc" :alt="item.imageAlt" class="object-center object-cover" />
                     </div>
-                    <router-link :to="item.href" class="mt-6 block text-sm font-medium text-white" @click="mobileMenuOpen = false">
+                    <router-link :to="item.href" class="mt-6 block text-sm font-medium text-artexa-white" @click="mobileMenuOpen = false">
                       <span class="absolute z-10 inset-0" aria-hidden="true" />
                       {{ item.name }}
                     </router-link>
@@ -89,7 +89,7 @@
               <div>
                 <label for="desktop-language" class="sr-only">Languages</label>
                 <div class="-ml-2 group relative bg-gray-900 border-transparent rounded-md focus-within:ring-2 focus-within:ring-white">
-                  <select id="desktop-language" name="language" class="bg-none bg-gray-900 border-transparent rounded-md py-0.5 pl-2 pr-5 flex items-center text-sm font-medium text-white group-hover:text-gray-100 focus:outline-none focus:ring-0 focus:border-transparent">
+                  <select id="desktop-language" name="language" class="bg-none bg-gray-900 border-transparent rounded-md py-0.5 pl-2 pr-5 flex items-center text-sm font-medium text-artexa-white group-hover:text-gray-100 focus:outline-none focus:ring-0 focus:border-transparent">
                     <option v-for="language in languages" :key="language">{{ language}}</option>
                   </select>
                 </div>
@@ -100,7 +100,7 @@
         </div>
 
         <!-- Secondary navigation -->
-        <div class="backdrop-blur-md backdrop-filter bg-opacity-10 bg-white">
+        <div class="backdrop-blur-md backdrop-filter bg-opacity-10 bg-artexa-white">
           <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div>
               <div class="h-16 flex items-center justify-between">
@@ -116,20 +116,22 @@
                   <!-- Flyout menus -->
                   <PopoverGroup class="px-4 bottom-0 inset-x-0">
                     <div class="h-full flex justify-center space-x-8">
+                      <a v-for="page in navigation.pages" :key="page.name" :href="page.href" class="flex items-center text-sm font-medium uppercase text-artexa-white hover:text-artexa-teal-400">{{ page.name }}</a>
+
                       <Popover v-for="category in navigation.categories" :key="category.name" class="flex" v-slot="{ open }">
                         <div class="relative flex">
-                          <PopoverButton class="relative z-10 flex items-center justify-center transition-colors ease-out duration-200 text-sm font-medium text-artexa-white outline-none">
+                          <PopoverButton class="hover:text-artexa-teal-400 uppercase relative z-10 flex items-center justify-center transition-colors ease-out duration-200 text-sm font-medium text-artexa-white outline-none">
                             {{ category.name }}
-                            <span :class="[open ? 'bg-white' : '', 'absolute -bottom-px inset-x-0 h-0.5 transition ease-out duration-200']" aria-hidden="true" />
+                            <span :class="[open ? 'bg-artexa-white' : '', 'absolute -bottom-px inset-x-0 h-0.5 transition ease-out duration-200']" aria-hidden="true" />
                           </PopoverButton>
                         </div>
 
                         <transition enter-active-class="transition ease-out duration-200" enter-from-class="opacity-0" enter-to-class="opacity-100" leave-active-class="transition ease-in duration-150" leave-from-class="opacity-100" leave-to-class="opacity-0">
                           <PopoverPanel class="absolute top-full inset-x-0 text-sm text-gray-500">
                             <!-- Presentational element used to render the bottom shadow, if we put the shadow on the actual panel it pokes out the top, so we use this shorter element to hide the top of the shadow -->
-                            <div class="absolute inset-0 top-1/2 bg-white shadow" aria-hidden="true" />
+                            <div class="absolute inset-0 top-1/2 bg-artexa-white shadow" aria-hidden="true" />
 
-                            <div class="relative bg-white">
+                            <div class="relative bg-artexa-white">
                               <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                                 <div class="flex justify-around py-10">
                                   <div v-for="item in category.featured" :key="item.name" class="group relative">
@@ -149,20 +151,19 @@
                         </transition>
                       </Popover>
 
-                      <a v-for="page in navigation.pages" :key="page.name" :href="page.href" class="flex items-center text-sm font-medium text-white">{{ page.name }}</a>
                     </div>
                   </PopoverGroup>
                 </div>
 
                 <!-- Mobile menu and search (lg-) -->
                 <div class="flex-1 flex items-center lg:hidden">
-                  <button type="button" class="-ml-2 p-2 text-white" @click="mobileMenuOpen = true">
+                  <button type="button" class="-ml-2 p-2 text-artexa-white" @click="mobileMenuOpen = true">
                     <span class="sr-only">Open menu</span>
                     <MenuIcon class="h-6 w-6" aria-hidden="true" />
                   </button>
 
                   <!-- Search -->
-<!--                  <a href="#" class="ml-2 p-2 text-white">-->
+<!--                  <a href="#" class="ml-2 p-2 text-artexa-white">-->
 <!--                    <span class="sr-only">Search</span>-->
 <!--                    <SearchIcon class="w-6 h-6" aria-hidden="true" />-->
 <!--                  </a>-->
@@ -175,23 +176,23 @@
                 </router-link>
 
                 <div class="flex-1 flex items-center justify-end">
-<!--                  <a href="#" class="hidden text-sm font-medium text-white lg:block">-->
+<!--                  <a href="#" class="hidden text-sm font-medium text-artexa-white lg:block">-->
 <!--                    Search-->
 <!--                  </a>-->
 
                   <div class="flex items-center lg:ml-8">
                     <!-- Help -->
-                    <a href="#" class="p-2 text-white lg:hidden">
+                    <a href="#" class="p-2 text-artexa-white lg:hidden">
                       <span class="sr-only">Help</span>
                       <QuestionMarkCircleIcon class="w-6 h-6" aria-hidden="true" />
                     </a>
-<!--                    <a href="#" class="hidden text-sm font-medium text-white lg:block">Help</a>-->
+<!--                    <a href="#" class="hidden text-sm font-medium text-artexa-white lg:block">Help</a>-->
 
                     <!-- Cart -->
 <!--                    <div class="ml-4 flow-root lg:ml-8">-->
 <!--                      <a href="#" class="group -m-2 p-2 flex items-center">-->
-<!--                        <ShoppingBagIcon class="flex-shrink-0 h-6 w-6 text-white" aria-hidden="true" />-->
-<!--                        <span class="ml-2 text-sm font-medium text-white">0</span>-->
+<!--                        <ShoppingBagIcon class="flex-shrink-0 h-6 w-6 text-artexa-white" aria-hidden="true" />-->
+<!--                        <span class="ml-2 text-sm font-medium text-artexa-white">0</span>-->
 <!--                        <span class="sr-only">items in cart, view bag</span>-->
 <!--                      </a>-->
 <!--                    </div>-->
@@ -199,7 +200,7 @@
                 </div>
                 <div class="hidden w-3/12 lg:flex-1 lg:flex lg:items-center lg:justify-end">
                   <router-link to="/contact">
-                    <MailIcon class="h-5 w-5 text-artexa-white"/>
+                    <MailIcon class="h-5 w-5 text-artexa-white hover:text-artexa-teal-400"/>
                   </router-link>
                 </div>
               </div>
@@ -220,19 +221,19 @@
     <div class="max-w-7xl mx-auto py-12 px-4 overflow-hidden sm:px-6 lg:px-8">
       <nav class="-mx-5 -my-2 flex flex-wrap justify-center" aria-label="Footer">
         <div v-for="item in footernavigation.main" :key="item.name" class="px-5 py-2">
-          <a :href="item.href" class="text-base text-gray-500 hover:text-gray-900">
+          <a :href="item.href" class="text-base text-gray-500 hover:text-artexa-teal-400">
             {{ item.name }}
           </a>
         </div>
       </nav>
       <div class="mt-8 flex justify-center space-x-6">
-        <a v-for="item in footernavigation.social" :key="item.name" :href="item.href" class="text-gray-200 hover:text-gray-300">
+        <a v-for="item in footernavigation.social" :key="item.name" :href="item.href" class="text-gray-200 hover:text-artexa-teal-400">
           <span class="sr-only">{{ item.name }}</span>
           <component :is="item.icon" class="h-6 w-6" aria-hidden="true" />
         </a>
       </div>
       <p class="mt-8 text-center text-base text-gray-400">
-        &copy; {{new Date().getFullYear()}} Artexa. All rights reserved.
+        &copy; {{new Date().getFullYear()}} Artexa agency. All rights reserved.
       </p>
     </div>
   </footer>
@@ -263,36 +264,36 @@ import { MailIcon } from '@heroicons/vue/solid'
 
 const languages = ['EN', 'FR', 'IT']
 
-const navigation = {
-  categories: [
-    {
-      name: 'Company',
-      featured: [
-        {
-          name: 'About',
-          role:'',
-          href: '/about',
-          imageSrc: 'img/artexa_round_anime_logo.svg',
-          imageAlt: 'Models sitting back to back, wearing Basic Tee in black and bone.',
-        },
-        {
-          name: 'Services',
-          role:'',
-          href: '/workflow',
-          imageSrc: 'img/services_logo.png',
-          imageAlt: 'Close up of Basic Tee fall bundle with off-white, ochre, olive, and black tees.',
-        },
-        {
-          name: 'Team',
-          role:'',
-          href: '/team',
-          imageSrc: 'img/team_logo.png',
-          imageAlt: 'Model wearing minimalist watch with black wristband and white watch face.',
-        },
-      ],
-    },
-    {
-      name: 'Projects',
+ const navigation = {
+   categories: [
+//     {
+//       name: 'Company',
+//       featured: [
+//         {
+//           name: 'About',
+//           role:'',
+//           href: '/about',
+//           imageSrc: 'img/artexa_round_anime_logo.svg',
+//           imageAlt: 'Models sitting back to back, wearing Basic Tee in black and bone.',
+//         },
+//         {
+//           name: 'Services',
+//           role:'',
+//           href: '/workflow',
+//           imageSrc: 'img/services_logo.png',
+//           imageAlt: 'Close up of Basic Tee fall bundle with off-white, ochre, olive, and black tees.',
+//         },
+//         {
+//           name: 'Team',
+//           role:'',
+//           href: '/team',
+//           imageSrc: 'img/team_logo.png',
+//           imageAlt: 'Model wearing minimalist watch with black wristband and white watch face.',
+//         },
+//       ],
+//     },
+   {
+      name: 'Portfolio',
       featured: [
         {
           name: 'Belgamobility',
@@ -323,8 +324,9 @@ const navigation = {
     },
   ],
   pages: [
-    // { name: 'About', href: '/about' },
-    // { name: 'Contact', href: '/contact' },
+    { name: 'About', href: '/about' },
+    { name: 'Services', href: '/workflow' },
+    { name: 'Team', href: '/team' },
   ],
 }
 
