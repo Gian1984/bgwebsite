@@ -105,20 +105,20 @@
             <div>
               <div class="h-16 flex items-center justify-between">
                 <!-- Logo (lg+) -->
-                <div class="hidden lg:flex-1 lg:flex lg:items-center">
+                <div class="hidden w-3/12 lg:flex-1 lg:flex lg:items-center">
                   <router-link to="/">
                     <span class="sr-only">Workflow</span>
                     <img class="h-12 w-auto" src="img/artexa_logo_anime.svg" alt="artexa_logo" />
                   </router-link>
                 </div>
 
-                <div class="hidden h-full lg:flex">
+                <div class="hidden h-full lg:flex w-11/12 justify-center">
                   <!-- Flyout menus -->
                   <PopoverGroup class="px-4 bottom-0 inset-x-0">
                     <div class="h-full flex justify-center space-x-8">
                       <Popover v-for="category in navigation.categories" :key="category.name" class="flex" v-slot="{ open }">
                         <div class="relative flex">
-                          <PopoverButton class="relative z-10 flex items-center justify-center transition-colors ease-out duration-200 text-sm font-medium text-white">
+                          <PopoverButton class="relative z-10 flex items-center justify-center transition-colors ease-out duration-200 text-sm font-medium text-artexa-white outline-none">
                             {{ category.name }}
                             <span :class="[open ? 'bg-white' : '', 'absolute -bottom-px inset-x-0 h-0.5 transition ease-out duration-200']" aria-hidden="true" />
                           </PopoverButton>
@@ -131,12 +131,12 @@
 
                             <div class="relative bg-white">
                               <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                                <div class="grid grid-cols-4 gap-y-10 gap-x-8 py-10">
+                                <div class="flex justify-around py-10">
                                   <div v-for="item in category.featured" :key="item.name" class="group relative">
                                     <div class="h-40 w-40 rounded-md bg-gray-100 overflow-hidden group-hover:opacity-75">
                                       <img :src="item.imageSrc" :alt="item.imageAlt" class="object-center object-cover" />
                                     </div>
-                                    <a :href="item.href" class="mt-4 block font-medium text-gray-900">
+                                    <a :href="item.href" class="mt-4 block text-center font-medium text-gray-900">
                                       <span class="absolute z-10 inset-0" aria-hidden="true" />
                                       {{ item.name }}
                                     </a>
@@ -197,6 +197,11 @@
 <!--                    </div>-->
                   </div>
                 </div>
+                <div class="hidden w-3/12 lg:flex-1 lg:flex lg:items-center lg:justify-end">
+                  <router-link to="/contact">
+                    <MailIcon class="h-5 w-5 text-artexa-white"/>
+                  </router-link>
+                </div>
               </div>
             </div>
           </div>
@@ -253,9 +258,10 @@ import {
 } from '@headlessui/vue'
 import { MenuIcon, QuestionMarkCircleIcon, SearchIcon, ShoppingBagIcon, XIcon } from '@heroicons/vue/outline'
 import { defineComponent, h } from 'vue'
+import { MailIcon } from '@heroicons/vue/solid'
 
 
-const languages = ['EN', 'FR', 'NL']
+const languages = ['EN', 'FR', 'IT']
 
 const navigation = {
   categories: [
@@ -282,13 +288,6 @@ const navigation = {
           href: '/team',
           imageSrc: 'img/team_logo.png',
           imageAlt: 'Model wearing minimalist watch with black wristband and white watch face.',
-        },
-        {
-          name: 'Contact',
-          role:'',
-          href: '/contact',
-          imageSrc: 'img/contact_logo.png',
-          imageAlt: 'Model opening tan leather long wallet with credit card pockets and cash pouch.',
         },
       ],
     },
@@ -414,6 +413,7 @@ export default {
     SearchIcon,
     ShoppingBagIcon,
     XIcon,
+    MailIcon,
   },
 }
 </script>
