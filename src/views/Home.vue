@@ -24,7 +24,7 @@
           @before-enter="beforeEnter"
           @enter="enter"
       >
-      <p class="mt-6 max-w-3xl text-xl text-gray-300 text2 ">Upgrade your business, start with your website.</p>
+      <p class="mt-6 max-w-3xl text-xl text-gray-300 text2 ">Upgrade your business starts with your website.</p>
       </transition>
       <transition
           appear
@@ -32,8 +32,8 @@
           @enter="enter"
       >
       <a href="/contact" class="mt-4 inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md shadow-sm text-artexa-white bg-artexa-teal-400 hover:bg-artexa-red focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
-        <PlusSmIcon class="-ml-1 mr-2 h-5 w-5" aria-hidden="true" />
-        <span>New Project</span>
+        <span>Start a new project </span>
+        <PlusSmIcon class="-mr-1 ml-2 h-5 w-5" aria-hidden="true" />
       </a>
       </transition>
          </div>
