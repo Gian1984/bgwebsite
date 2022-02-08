@@ -24,7 +24,7 @@
           @before-enter="beforeEnter"
           @enter="enter"
       >
-      <p class="mt-6 max-w-3xl text-xl text-gray-300 text2 ">Take the software path to your digital future.</p>
+      <p class="mt-6 max-w-3xl text-xl text-gray-300 text2 ">Upgrade your business, start with your website.</p>
       </transition>
       <transition
           appear
