@@ -3,7 +3,7 @@
     <!-- Header -->
     <div class="relative pb-32 bg-gray-800 pt-24">
       <div class="absolute inset-0">
-        <img class="w-full h-full object-cover" src="img/header_tower.png" alt="coding" />
+        <img class="w-full h-full object-cover" src="img/header_tower.webp" alt="coding" />
         <div class="absolute inset-0 bg-artexa-white mix-blend-multiply" aria-hidden="true" />
       </div>
       <div class="relative max-w-7xl mx-auto py-32 px-4 sm:py-36 sm:px-6 lg:px-8">
@@ -214,7 +214,7 @@
           <section aria-labelledby="offices-heading">
             <div class="relative pb-32 bg-gray-800 mt-32">
               <div class="absolute inset-0">
-                <img class="w-full h-full object-cover" src="img/where.png" alt="coding" />
+                <img class="w-full h-full object-cover" src="img/where.webp" alt="map of where we are" />
                 <div class="absolute inset-0 bg-artexa-white mix-blend-multiply" aria-hidden="true" />
               </div>
               <div class="relative max-w-7xl mx-auto py-32 px-4 sm:py-36 sm:px-6 lg:px-8">

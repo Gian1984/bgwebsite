@@ -19,7 +19,7 @@
           <TabGroup as="div" class="mt-2">
             <div class="border-b border-gray-200">
               <TabList class="-mb-px flex px-4 space-x-8">
-                <Tab as="template" v-for="category in navigation.categories" :key="category.name" v-slot="{ selected }">
+                <Tab as="template" v-for="category in navigationmobile.categories" :key="category.name" v-slot="{ selected }">
                   <button :class="[selected ? 'text-teal-600 border-teal-600' : 'text-artexa-white border-transparent', 'flex-1 whitespace-nowrap py-4 px-1 border-b-2 text-base font-medium']">
                     {{ category.name }}
                   </button>
@@ -27,7 +27,7 @@
               </TabList>
             </div>
             <TabPanels as="template">
-              <TabPanel v-for="category in navigation.categories" :key="category.name" class="px-4 py-6 space-y-12">
+              <TabPanel v-for="category in navigationmobile.categories" :key="category.name" class="px-4 py-6 space-y-12">
                 <div class="grid grid-cols-2 gap-x-4 gap-y-10">
                   <div v-for="item in category.featured" :key="item.name" class="group relative">
                     <div class="aspect-w-1 aspect-h-1  rounded-md bg-gray-100 overflow-hidden group-hover:opacity-75">
@@ -45,7 +45,7 @@
           </TabGroup>
 
           <div class="border-t border-gray-200 py-6 px-4 space-y-6">
-            <div v-for="page in navigation.pages" :key="page.name" class="flow-root">
+            <div v-for="page in navigationmobile.pages" :key="page.name" class="flow-root">
               <router-link :to="page.href" class="-m-2 p-2 block font-medium text-gray-900">{{ page.name }}</router-link>
             </div>
           </div>
@@ -82,7 +82,7 @@
     <header class="relative z-10">
       <nav aria-label="Top">
         <!-- Top navigation -->
-        
+
 
         <!-- Secondary navigation -->
         <div class="backdrop-blur-md backdrop-filter bg-opacity-10 bg-artexa-white">
@@ -167,10 +167,10 @@
 
                   <div class="flex items-center lg:ml-8">
                     <!-- Help -->
-                    <a href="#" class="p-2 text-artexa-white lg:hidden">
+                    <router-link to="/contact" class="p-2 text-artexa-white lg:hidden">
                       <span class="sr-only">Help</span>
-                      <QuestionMarkCircleIcon class="w-6 h-6" aria-hidden="true" />
-                    </a>
+                      <MailIcon class="w-6 h-6" aria-hidden="true" />
+                    </router-link>
 <!--                    <a href="#" class="hidden text-sm font-medium text-artexa-white lg:block">Help</a>-->
 
                     <!-- Cart -->
@@ -265,61 +265,123 @@ import { MailIcon } from '@heroicons/vue/solid'
 
 const languages = ['EN', 'FR', 'IT']
 
+
+const navigationmobile = {
+  categories: [
+    {
+      name: 'Company',
+      featured: [
+        {
+          name: 'About',
+          role: '',
+          href: '/about',
+          imageSrc: 'img/artexa_round_anime_logo.svg',
+          imageAlt: 'Models sitting back to back, wearing Basic Tee in black and bone.',
+        },
+        {
+          name: 'Services',
+          role: '',
+          href: '/workflow',
+          imageSrc: 'img/services_logo.png',
+          imageAlt: 'Close up of Basic Tee fall bundle with off-white, ochre, olive, and black tees.',
+        },
+        {
+          name: 'Team',
+          role: '',
+          href: '/team',
+          imageSrc: 'img/team_logo.png',
+          imageAlt: 'Model wearing minimalist watch with black wristband and white watch face.',
+        },
+      ],
+    },
+    {
+      name: 'Portfolio',
+      featured: [
+        {
+          name: 'Belgamobility',
+          href: 'https://www.belgamobility.com/',
+          imageSrc: 'img/logos/BELGA-MOBILITY.png',
+          imageAlt: 'Hats and sweaters on wood shelves next to various colors of t-shirts on hangers.',
+        },
+        {
+          name: 'Fernelmove',
+          href: 'http://fernelmove.be',
+          imageSrc: 'img/logos/FernelLogoFinal.svg',
+          imageAlt: 'social application developped for the municipality of Fernelmont.',
+        },
+        {
+          name: 'Fava Claudio architect',
+          href: 'https://www.favaclaudio.com',
+          imageSrc: 'img/logos/logo-small.png',
+          imageAlt:
+              'Fava Claudio architect website.',
+        },
+        {
+          name: 'Pizza Vino',
+          href: 'https://pizzavino.be',
+          imageSrc: 'img/logos/pizza-vino-logo.png',
+          imageAlt: 'pizza vino web site.',
+        },
+      ],
+    },
+  ],
+}
+
  const navigation = {
    categories: [
-//     {
-//       name: 'Company',
-//       featured: [
-//         {
-//           name: 'About',
-//           role:'',
-//           href: '/about',
-//           imageSrc: 'img/artexa_round_anime_logo.svg',
-//           imageAlt: 'Models sitting back to back, wearing Basic Tee in black and bone.',
-//         },
-//         {
-//           name: 'Services',
-//           role:'',
-//           href: '/workflow',
-//           imageSrc: 'img/services_logo.png',
-//           imageAlt: 'Close up of Basic Tee fall bundle with off-white, ochre, olive, and black tees.',
-//         },
-//         {
-//           name: 'Team',
-//           role:'',
-//           href: '/team',
-//           imageSrc: 'img/team_logo.png',
-//           imageAlt: 'Model wearing minimalist watch with black wristband and white watch face.',
-//         },
-//       ],
-//     },
+    // {
+    //   name: 'Company',
+    //   featured: [
+    //     {
+    //       name: 'About',
+    //       role:'',
+    //       href: '/about',
+    //       imageSrc: 'img/artexa_round_anime_logo.svg',
+    //       imageAlt: 'Models sitting back to back, wearing Basic Tee in black and bone.',
+    //     },
+    //     {
+    //       name: 'Services',
+    //       role:'',
+    //       href: '/workflow',
+    //       imageSrc: 'img/services_logo.png',
+    //       imageAlt: 'Close up of Basic Tee fall bundle with off-white, ochre, olive, and black tees.',
+    //     },
+    //     {
+    //       name: 'Team',
+    //       role:'',
+    //       href: '/team',
+    //       imageSrc: 'img/team_logo.png',
+    //       imageAlt: 'Model wearing minimalist watch with black wristband and white watch face.',
+    //     },
+    //   ],
+    // },
    {
       name: 'Portfolio',
       featured: [
         {
           name: 'Belgamobility',
           href: 'https://www.belgamobility.com/',
-          imageSrc: 'https://tailwindui.com/img/ecommerce-images/mega-menu-01-men-category-01.jpg',
+          imageSrc: 'img/logos/BELGA-MOBILITY.png',
           imageAlt: 'Hats and sweaters on wood shelves next to various colors of t-shirts on hangers.',
         },
         {
           name: 'Fernelmove',
           href: 'http://fernelmove.be',
-          imageSrc: 'https://tailwindui.com/img/ecommerce-images/mega-menu-01-men-category-02.jpg',
+          imageSrc: 'img/logos/FernelLogoFinal.svg',
           imageAlt: 'social application developped for the municipality of Fernelmont.',
         },
         {
-          name: 'Fava Claudio architect',
+          name: 'Fava Claudio Architect',
           href: 'https://www.favaclaudio.com',
-          imageSrc: 'https://tailwindui.com/img/ecommerce-images/mega-menu-01-men-category-03.jpg',
+          imageSrc: 'img/logos/logo-small.png',
           imageAlt:
               'Fava Claudio architect website.',
         },
         {
-          name: 'Carry',
-          href: '#',
-          imageSrc: 'https://tailwindui.com/img/ecommerce-images/mega-menu-01-men-category-04.jpg',
-          imageAlt: 'Model putting folded cash into slim card holder olive leather wallet with hand stitching.',
+          name: 'Pizza Vino',
+          href: 'https://pizzavino.be',
+          imageSrc: 'img/logos/pizza-vino-logo.png',
+          imageAlt: 'pizza vino web site.',
         },
       ],
     },
@@ -391,6 +453,7 @@ export default {
     const mobileMenuOpen = ref(false)
     return {
       mobileMenuOpen,
+      navigationmobile,
       navigation,
       footernavigation,
       languages

@@ -7,7 +7,7 @@
 
         <div class="relative pb-32 bg-gray-800 pt-40">
           <div class="absolute inset-0">
-            <img class="w-full h-full object-cover" src="img/red_header.png" />
+            <img class="w-full h-full object-cover" src="img/header_workflow.webp" />
             <div class="absolute inset-0 bg-gray-900 opacity-50" aria-hidden="true" />
           </div>
           <div class="relative max-w-7xl mx-auto py-24 px-4 sm:py-32 sm:px-6 lg:px-8">
@@ -57,7 +57,7 @@
               </p>
             </div>
             <div class="mt-12 shadow-2xl mb-24">
-              <img class="rounded-lg ring-1 ring-black ring-opacity-5 h-full w-full" src="img/header_main.png" alt="strategy_image" />
+              <img class="rounded-lg ring-1 ring-black ring-opacity-5 h-full w-full" src="img/header_main.webp" alt="strategy_image" />
             </div>
           </div>
         </div>

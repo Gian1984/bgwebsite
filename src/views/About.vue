@@ -1,7 +1,7 @@
 <template>
   <div class="relative pb-32 bg-gray-800 pt-40">
     <div class="absolute inset-0">
-      <img class="w-full h-full object-cover" src="img/header_one.png" />
+      <img class="w-full h-full object-cover" src="img/header_one.webp" />
       <div class="absolute inset-0 bg-gray-900 opacity-50" aria-hidden="true" />
     </div>
     <div class="relative max-w-7xl mx-auto py-24 px-4 sm:py-32 sm:px-6 lg:px-8">
@@ -22,7 +22,7 @@
 
 
   <div class="bg-gray-50">
-    <div class="max-w-7xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:px-8">
+    <div class="max-w-7xl mx-auto py-12 px-4 sm:py-12 sm:px-6 lg:px-8">
       <div class="sm:items-baseline text-center">
         <h2 class="text-3xl tracking-tight font-extrabold text-gray-900 sm:text-4xl">
           About US.
@@ -68,9 +68,12 @@
     </div>
   </div>
 
-  <div class="bg-gray-50">
-    <h2 class="sr-only">Our perks</h2>
-    <div class="max-w-7xl mx-auto py-12 sm:px-2 sm:py-24 lg:px-4">
+  <div class="bg-gray-50 py-12 sm:px-2 sm:py-12">
+    <h2 class="text-3xl tracking-tight font-extrabold text-gray-900 sm:text-4xl text-center">Our core values</h2>
+    <p class="mt-3 mb-10 max-w-2xl mx-auto text-xl text-gray-500 sm:mt-4 text-center">
+      To get a sense of what our core values are, we ask ourself what bring us the most joy, or what we couldn’t live without. What gives us life meaning or what do we want to achieve?
+    </p>
+    <div class="max-w-7xl mx-auto lg:px-4">
       <div class="max-w-2xl mx-auto px-4 grid grid-cols-1 gap-y-12 gap-x-8 lg:max-w-none lg:grid-cols-2 lg:gap-y-16">
         <div v-for="perk in perks" :key="perk.name" class="sm:flex">
           <div class="sm:flex-shrink-0">
@@ -94,7 +97,7 @@
 
 
   <div class="bg-gray-50">
-    <div class="max-w-7xl mx-auto py-16 px-4 sm:py-12 sm:px-6 lg:px-8">
+    <div class="max-w-7xl mx-auto py-12 px-4 sm:py-12 sm:px-6 lg:px-8">
       <div class="sm:items-baseline text-center">
         <h2 class="text-3xl tracking-tight font-extrabold text-gray-900 sm:text-4xl">
           Why Choose Artexa?
@@ -131,22 +134,22 @@ import 'vue3-carousel/dist/carousel.css';
 
 const perks = [
   {
-    name: 'Free delivery',
+    name: 'Move fast',
     imageSrc: 'https://tailwindui.com/img/ecommerce/icons/icon-delivery-light.svg',
     description:
-        "Order now and you'll get delivery absolutely free. Well, it's not actually free, we just price it into the products. Someone's paying for it, and it's not us.",
+        "We are always looking for innovation and the best solutions for our customers. In a world that moves at the speed of a click, we try to give maximum importance to your needs in the shortest time possible.",
   },
   {
-    name: '10-year warranty',
+    name: 'Constant commitment',
     imageSrc: 'https://tailwindui.com/img/ecommerce/icons/icon-warranty-light.svg',
     description:
-        "We have a 10 year warranty with every product that you purchase, whether thats a new pen or organizer, you can be sure we'll stand behind it.",
+        "We know how important is the presence on the web for our customers, and that's why we are committed every day to ensure the best result.",
   },
   {
-    name: '24/7 Customer Support',
+    name: '6/7 Customer Support',
     imageSrc: 'https://tailwindui.com/img/ecommerce/icons/icon-chat-light.svg',
     description:
-        'We understand that when your product arrives you might not particularly like it, or you ordered the wrong thing. Conditions apply here.',
+        'We understand that when your product arrives you might not particularly like it, when something goes wrong we always try to move as quickly as possible to respond and resolve any issues or needs.',
   },
   {
     name: 'For the planet',

@@ -1,7 +1,7 @@
 <template>
   <div class="relative pb-32 bg-gray-800 pt-40">
     <div class="absolute inset-0">
-      <img class="w-full h-full object-cover" src="img/header_one.png" />
+      <img class="w-full h-full object-cover" src="img/team_header.webp" />
       <div class="absolute inset-0 bg-gray-900 opacity-50" aria-hidden="true" />
     </div>
     <div class="relative max-w-7xl mx-auto py-24 px-4 sm:py-32 sm:px-6 lg:px-8">
@@ -13,7 +13,7 @@
         <img class="h-24" src="img/artexa.png"/>
       </transition>
       <h1 class="mt-6 text-4xl font-extrabold tracking-tight text-white md:text-5xl lg:text-6xl">Web Development Company</h1>
-      <p class="mt-6 max-w-3xl text-xl text-gray-300">Take the software path to your digital future.</p>
+      <p class="mt-6 max-w-3xl text-xl text-gray-300">Growth and learning is in our DNA</p>
     </div>
   </div>
 
@@ -62,11 +62,53 @@
     </div>
   </div>
 </div>
+
+  <div class="relative my-12">
+    <div class="absolute inset-0 py-12">
+      <img class="w-full h-full object-cover" src="https://images.unsplash.com/photo-1525130413817-d45c1d127c42?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1920&q=60&&sat=-100" alt="" />
+      <div class="absolute inset-0 bg-artexa-teal-400 mix-blend-multiply" aria-hidden="true" />
+    </div>
+    <div class="relative max-w-7xl mx-auto py-24 px-4 sm:py-32 sm:px-6 lg:px-8">
+      <h1 class="text-4xl font-extrabold tracking-tight text-white sm:text-5xl lg:text-6xl">The people who work at Artexa share the same vision and values as our customer.</h1>
+      <p class="mt-6 text-xl text-indigo-100 max-w-3xl">We are guided by the idea that the best work comes from commitment, dedication and respect.</p>
+    </div>
+  </div>
+
+
+  <div class="bg-white">
+    <div class="max-w-7xl mx-auto py-12 sm:px-2 sm:py-24 lg:px-4">
+      <div class="max-w-2xl mx-auto px-4 lg:max-w-none">
+        <div class="grid grid-cols-1 items-center gap-y-10 gap-x-16 lg:grid-cols-2">
+          <div>
+            <h2 class="text-4xl font-extrabold tracking-tight text-gray-900">We're more than a web agency, we're an agency of progress</h2>
+            <p class="mt-4 text-gray-500">As your partner we do a lot, but what's more important is how we help you move forward. Whether it’s to better align on your business challenge, understand the people you need to reach, or define the best process to get there, we do it together as one single, cohesive team.</p>
+          </div>
+          <div class="aspect-w-3 aspect-h-2 bg-gray-100 rounded-lg overflow-hidden">
+            <img src="https://tailwindui.com/img/ecommerce-images/incentives-07-hero.jpg" alt="" class="object-center object-cover" />
+          </div>
+        </div>
+        <div class="mt-16 grid grid-cols-1 gap-y-10 gap-x-8 lg:grid-cols-4 text-center">
+          <div v-for="incentive in incentives" :key="incentive.name" class="sm:flex lg:block">
+            <div class="sm:flex-shrink-0 items-center">
+              <img class="w-16 h-16 mx-auto" :src="incentive.imageSrc" alt="" />
+            </div>
+            <div class="mt-4 sm:mt-0 sm:ml-6 lg:mt-6 lg:ml-0">
+              <h3 class="text-sm font-medium text-gray-900">
+                {{ incentive.name }}
+              </h3>
+              <p class="mt-2 text-sm text-gray-500">
+                {{ incentive.description }}
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
 </template>
 
 <script>
-
-
 import gsap from "gsap";
 
 const team = [
@@ -91,6 +133,31 @@ const team = [
         "My favorite frameworks are VueJs / Laravel / Tailwnd, but in this area learning something new is part of everyday life.\n" +
         "My approach to website development fuses creativity, technology and data analysis, giving you the platform you need to reach new audiences and engage your customers.",
     linkedinUrl: 'https://www.linkedin.com/in/gianluca-tiengo/',
+  },
+]
+
+const incentives = [
+  {
+    name: 'Brand innovation & transformation',
+    imageSrc: 'img/idea.png',
+    description: "We’re your partner in defining and articulating your brand as an entity that meets the changed expectations of your customers",
+  },
+  {
+    name: 'Research & intelligence',
+    imageSrc: 'img/data-analysis.png',
+    description: "Our deep practice in cultural and behavioral intelligence helps our partners to understand their customers needs with more nuance and flexibility. We help you operate in both the now and the next.",
+  },
+  {
+    name: 'Customer experience design',
+    imageSrc: 'img/sketch.png',
+    description:
+        "You need a partner that understands more than just how to design great products and services. We understand how to create strong bonds with the larger world of your brand, which is how true loyalty is earned.",
+  },
+  {
+    name: 'Culture, content, & community',
+    imageSrc: 'img/teamwork.png',
+    description:
+        "We balance strategy, creativity, production, and delivery to create truly resonant modern content across your website.",
   },
 ]
 
@@ -131,6 +198,7 @@ export default {
 
     return {
       team,
+      incentives,
       beforeEnter,
       enter,
       slide,
