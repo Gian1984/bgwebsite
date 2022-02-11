@@ -32,7 +32,7 @@
           @enter="enter"
       >
       <a href="/contact" class="mt-4 inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md shadow-sm text-artexa-white bg-artexa-teal-400 hover:bg-artexa-red focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
-        <span>Start a new project </span>
+        <span>{{ $t("header.button") }} </span>
         <PlusSmIcon class="-mr-1 ml-2 h-5 w-5" aria-hidden="true" />
       </a>
       </transition>
@@ -87,7 +87,7 @@
           <h2 class="text-3xl tracking-tight font-extrabold text-gray-900 sm:text-4xl">
             Our technologies
           </h2>
-          <p class="mt-3 max-w-2xl mx-auto text-xl text-gray-500 sm:mt-4 ">
+          <p class="mt-3 max-w-2xl mx-auto text-xl text-gray-500 sm:mt-4 px-4">
             The development of advanced web applications is our specialty, and we will successfully fulfill all your web application development requirements, from small-sized to wider-ranged projects. To maintain and improve our high-quality web apps, we have expertise in various web development technologies.
           </p>
         </div>
@@ -355,6 +355,17 @@ export default {
   },
 }
 </script>
+
+<i18n>
+{
+  "en": {
+    "ciao": "hello world!"
+  },
+  "fr": {
+    "ciao": "こんにちは、世界！"
+  }
+}
+</i18n>
 
 
 
