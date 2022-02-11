@@ -1,6 +1,6 @@
 <!-- This example requires Tailwind CSS v2.0+ -->
 <template>
-  <TransitionRoot as="template" :show="mobileMenuOpen">
+  <TransitionRoot as="template" :show="mobileMenuOpen" id="header">
     <Dialog as="div" class="fixed inset-0 flex z-40 lg:hidden" @close="mobileMenuOpen = false">
       <TransitionChild as="template" enter="transition-opacity ease-linear duration-300" enter-from="opacity-0" enter-to="opacity-100" leave="transition-opacity ease-linear duration-300" leave-from="opacity-100" leave-to="opacity-0">
         <DialogOverlay class="fixed inset-0 bg-black bg-opacity-25" />
@@ -56,11 +56,32 @@
             <!-- languages selector -->
             <form>
               <div class="inline-block">
-                <label for="mobile-languages" class="sr-only">Languages</label>
+                <label class="sr-only">Languages</label>
                 <div class="-ml-2 group relative border-transparent rounded-md focus-within:ring-2 focus-within:ring-white">
-                  <select id="mobile-languages" name="language" class="bg-none border-transparent rounded-md py-0.5 pl-2 pr-5 flex items-center text-sm font-medium text-gray-700 group-hover:text-gray-800 focus:outline-none focus:ring-0 focus:border-transparent">
-                    <option v-for="language in languages" :key="language">{{ language }}</option>
-                  </select>
+<!--                  <form class="ml-2">-->
+<!--                    <select v-model="$i18n.locale" id="language" name="location" class="block w-full pl-3 ml-2 pr-10 py-2 text-base border-white focus:outline-none  focus:border-white sm:text-sm rounded-md">-->
+<!--                      <option selected="selected" value="en">EN</option>-->
+<!--                      <option value="en">EN</option>-->
+<!--                    </select>-->
+<!--                  </form>-->
+
+
+
+
+<!--                  <form>-->
+<!--                    <div class="inline-block">-->
+<!--                      <label for="mobile-currency" class="sr-only">Currency</label>-->
+<!--                      <div class="-ml-2 group relative border-transparent rounded-md focus-within:ring-2 focus-within:ring-white">-->
+<!--                        <select v-model="$i18n.locale" id="mobile-currency" name="currency" class="bg-none border-transparent rounded-md py-0.5 pl-2 pr-5 flex items-center text-sm font-medium text-gray-700 group-hover:text-gray-800 focus:outline-none focus:ring-0 focus:border-transparent">-->
+<!--                          <option value="fr">fr</option>-->
+<!--                          <option value="en">EN</option>-->
+<!--                        </select>-->
+<!--                      </div>-->
+<!--                    </div>-->
+<!--                  </form>-->
+
+
+
                 </div>
               </div>
             </form>
@@ -194,13 +215,15 @@
         </div>
         <div class="bg-gray-900">
           <div class="max-w-7xl mx-auto h-10 px-4 flex items-center justify-between sm:px-6 lg:px-8">
-            <!-- languages selector -->
+
             <form>
               <div>
-                <label for="desktop-language" class="sr-only">Languages</label>
+                <label for="desktop-currency" class="sr-only">Currency</label>
                 <div class="-ml-2 group relative bg-gray-900 border-transparent rounded-md focus-within:ring-2 focus-within:ring-white">
-                  <select id="desktop-language" name="language" class="bg-none bg-gray-900 border-transparent rounded-md py-0.5 pl-2 pr-5 flex items-center text-sm font-medium text-artexa-white group-hover:text-gray-100 focus:outline-none focus:ring-0 focus:border-transparent">
-                    <option v-for="language in languages" :key="language">{{ language}}</option>
+                  <select v-model="$i18n.locale" id="desktop-currency" name="currency" class="bg-none bg-gray-900 border-transparent rounded-md py-0.5 pl-2 pr-5 flex items-center text-sm font-medium text-white group-hover:text-gray-100 focus:outline-none focus:ring-0 focus:border-transparent">
+                    <option value="fr">FR</option>
+                    <option value="en">EN</option>
+                    <option value="it">IT</option>
                   </select>
                 </div>
               </div>
@@ -237,6 +260,50 @@
         &copy; {{new Date().getFullYear()}} Artexa agency. All rights reserved.
       </p>
     </div>
+
+    <vue-cookie-comply
+        :preferences="[
+            {
+              title: 'Required Information / Information requise',
+              description:
+                'Personal information collected such as names, telephone numbers and places are mandatory to allow the application to function properly and will in no way be disclosed to third parties. / Les informations personnelles collectées telles que noms, numéros de téléphone et lieux sont obligatoires pour permettre le bon fonctionnement de l\'application et ne seront en aucun cas divulguées à des tiers.',
+              items: [{ label: 'Active', value: 'I understand / je comprend ', isRequired: true }],
+            },
+            {
+              title: 'GoogleAnalytics',
+              description:
+                  'We ask for permission to collect statistical information relating to our site in a completely anonymous form to understand on average how many users use our application, the type of browser used or the type of device used (smartphone rather than PC) in order to improve our service. / Nous demandons l\'autorisation de collecter des informations statistiques relatives à notre site sous une forme totalement anonyme pour comprendre en moyenne combien d\'utilisateurs utilisent notre application, le type de navigateur utilisé ou le type d\'appareil utilisé (smartphone plutôt que PC) afin d\'améliorer notre service. ',
+              items: [
+                { label: 'GoogleAnalytics', value: 'Allow / Permettre ?' },
+              ],
+            },
+          ]"
+    >
+      <template v-slot:header class="bg-white">
+        <header>Cher visiteur / Dear visitor </header>
+
+        <footer class="mt-1">
+          <p class="text-xs text-gray-500">En cliquant "Accept All" vous acceptez les <a href="/Terms" class="text-gold">conditions d'utilisation</a> ainsi que le <a href="/Privacy" class="text-gold">traitement des données personnelles</a> afin de pouvoir fournir le service.</p>
+          <p class="text-xs text-gray-500">By clicking "Accept All" you accept the <a href="/Terms" class="text-gold">Terms of use</a> as well as the <a href="/Privacy" class="text-gold">processing of personal data</a> in order to be able to provide the service.</p>
+        </footer>
+      </template>
+
+      <template v-slot:modal-body="{ preference }">
+        <div class="mt-6">
+          <h4 class="text-bold text-sm">{{ preference.title }}</h4>
+          <p class="mt-2 text-xs text-gray-500">{{ preference.description }}</p>
+
+          <div v-for="(item, index) in preference.items" v-bind:key="index"  class="cookie-comply__modal-switches my-3">
+            <h3 class="text-sm">{{item.value}}</h3>
+            <label class="cookie-comply-switch" title="ok">
+              <input id="sentry" type="checkbox" value="ok">
+              <span class="cookie-comply-slider cookie-comply-round"></span>
+            </label>
+          </div>
+        </div>
+      </template>
+
+    </vue-cookie-comply>
   </footer>
 </template>
 
@@ -261,10 +328,22 @@ import {
 import { MenuIcon, QuestionMarkCircleIcon, SearchIcon, ShoppingBagIcon, XIcon } from '@heroicons/vue/outline'
 import { defineComponent, h } from 'vue'
 import { MailIcon } from '@heroicons/vue/solid'
+import 'vue-cookie-comply/dist/style.css'
 
 
-const languages = ['EN', 'FR', 'IT']
-
+const languages =
+    [
+      {
+        id: 1,
+        name: "EN",
+        value: "en"
+      },
+      {
+        id: 2,
+        name: "FR",
+        value: "fr"
+      },
+     ]
 
 const navigationmobile = {
   categories: [
@@ -425,6 +504,47 @@ const footernavigation = {
 
 
 export default {
+
+
+  data(){
+    return {
+      user:'',
+      wa:false,
+      preference: [
+        {
+          title: 'Performance',
+          description:
+              'Bla bla serviços que podemos oferecer erviços que podemos oferecer erviços que podemos oferecer erviços que podemos oferecer serviços que podemos oferecer.',
+          items: [{ label: 'Active', value: 'performance', isRequired: true }],
+        },
+        {
+          title: 'Analytics',
+          description:
+              'Bla bla serviços que podemos oferecer erviços que podemos oferecer erviços que podemos oferecer erviços que podemos oferecer serviços que podemos oferecer.',
+          items: [
+            { label: 'GoogleAnalytics', value: 'ga' },
+            { label: 'Sentry', value: 'sentry', isEnable: true },
+            { label: 'Mapbox', value: 'mapbox' },
+            { label: 'New Relic', value: 'newRelic', isEnable: true },
+            { label: 'Dog Food', value: 'dogfood' },
+          ],
+        },
+      ]
+    }
+  },
+  /* eslint-disable */
+
+  methods:{
+    french(){
+      $i18n.locale == 'en'
+    },
+    waz(){
+      this.wa = true
+    },
+  },
+
+
+
   setup() {
     const mobileMenuOpen = ref(false)
     return {
@@ -432,7 +552,7 @@ export default {
       navigationmobile,
       navigation,
       footernavigation,
-      languages
+      languages,
     }
   },
 
@@ -459,3 +579,29 @@ export default {
   },
 }
 </script>
+
+<style>
+
+
+.cookie-comply{
+  position: fixed !important;
+  left: 0 !important;
+  bottom: 0 !important;
+}
+
+.cookie-comply__back-arrow{
+  display: none !important;
+}
+
+.cookie-comply__button-accept {
+  background-color: black !important;
+  color: var(--color-white);
+  border: none;
+}
+
+a[type=button] {
+  -webkit-appearance: none !important;
+  -webkit-border-radius: 0 !important;
+}
+
+</style>

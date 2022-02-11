@@ -70,7 +70,7 @@
 
   <div class="bg-gray-50 py-12 sm:px-2 sm:py-12">
     <h2 class="text-3xl tracking-tight font-extrabold text-gray-900 sm:text-4xl text-center">Our core values</h2>
-    <p class="mt-3 mb-10 max-w-2xl mx-auto text-xl text-gray-500 sm:mt-4 text-center">
+    <p class="mt-3 mb-10 max-w-2xl mx-auto text-xl text-gray-500 sm:mt-4 text-center px-4">
       To get a sense of what our core values are, we ask ourself what bring us the most joy, or what we couldn’t live without. What gives us life meaning or what do we want to achieve?
     </p>
     <div class="max-w-7xl mx-auto lg:px-4">
