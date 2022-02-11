@@ -329,32 +329,6 @@ const navigationmobile = {
 
  const navigation = {
    categories: [
-    // {
-    //   name: 'Company',
-    //   featured: [
-    //     {
-    //       name: 'About',
-    //       role:'',
-    //       href: '/about',
-    //       imageSrc: 'img/artexa_round_anime_logo.svg',
-    //       imageAlt: 'Models sitting back to back, wearing Basic Tee in black and bone.',
-    //     },
-    //     {
-    //       name: 'Services',
-    //       role:'',
-    //       href: '/workflow',
-    //       imageSrc: 'img/services_logo.png',
-    //       imageAlt: 'Close up of Basic Tee fall bundle with off-white, ochre, olive, and black tees.',
-    //     },
-    //     {
-    //       name: 'Team',
-    //       role:'',
-    //       href: '/team',
-    //       imageSrc: 'img/team_logo.png',
-    //       imageAlt: 'Model wearing minimalist watch with black wristband and white watch face.',
-    //     },
-    //   ],
-    // },
    {
       name: 'Portfolio',
       featured: [
@@ -399,6 +373,8 @@ const footernavigation = {
     { name: 'Services', href: '/workflow' },
     { name: 'Team', href: '/team' },
     { name: 'Contact', href: '/contact' },
+    { name: 'Terms', href: '/terms' },
+    { name: 'Privacy', href: '/privacy' },
   ],
   social: [
     {

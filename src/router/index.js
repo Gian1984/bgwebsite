@@ -4,6 +4,8 @@ import About from '../views/About.vue'
 import Contact from '../views/Contact.vue'
 import Workflow from '../views/Workflow.vue'
 import Team from '../views/Team.vue'
+import Terms from '../views/Terms.vue'
+import Privacy from '../views/Privacy.vue'
 import PageNotFound from '../views/PageNotFound.vue'
 
 const routes = [
@@ -26,6 +28,16 @@ const routes = [
     path: '/team',
     name: 'Team',
     component: Team
+  },
+  {
+    path: '/terms',
+    name: 'Terms',
+    component: Terms
+  },
+  {
+    path: '/privacy',
+    name: 'Privacy',
+    component: Privacy
   },
   {
     path: '/workflow',

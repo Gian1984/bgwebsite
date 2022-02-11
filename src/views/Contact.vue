@@ -75,7 +75,7 @@
 
                 <div class="grid grid-cols-1 lg:grid-cols-3">
                   <!-- Contact information -->
-                  <div class="relative overflow-hidden py-10 px-6 bg-gradient-to-b from-gray-700 to-gray-800 sm:px-10 xl:p-12">
+                  <div class="relative overflow-hidden py-10 px-6 bg-gradient-to-b from-artexa-teal-300 to-gray-800 sm:px-10 xl:p-12">
                     <!-- Decorative angle backgrounds -->
                     <div class="absolute inset-0 pointer-events-none sm:hidden" aria-hidden="true">
                       <svg class="absolute inset-0 w-full h-full" width="343" height="388" viewBox="0 0 343 388" fill="none" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
@@ -218,7 +218,7 @@
                 <div class="absolute inset-0 bg-artexa-white mix-blend-multiply" aria-hidden="true" />
               </div>
               <div class="relative max-w-7xl mx-auto py-32 px-4 sm:py-36 sm:px-6 lg:px-8">
-              <h2 id="office-heading" class="text-3xl font-extrabold text-artexa-white">OUR OFFICE</h2>
+              <h2 id="office-heading" class="text-3xl font-extrabold text-artexa-white">Our Office</h2>
               <p class="mt-6 text-lg text-gray-700 max-w-3xl"></p>
                 <div class="mt-10 grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-4">
                   <div v-for="office in offices" :key="office.id">
@@ -243,8 +243,9 @@
           <div class="mt-6 pt-10">
             <dl class="space-y-10 md:space-y-0 md:grid md:grid-cols-2 md:grid-rows-2 md:gap-x-8 md:gap-y-12">
               <div v-for="faq in faqs" :key="faq.id">
-                <dt class="text-lg font-medium text-blue-gray-900">
-                  {{ faq.question }}
+                <dt class="text-lg font-medium text-artexa-teal-400 flex">
+                  <Chevron-double-right-icon class="absolute h-6 w-6 text-teal-500"/>
+                  <p class="ml-9 text-lg leading-6 font-medium text-teal-500">{{ faq.question }}</p>
                 </dt>
                 <dd class="mt-2 text-base text-blue-gray-500">
                   {{ faq.answer }}
@@ -295,7 +296,7 @@
 
 <script>
 import { Popover, PopoverButton, PopoverPanel } from '@headlessui/vue'
-import { MenuIcon, NewspaperIcon, PhoneIcon, SupportIcon, XIcon,  MailIcon, } from '@heroicons/vue/outline'
+import { MenuIcon, NewspaperIcon, PhoneIcon, SupportIcon, XIcon,  MailIcon, ChevronDoubleRightIcon } from '@heroicons/vue/outline'
 import gsap from 'gsap'
 
 const offices = [
@@ -334,39 +335,58 @@ const supportLinks = [
 const faqs = [
   {
     id: 1,
-    question: "What's the best thing about Switzerland?",
+    question: "How much do you charge for a website?",
     answer:
-        "I don't know, but the flag is a big plus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.",
+        "Our website packages usually range from € 2500 – € 6000. However it really depends on what kind of website you need.",
   },
   {
     id: 2,
-    question: 'Why do you never see elephants hiding in trees?',
+    question: 'Why are you so expensive?',
     answer:
-        "Because they're so good at it. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.",
+        "The process we use to build your website takes a certain amount of time and a lot of planning and research. Unlike other agencies, we DON’T use templates. We build your website from scratch, which means you get a unique design tailored around your business. Buying a website from us should not just simply be seen as a business expense as your website is a sales tool that should earn you money.",
   },
   {
     id: 3,
-    question: 'How do you make holy water?',
+    question: 'Why are you so cheap?',
     answer:
-        'You boil the hell out of it. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.',
+        'Yep. We’ve also been asked that question too. We spend a lot of time researching, planning the user’s journey through your site and then finally with the design and build. We’re typically cheaper than larger agencies because we work remotely which means you don’t pay for the water cooler or beanbag chairs also we’re a small team who take on a limited amount of clients each year. You won’t be talking to account managers, you’ll talk directly to the owner. This saves on staff costs.',
   },
   {
     id: 4,
-    question: "Why can't you hear a pterodactyl go to the bathroom?",
+    question: "How long does it take to build a website?",
     answer:
-        'Because the pee is silent. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.',
+        'It takes approximately 6-10 weeks to build a website from start to finish, providing we have all the information from you. Generally speaking, the website will only take a long time if we are still waiting for text and images from yourself.',
   },
   {
     id: 5,
-    question: 'What do you call someone with no body and no nose?',
-    answer: 'Nobody knows. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.',
+    question: 'How do we communicate throughout the website build?',
+    answer: 'Before we begin working together, we’ll usually have an initially meeting to discuss the project. Once we get started, most of the communication will take place over email. This makes the process a lot easier as we’ll have all of the information saved and can come back to it later. Once we’ve finished the project, we will book in your 1hr digital marketing training session.',
   },
   {
     id: 6,
-    question: 'Why did the invisible man turn down the job offer?',
+    question: 'What will you need from me?',
     answer:
-        "He couldn't see himself doing it. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.",
+        "It really depends on what type of website you want. We’ll be able to discuss this on our discovery call before we start working together. Depending on which package we agree on we could need images of you and your team, images of your workplace, content for the website e.g. text, PDFs etc. , Staff Profiles... Some of this might already be on the existing website, in which case it can be transferred over to the new site.",
   },
+  {
+    id: 7,
+    question: 'Do you offer a payment schedule?',
+    answer:
+        "Yes, we split the payment into two. The first 50% is usually taken once you have seen the mockup of your homepage and you’re happy to move forward. The following 50% is taken 30 days after this.",
+  },
+  {
+    id: 8,
+    question: 'Can I make the final payment when the site is ready to go live?',
+    answer:
+        "No. In the past we have found that projects can take a lot longer than expected to complete. We might be waiting for information from you and this can delay the process. Sometimes these delays can take months. This is why we always invoice 30 days after the original payment. At this point we’ll be well on our way with your new website and you’ll be able to see the progress.",
+  },
+  {
+    id: 9,
+    question: 'Will my website be mobile friendly?',
+    answer:
+        "Yes. Your website will be fully responsive and will look great on all devices. We don’t charge extra for this. It comes as standard.",
+  },
+
 ]
 
 
@@ -378,7 +398,8 @@ export default {
     MenuIcon,
     XIcon,
     MailIcon,
-    PhoneIcon
+    PhoneIcon,
+    ChevronDoubleRightIcon
   },
   setup() {
 
