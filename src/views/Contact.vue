@@ -303,30 +303,24 @@ const offices = [
   { id: 1, city: 'Luxembourg', address: ['34 Rue principale', 'L8814 Bigonville'] },
 ]
 
-const navigation = [
-  { name: 'Changelog', href: '#' },
-  { name: 'About', href: '#' },
-  { name: 'Partners', href: '#' },
-  { name: 'News', href: '#' },
-]
 const supportLinks = [
   {
     name: 'Product advice',
-    href: '#',
+    href: 'mailto:info@artexa.agency?subject=Evaluating and need advice before you buy',
     description:
         'Evaluating our products and need advice before you buy?',
     icon: NewspaperIcon,
   },
   {
     name: 'Sales',
-    href: '#',
+    href: 'sales@artexa.agency?subject=Searching for the right products and pricing for your business',
     description:
       'We\'ll help you find the right products and pricing for your business.',
     icon: PhoneIcon,
   },
   {
     name: 'Technical Support',
-    href: '#',
+    href: 'mailto:support@artexa.agency?subject=Technical Support',
     description:
         'Already using our products and experiencing technical issues?',
     icon: SupportIcon,
@@ -436,7 +430,6 @@ export default {
 
 
     return {
-      navigation,
       supportLinks,
       faqs,
       offices,
