@@ -155,23 +155,23 @@
                   <!-- Contact form -->
                   <div class="py-10 px-6 sm:px-10 lg:col-span-2 xl:p-12">
                     <h3 class="text-lg font-medium text-warm-gray-900">Send us a message</h3>
-                    <form action="#" method="POST" class="mt-6 grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-8">
+                    <form ref="form" @submit.prevent="sendEmail" class="mt-6 grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-8">
                       <div>
                         <label for="first-name" class="block text-sm font-medium text-warm-gray-900">First name</label>
                         <div class="mt-1">
-                          <input type="text" name="first-name" id="first-name" autocomplete="given-name" class="py-3 px-4 block w-full shadow-sm text-warm-gray-900 focus:ring-artexa-teal-400 focus:border-artexa-teal-400 border-artexa-white rounded-md" />
+                          <input v-model="firstname" type="text" name="first-name" id="first-name" autocomplete="given-name" class="py-3 px-4 block w-full shadow-sm text-warm-gray-900 focus:ring-artexa-teal-400 focus:border-artexa-teal-400 border-artexa-white rounded-md" required/>
                         </div>
                       </div>
                       <div>
                         <label for="last-name" class="block text-sm font-medium text-warm-gray-900">Last name</label>
                         <div class="mt-1">
-                          <input type="text" name="last-name" id="last-name" autocomplete="family-name" class="py-3 px-4 block w-full shadow-sm text-warm-gray-900 focus:ring-artexa-teal-400 focus:border-artexa-teal-400 border-artexa-white rounded-md" />
+                          <input v-model="lastname" type="text" name="last-name" id="last-name" autocomplete="family-name" class="py-3 px-4 block w-full shadow-sm text-warm-gray-900 focus:ring-artexa-teal-400 focus:border-artexa-teal-400 border-artexa-white rounded-md" required/>
                         </div>
                       </div>
                       <div>
                         <label for="email" class="block text-sm font-medium text-warm-gray-900">Email</label>
                         <div class="mt-1">
-                          <input id="email" name="email" type="email" autocomplete="email" class="py-3 px-4 block w-full shadow-sm text-warm-gray-900 focus:ring-artexa-teal-400 focus:border-artexa-teal-400 border-artexa-white rounded-md" />
+                          <input v-model="email" id="email" name="email" type="email" autocomplete="email" class="py-3 px-4 block w-full shadow-sm text-warm-gray-900 focus:ring-artexa-teal-400 focus:border-artexa-teal-400 border-artexa-white rounded-md" aria-describedby="required" required/>
                         </div>
                       </div>
                       <div>
@@ -180,13 +180,13 @@
                           <span id="phone-optional" class="text-sm text-warm-gray-500">Optional</span>
                         </div>
                         <div class="mt-1">
-                          <input type="text" name="phone" id="phone" autocomplete="tel" class="py-3 px-4 block w-full shadow-sm text-warm-gray-900 focus:ring-artexa-teal-400 focus:border-artexa-teal-400 border-artexa-white rounded-md" aria-describedby="phone-optional" />
+                          <input v-model="phone" type="text" name="phone" id="phone" autocomplete="tel" class="py-3 px-4 block w-full shadow-sm text-warm-gray-900 focus:ring-artexa-teal-400 focus:border-artexa-teal-400 border-artexa-white rounded-md" aria-describedby="phone-optional" />
                         </div>
                       </div>
                       <div class="sm:col-span-2">
                         <label for="subject" class="block text-sm font-medium text-warm-gray-900">Subject</label>
                         <div class="mt-1">
-                          <input type="text" name="subject" id="subject" class="py-3 px-4 block w-full shadow-sm text-warm-gray-900 focus:ring-artexa-teal-400 focus:border-artexa-teal-400 border-artexa-white rounded-md" />
+                          <input v-model="subject" type="text" name="subject" id="subject" class="py-3 px-4 block w-full shadow-sm text-warm-gray-900 focus:ring-artexa-teal-400 focus:border-artexa-teal-400 border-artexa-white rounded-md" />
                         </div>
                       </div>
                       <div class="sm:col-span-2">
@@ -195,15 +195,41 @@
                           <span id="message-max" class="text-sm text-warm-gray-500">Max. 500 characters</span>
                         </div>
                         <div class="mt-1">
-                          <textarea id="message" name="message" rows="4" class="py-3 px-4 block w-full shadow-sm text-warm-gray-900 focus:ring-gray-500 focus:border-gray-500 border border-artexa-white rounded-md" aria-describedby="message-max" />
+                          <textarea v-model="message" id="message" name="message" rows="4" class="py-3 px-4 block w-full shadow-sm text-warm-gray-900 focus:ring-gray-500 focus:border-gray-500 border border-artexa-white rounded-md" aria-describedby="message-max" required />
                         </div>
                       </div>
                       <div class="sm:col-span-2 sm:flex sm:justify-end">
                         <button type="submit" class="mt-2 w-full inline-flex items-center justify-center px-6 py-3 border border-transparent rounded-md shadow-sm text-base font-medium text-artexa-white bg-gray-800 hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-artexa-teal-400 sm:w-auto">
-                          Submit
+                          Send
                         </button>
                       </div>
                     </form>
+
+
+                    <div class="mt-3" v-if="confirmation" >
+                      <div v-if="alertsOpen" class="rounded-md bg-green-50 p-4">
+                        <div class="flex">
+                          <div class="flex-shrink-0">
+                            <CheckCircleIcon class="h-5 w-5 text-green-400" aria-hidden="true" />
+                          </div>
+                          <div class="ml-3">
+                            <p class="text-sm font-medium text-green-800">
+                              {{ confirmation }}
+                            </p>
+                          </div>
+                          <div class="ml-auto pl-3">
+                            <div class="-mx-1.5 -my-1.5">
+                              <button v-on:click="closeAlert()" type="button" class="inline-flex bg-green-50 rounded-md p-1.5 text-green-500 hover:bg-green-100 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-green-50 focus:ring-green-600">
+                                <span class="sr-only">Dismiss</span>
+                                <XIcon class="h-5 w-5" aria-hidden="true" />
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+
                   </div>
                 </div>
               </div>
@@ -296,8 +322,9 @@
 
 <script>
 import { Popover, PopoverButton, PopoverPanel } from '@headlessui/vue'
-import { MenuIcon, NewspaperIcon, PhoneIcon, SupportIcon, XIcon,  MailIcon, ChevronDoubleRightIcon } from '@heroicons/vue/outline'
+import { MenuIcon, NewspaperIcon, PhoneIcon, SupportIcon, XIcon,  MailIcon, ChevronDoubleRightIcon, CheckCircleIcon } from '@heroicons/vue/outline'
 import gsap from 'gsap'
+import emailjs from '@emailjs/browser';
 
 const offices = [
   { id: 1, city: 'Luxembourg', address: ['34 Rue principale', 'L8814 Bigonville'] },
@@ -385,6 +412,54 @@ const faqs = [
 
 
 export default {
+
+  name: 'ContactUs',
+  data() {
+    return {
+      alertsOpen: true,
+      firstname: '',
+      lastname: '',
+      subject:'',
+      email: '',
+      phone: '',
+      message: '',
+      confirmation:'',
+    }
+  },
+
+
+  methods: {
+    sendEmail(e) {
+      try {
+        emailjs.sendForm('service_kue78sp', 'template_i0zsppg', e.target,
+            'user_bWsz1ZX5LXkZ88wSAAPV8', {
+              firstname: this.firstname,
+              lastname: this.lastname,
+              subject: this.subject,
+              email: this.email,
+              phone: this.phone,
+              message: this.message
+            })
+
+      } catch(error) {
+        console.log({error})
+      }
+      // Reset form field
+      this.firstname = '',
+      this.lastname= '',
+      this.email= '',
+      this.phone= '',
+      this.message = ''
+      this.subject='',
+      this.confirmation = 'Your messase has been sent!'
+    },
+
+    closeAlert: function(){
+      this.alertsOpen = false;
+    }
+  },
+
+
   components: {
     Popover,
     PopoverButton,
@@ -393,7 +468,8 @@ export default {
     XIcon,
     MailIcon,
     PhoneIcon,
-    ChevronDoubleRightIcon
+    ChevronDoubleRightIcon,
+    CheckCircleIcon
   },
   setup() {
 
