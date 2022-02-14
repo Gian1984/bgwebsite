@@ -10,7 +10,7 @@
           @before-enter="beforeSlide"
           @enter="slide"
       >
-      <img class="h-24" src="img/artexa.png"/>
+      <img class="h-24" src="img/artexa.png" alt="artexa logo"/>
       </transition>
       <transition
           appear
@@ -48,27 +48,27 @@
     <div class="relative max-w-7xl mx-auto">
       <div class="text-center">
         <h2 class="text-3xl tracking-tight font-extrabold text-gray-900 sm:text-4xl">
-          Websites & Apps
+          {{$t('homeposts.title')}}
         </h2>
         <p class="mt-3 max-w-2xl mx-auto text-xl text-gray-500 sm:mt-4 ">
-          We are a world class digital agency, who can develop a wide range of websites such as brochure, e-commerce and multilingual websites for B2B and B2C audiences. All the websites we create are responsive websites which automatically adjust to the device they are being viewed on. We create custom websites that are linked to a back end that can be easily updated by you or your team.
+          {{$t('homeposts.subtitle')}}
         </p>
       </div>
       <div class="mt-12 max-w-lg mx-auto grid gap-5 lg:grid-cols-3 lg:max-w-none">
         <div v-for="post in posts" :key="post.title" class="flex flex-col rounded-lg shadow-lg overflow-hidden">
           <div class="flex-shrink-0">
-            <img class="h-48 mx-auto mt-10" :src="post.imageUrl" alt="" />
+            <img class="h-48 mx-auto mt-10" :src="post.imageUrl" alt="our skills" />
           </div>
           <div class="flex-1 bg-white p-6 flex flex-col justify-between">
             <div class="flex-1">
-              <a :href="post.href" class="block mt-2">
+              <div class="block mt-2">
                 <p class="text-xl font-semibold text-gray-900">
                   {{ post.title }}
                 </p>
                 <p class="mt-3 text-base text-gray-500">
                   {{ post.description }}
                 </p>
-              </a>
+              </div>
             </div>
           </div>
         </div>
@@ -76,19 +76,16 @@
     </div>
   </div>
 
-
-
-
   <div>
     <div class="relative mb-22 box2">
       <div class="absolute inset-x-0 bottom-0" />
       <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
         <div class="text-center">
           <h2 class="text-3xl tracking-tight font-extrabold text-gray-900 sm:text-4xl">
-            Our technologies
+            {{$t('tech.title')}}
           </h2>
           <p class="mt-3 max-w-2xl mx-auto text-xl text-gray-500 sm:mt-4 px-4">
-            The development of advanced web applications is our specialty, and we will successfully fulfill all your web application development requirements, from small-sized to wider-ranged projects. To maintain and improve our high-quality web apps, we have expertise in various web development technologies.
+            {{$t('tech.subtitle')}}
           </p>
         </div>
         <div class="relative  sm:rounded-2xl sm:overflow-hidden">
@@ -117,9 +114,9 @@
   <div class="bg-white">
     <div class="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:py-24 lg:px-8 lg:grid lg:grid-cols-3 lg:gap-x-8">
       <div>
-        <h2 class="text-base font-semibold text-teal-500 uppercase tracking-wide text4">Everything you need</h2>
-        <p class="mt-2 text-3xl font-extrabold text-gray-900 text5">Areas of tech expertise</p>
-        <p class="mt-4 text-lg text-gray-500">Our team is also highly experienced with working with a wide variety of frameworks and languages such as PHP, Laravel, TailwindCSS, Bootstrap, JS and Vue.js.</p>
+        <h2 class="text-base font-semibold text-teal-500 uppercase tracking-wide text4">{{ $t("homefeatures.titleover") }}</h2>
+        <p class="mt-2 text-3xl font-extrabold text-gray-900 text5">{{ $t("homefeatures.title") }}</p>
+        <p class="mt-4 text-lg text-gray-500">{{ $t("homefeatures.subtitle") }}</p>
       </div>
       <div class="mt-12 lg:mt-0 lg:col-span-2">
         <dl class="space-y-10 sm:space-y-0 sm:grid sm:grid-cols-2 sm:grid-rows-3 sm:grid-flow-col sm:gap-x-6 sm:gap-y-10 lg:gap-x-8">
@@ -136,15 +133,6 @@
       </div>
     </div>
   </div>
-
-
-
-
-
-
-
-
-
 </template>
 
 
@@ -153,10 +141,6 @@ import { CheckIcon } from '@heroicons/vue/outline'
 import gsap from 'gsap'
 import {ScrollTrigger} from 'gsap/ScrollTrigger'
 import { PlusSmIcon } from '@heroicons/vue/solid'
-
-
-
-
 
 
 const galleries = [
@@ -186,88 +170,6 @@ const galleries = [
   },
 ]
 
-
-
-const features = [
-  {
-    name: 'Mobile Development',
-    description: 'Obtain your top-of-the-class and tailored-fit mobile application. With us as your experienced custom mobile app developer, possessing deep expertise and knowledge of the latest mobile development frameworks, you can implement a mobile project of any complexity.',
-  },
-  {
-    name: 'Web Development',
-    description: 'Build a custom web application. Being a world-class web development vendor, we can create a web app capable of resolving your industry-specific business challenges, boosting your efficiency, winning new customers, and increasing your user satisfaction rates.' },
-  {
-    name: 'Product Development Services',
-    description: 'Flexible and highly iterative approach to software Product Development Services makes it possible even the most complex IT solutions from scratch. We collaborate closely with our customers to ensure the best deliverables and features you need.',
-  },
-  {
-    name: 'Outsourced IT Services',
-    description: 'Comprehensive Outsourced IT Services for businesses will enable you to focus on attaining your goals and matching your priorities while entrusting your IT industry-specific challenges to a reliable team of world-class tech experts working in a truly Agile way.'
-  },
-  {
-    name: 'UI/UX Design',
-    description: 'In-house UI/UX design team of multidisciplinary experts is capable of providing you with user-friendly and convenient-to-use solutions with perfect user journeys and intuitive navigation. As a result, your branded products will be not only effective but also feature an outstanding look and feel.'
-  },
-  {
-    name: 'Solution Architecture',
-    description: 'Ensure that your envisioned IT project is scalable, flexible, and perfectly adaptable to your corporate tech ecosystem with a reliable foundational architecture. With ours expert-level custom solution architecture services and consultancy you will definitely obtain one!'
-  },
-]
-
-
-const posts = [
-  {
-    title: 'Scoping',
-    href: '#',
-    description:
-        'Here we look at what is needed for the project. We start with an exploratory workshop to discover all the needs and assess your existing website. The workshop will include factors such as how you envisage the user journey? What is the objective of the site and the functionality required? What integrations are required? Once we have all the information we will set out a UX journey and create a full set of wireframes mapping out the user\'s journey around the site.',
-    date: 'Mar 16, 2020',
-    datetime: '2020-03-16',
-    imageUrl:
-        'img/scoping.png',
-  },
-  {
-    title: 'Design',
-    href: '#',
-    description:
-        'Once we have understood all your wants and needs, we can start designing the website. In this phase, the wireframes start to take shape with design and colours. We use several tools so you will be able to see how the pages and design fits together and experience the site before it is built, in order to be fully happy before moving into the build phase.',
-    imageUrl:
-        'img/design.png',
-  },
-  {
-    title: 'Development',
-    href: '#',
-    description:
-        'This is the largest phase. We will have various milestones and reviews throughout the process. A preview link is provided during the development stage so you can see the project come to life before final sign off.',
-    imageUrl:
-        'img/coder.png',
-  },
-  {
-    title: 'Brochure Websites',
-    href: '#',
-    description:
-        'We design and develop responsive brochure websites to showcase your products and services in alignment with your brand essence, your target audience and your preferences. Our websites follow the latest design trends to ensure they’re up to date for years to come.',
-    imageUrl:
-        'img/vitrine.png',
-  },
-  {
-    title: 'E-commerce Websites',
-    href: '#',
-    description:
-        'In addition to designing a beautiful, trendy and modern-looking website that fits with your brand, we will also take care of all technical aspects of the e-commerce side to ensure that everything works without issues. We can set up smooth payment systems, integrations and subscriptions.',
-    imageUrl:
-        'img/ecommerce.png',
-  },
-  {
-    title: 'Multilingual Websites',
-    href: '#',
-    description:
-        'One of the perks of having an international team working is that we have over 3 native languages spoken in-house and therefore can provide you with multilingual websites if needed. Our multilingual websites will be able to allow users to change their languages for themselves.',
-    imageUrl:
-        'img/languages.png',
-  },
-
-]
 
 gsap.registerPlugin(ScrollTrigger)
 
@@ -299,6 +201,77 @@ export default {
           .from(".text5", { x : -50, opacity: 0, duration:0.5 })
           .to( ".text5",{ x : 0 , opacity : 50})
           // .from(".text5", { x : innerWidth * 1, opacity: 0 })
+    },
+  },
+
+  computed: {
+
+    posts(){
+      return[
+
+        {
+          title: this.$t('homeposts.title1'),
+          description: this.$t('homeposts.description1'),
+          imageUrl: 'img/scoping.png',
+        },
+        {
+          title: this.$t('homeposts.title2'),
+          description:this.$t('homeposts.description2'),
+          imageUrl: 'img/design.png',
+        },
+        {
+          title: this.$t('homeposts.title3'),
+          description:this.$t('homeposts.description3'),
+          imageUrl: 'img/coder.png',
+        },
+        {
+          title: this.$t('homeposts.title4'),
+          description:this.$t('homeposts.description4'),
+          imageUrl: 'img/vitrine.png',
+        },
+        {
+          title: this.$t('homeposts.title5'),
+          description:this.$t('homeposts.description5'),
+          imageUrl: 'img/ecommerce.png',
+        },
+        {
+          title: this.$t('homeposts.title6'),
+          description:this.$t('homeposts.description6'),
+          imageUrl: 'img/languages.png',
+        },
+
+      ]
+    },
+
+
+    features() {
+      return [
+
+        {
+          name: this.$t('homefeatures.name1'),
+          description: this.$t('homefeatures.description1'),
+        },
+        {
+          name: this.$t('homefeatures.name2'),
+          description: this.$t('homefeatures.description2') },
+        {
+          name: this.$t('homefeatures.name3'),
+          description: this.$t('homefeatures.description3'),
+        },
+        {
+          name: this.$t('homefeatures.name4'),
+          description: this.$t('homefeatures.description4')
+        },
+        {
+          name: this.$t('homefeatures.name5') ,
+          description: this.$t('homefeatures.description5')
+        },
+        {
+          name: this.$t('homefeatures.name6'),
+          description: this.$t('homefeatures.description6')
+        },
+
+      ]
     },
   },
 
@@ -344,8 +317,6 @@ export default {
 
 
     return {
-      posts,
-      features,
       galleries,
       beforeEnter,
       enter,
@@ -355,17 +326,6 @@ export default {
   },
 }
 </script>
-
-<i18n>
-{
-  "en": {
-    "ciao": "hello world!"
-  },
-  "fr": {
-    "ciao": "こんにちは、世界！"
-  }
-}
-</i18n>
 
 
 

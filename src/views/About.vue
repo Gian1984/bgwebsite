@@ -25,10 +25,10 @@
     <div class="max-w-7xl mx-auto py-12 px-4 sm:py-12 sm:px-6 lg:px-8">
       <div class="sm:items-baseline text-center">
         <h2 class="text-3xl tracking-tight font-extrabold text-gray-900 sm:text-4xl">
-          About US.
+          {{ $t('teamcore.title') }}
         </h2>
         <p class="mt-3 max-w-2xl mx-auto text-xl text-gray-500 sm:mt-4 ">
-          We are talented creatives that take business seriously.
+          {{ $t('teamcore.subtitle') }}
         </p>
       </div>
 
@@ -47,7 +47,7 @@
                   <span class="absolute inset-0" />
                 </p>
               </h3>
-              <p aria-hidden="true" class="mt-1 text-sm sm:text-gray-400 lg:text-gray-300">Our team of experts is made up of creatives with technical know-how, strategists who think outside the box, and developers who push innovation.</p>
+              <p aria-hidden="true" class="mt-1 text-sm sm:text-gray-400 lg:text-gray-300">{{ $t('teamcore.desc1') }}</p>
             </div>
           </div>
         </div>
@@ -59,7 +59,7 @@
               <h3 class="font-semibold text-white">
                   <span class="absolute inset-0" />
               </h3>
-              <p aria-hidden="true" class="mt-1 text-sm sm:text-gray-400 lg:text-gray-300">You will find our team working across Creative Web Design, Web Development, Branding, and Digital Marketing.</p>
+              <p aria-hidden="true" class="mt-1 text-sm sm:text-gray-400 lg:text-gray-300">{{ $t('teamcore.desc2') }}</p>
             </div>
           </div>
         </div>
@@ -69,9 +69,9 @@
   </div>
 
   <div class="bg-gray-50 py-12 sm:px-2 sm:py-12">
-    <h2 class="text-3xl tracking-tight font-extrabold text-gray-900 sm:text-4xl text-center">Our core values</h2>
+    <h2 class="text-3xl tracking-tight font-extrabold text-gray-900 sm:text-4xl text-center">{{ $t('perks.title') }}</h2>
     <p class="mt-3 mb-10 max-w-2xl mx-auto text-xl text-gray-500 sm:mt-4 text-center px-4">
-      To get a sense of what our core values are, we ask ourself what bring us the most joy, or what we couldn’t live without. What gives us life meaning or what do we want to achieve?
+      {{ $t('perks.subtitle') }}
     </p>
     <div class="max-w-7xl mx-auto lg:px-4">
       <div class="max-w-2xl mx-auto px-4 grid grid-cols-1 gap-y-12 gap-x-8 lg:max-w-none lg:grid-cols-2 lg:gap-y-16">
@@ -100,10 +100,10 @@
     <div class="max-w-7xl mx-auto py-12 px-4 sm:py-12 sm:px-6 lg:px-8">
       <div class="sm:items-baseline text-center">
         <h2 class="text-3xl tracking-tight font-extrabold text-gray-900 sm:text-4xl">
-          Why Choose Artexa?
+          {{ $t('slides.title') }}
         </h2>
         <p class="mt-3 mb-10 max-w-2xl mx-auto text-xl text-gray-500 sm:mt-4 ">
-          We are talented creatives that take business seriously.
+          {{ $t('slides.subtitle') }}
         </p>
       </div>
       <div class="box-content py-2 relative ">
@@ -132,61 +132,6 @@ import { Carousel, Navigation, Slide } from 'vue3-carousel';
 
 import 'vue3-carousel/dist/carousel.css';
 
-const perks = [
-  {
-    name: 'Move fast',
-    imageSrc: 'https://tailwindui.com/img/ecommerce/icons/icon-delivery-light.svg',
-    description:
-        "We are always looking for innovation and the best solutions for our customers. In a world that moves at the speed of a click, we try to give maximum importance to your needs in the shortest time possible.",
-  },
-  {
-    name: 'Constant commitment',
-    imageSrc: 'https://tailwindui.com/img/ecommerce/icons/icon-warranty-light.svg',
-    description:
-        "We know how important is the presence on the web for our customers, and that's why we are committed every day to ensure the best result.",
-  },
-  {
-    name: '6/7 Customer Support',
-    imageSrc: 'https://tailwindui.com/img/ecommerce/icons/icon-chat-light.svg',
-    description:
-        'We understand that when your product arrives you might not particularly like it, when something goes wrong we always try to move as quickly as possible to respond and resolve any issues or needs.',
-  },
-  {
-    name: 'For the planet',
-    imageSrc: 'https://tailwindui.com/img/ecommerce/icons/icon-planet-light.svg',
-    description:
-        "Like you, we love the planet, and so we've pledged 1% of all sales to the preservation and restoration of the natural environment.",
-  },
-]
-
-const slides =[
-  {
-    imageSrc:"img/ambition.png",
-    name:"Ambition",
-    desc:"We approach every challenge with energy and vigour. We come up with innovative solutions and we’re not afraid to think big"
-  },
-  {
-    imageSrc:"img/creativity.webp",
-    name:"Creativity",
-    desc:"Every member of our team has a creative streak. This is at the heart of what we do and central to our core values."
-  },
-  {
-    imageSrc:"img/fun.webp",
-    name:"Fun",
-    desc:"Our working environment is relaxed and light-hearted. We listen to good tunes and eat good biscuits."
-  },
-  {
-    imageSrc:"img/integrity.png",
-    name:"Integrity",
-    desc:"We care about our work, our clients and our people. We treat everyone with honesty and respect and expect to be treated in the same way."
-  },
-  {
-    imageSrc:"img/pride.png",
-    name:"Pride",
-    desc:"We take pride in our work and sign every piece of it. We strive for perfection in everything we do."
-  },
-]
-
 export default {
 
   name: 'WrapAround',
@@ -194,6 +139,68 @@ export default {
     Carousel,
     Slide,
     Navigation,
+  },
+
+  computed: {
+    slides(){
+      return[
+
+        {
+          imageSrc:"img/ambition.png",
+          name:this.$t('slides.name1'),
+          desc:this.$t('slides.desc1')
+        },
+        {
+          imageSrc:"img/creativity.webp",
+          name:this.$t('slides.name2'),
+          desc:this.$t('slides.desc2')
+        },
+        {
+          imageSrc:"img/fun.webp",
+          name:this.$t('slides.name3'),
+          desc:this.$t('slides.desc3')
+        },
+        {
+          imageSrc:"img/integrity.png",
+          name:this.$t('slides.name4'),
+          desc:this.$t('slides.desc4')
+        },
+        {
+          imageSrc:"img/pride.png",
+          name:this.$t('slides.name5'),
+          desc:this.$t('slides.desc5')
+        },
+
+      ]
+    },
+
+    perks(){
+      return[
+
+        {
+          name: this.$t('perks.name1'),
+          imageSrc: 'https://tailwindui.com/img/ecommerce/icons/icon-delivery-light.svg',
+          description: this.$t('perks.description1'),
+        },
+        {
+          name: this.$t('perks.name2'),
+          imageSrc: 'https://tailwindui.com/img/ecommerce/icons/icon-warranty-light.svg',
+          description:this.$t('perks.description2'),
+        },
+        {
+          name: this.$t('perks.name3'),
+          imageSrc: 'https://tailwindui.com/img/ecommerce/icons/icon-chat-light.svg',
+          description:this.$t('perks.description3'),
+        },
+        {
+          name: this.$t('perks.name4'),
+          imageSrc: 'https://tailwindui.com/img/ecommerce/icons/icon-planet-light.svg',
+          description:this.$t('perks.description4'),
+        },
+
+      ]
+    },
+
   },
 
 
@@ -231,8 +238,6 @@ export default {
   }
 
   return {
-    perks,
-    slides,
     beforeEnter,
     enter,
     slide,
