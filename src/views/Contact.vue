@@ -49,8 +49,8 @@
           <div class="bg-artexa-white">
             <div class="py-24 lg:py-32">
               <div class="relative z-10 max-w-7xl mx-auto pl-4 pr-8 sm:px-6 lg:px-8">
-                <h2 id="offices-heading" class="text-3xl font-extrabold text-warm-gray-900">Need more informations?</h2>
-                <p class="mt-6 text-xl text-warm-gray-500 max-w-3xl">Our inbox is always open. Whether you have a question or just want to say hi, We'll try our best to get back to you as soon as possible!</p>
+                <h2 id="offices-heading" class="text-3xl font-extrabold text-warm-gray-900">{{ $t('form.title') }}</h2>
+                <p class="mt-6 text-xl text-warm-gray-500 max-w-3xl">{{ $t('team.subtitle') }}</p>
               </div>
             </div>
           </div>
@@ -110,10 +110,10 @@
                         </defs>
                       </svg>
                     </div>
-                    <h3 class="text-lg font-medium text-artexa-white">Contact information</h3>
-                    <p class="mt-6 text-base text-grey-50 max-w-3xl text-artexa-white">Please fill out this form,<br>we'll get in touch shortly.</p>
+                    <h3 class="text-lg font-medium text-artexa-white">{{ $t('form.formtitle') }}</h3>
+                    <p class="mt-6 text-base text-grey-50 max-w-3xl text-artexa-white">{{ $t('form.formdesc') }}</p>
                     <dl class="mt-8 space-y-6">
-                      <dt><span class="sr-only">Phone number</span></dt>
+                      <dt><span class="sr-only">{{ $t('form.phone') }}</span></dt>
                       <dd class="flex text-base text-artexa-white">
                         <PhoneIcon class="flex-shrink-0 w-6 h-6 text-artexa-white" aria-hidden="true" />
                         <span class="ml-3">+32 (491) 089-936</span>
@@ -154,16 +154,16 @@
 
                   <!-- Contact form -->
                   <div class="py-10 px-6 sm:px-10 lg:col-span-2 xl:p-12">
-                    <h3 class="text-lg font-medium text-warm-gray-900">Send us a message</h3>
+                    <h3 class="text-lg font-medium text-warm-gray-900">{{ $t('form.headtitle') }}</h3>
                     <form ref="form" @submit.prevent="sendEmail" class="mt-6 grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-8">
                       <div>
-                        <label for="first-name" class="block text-sm font-medium text-warm-gray-900">First name</label>
+                        <label for="first-name" class="block text-sm font-medium text-warm-gray-900">{{ $t('form.firstname') }}</label>
                         <div class="mt-1">
                           <input v-model="firstname" type="text" name="first-name" id="first-name" autocomplete="given-name" class="py-3 px-4 block w-full shadow-sm text-warm-gray-900 focus:ring-artexa-teal-400 focus:border-artexa-teal-400 border-artexa-white rounded-md" required/>
                         </div>
                       </div>
                       <div>
-                        <label for="last-name" class="block text-sm font-medium text-warm-gray-900">Last name</label>
+                        <label for="last-name" class="block text-sm font-medium text-warm-gray-900">{{ $t('form.lastname') }}</label>
                         <div class="mt-1">
                           <input v-model="lastname" type="text" name="last-name" id="last-name" autocomplete="family-name" class="py-3 px-4 block w-full shadow-sm text-warm-gray-900 focus:ring-artexa-teal-400 focus:border-artexa-teal-400 border-artexa-white rounded-md" required/>
                         </div>
@@ -176,7 +176,7 @@
                       </div>
                       <div>
                         <div class="flex justify-between">
-                          <label for="phone" class="block text-sm font-medium text-warm-gray-900">Phone</label>
+                          <label for="phone" class="block text-sm font-medium text-warm-gray-900">{{ $t('form.phone') }}</label>
                           <span id="phone-optional" class="text-sm text-warm-gray-500">Optional</span>
                         </div>
                         <div class="mt-1">
@@ -184,14 +184,14 @@
                         </div>
                       </div>
                       <div class="sm:col-span-2">
-                        <label for="subject" class="block text-sm font-medium text-warm-gray-900">Subject</label>
+                        <label for="subject" class="block text-sm font-medium text-warm-gray-900">{{ $t('form.subject') }}</label>
                         <div class="mt-1">
                           <input v-model="subject" type="text" name="subject" id="subject" class="py-3 px-4 block w-full shadow-sm text-warm-gray-900 focus:ring-artexa-teal-400 focus:border-artexa-teal-400 border-artexa-white rounded-md" />
                         </div>
                       </div>
                       <div class="sm:col-span-2">
                         <div class="flex justify-between">
-                          <label for="message" class="block text-sm font-medium text-warm-gray-900">Message</label>
+                          <label for="message" class="block text-sm font-medium text-warm-gray-900">{{ $t('form.message') }}</label>
                           <span id="message-max" class="text-sm text-warm-gray-500">Max. 500 characters</span>
                         </div>
                         <div class="mt-1">
@@ -200,7 +200,7 @@
                       </div>
                       <div class="sm:col-span-2 sm:flex sm:justify-end">
                         <button type="submit" class="mt-2 w-full inline-flex items-center justify-center px-6 py-3 border border-transparent rounded-md shadow-sm text-base font-medium text-artexa-white bg-gray-800 hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-artexa-teal-400 sm:w-auto">
-                          Send
+                          {{ $t('form.button') }}
                         </button>
                       </div>
                     </form>
@@ -244,7 +244,7 @@
                 <div class="absolute inset-0 bg-artexa-white mix-blend-multiply" aria-hidden="true" />
               </div>
               <div class="relative max-w-7xl mx-auto py-32 px-4 sm:py-36 sm:px-6 lg:px-8">
-              <h2 id="office-heading" class="text-3xl font-extrabold text-artexa-white">Our Office</h2>
+              <h2 id="office-heading" class="text-3xl font-extrabold text-artexa-white"> {{ $t('form.office') }}</h2>
               <p class="mt-6 text-lg text-gray-700 max-w-3xl"></p>
                 <div class="mt-10 grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-4">
                   <div v-for="office in offices" :key="office.id">
@@ -264,7 +264,7 @@
         <!-- FAQ -->
         <section class="max-w-md mx-auto py-24 px-4 divide-y-2 divide-blue-gray-200 sm:max-w-3xl sm:px-6 lg:max-w-7xl lg:py-32 lg:px-8" aria-labelledby="faq-heading">
           <h2 class="text-3xl font-extrabold text-blue-gray-900" id="faq-heading">
-            Frequently asked questions
+            {{ $t('faqs.title') }}
           </h2>
           <div class="mt-6 pt-10">
             <dl class="space-y-10 md:space-y-0 md:grid md:grid-cols-2 md:grid-rows-2 md:gap-x-8 md:gap-y-12">
@@ -292,25 +292,25 @@
             Newsletter
           </h2>
           <p class="max-w-3xl text-lg text-blue-gray-500">
-            Sign up here to get the latest news, updates and special offers.
+            {{ $t('newsletter.subtitle') }}
           </p>
         </div>
         <div class="mt-8 lg:mt-0 lg:ml-8">
           <form class="sm:flex">
-            <label for="email-address" class="sr-only">Email address</label>
-            <input id="email-address" name="email-address" type="email" autocomplete="email" required="" class="w-full px-5 py-3 border border-blue-gray-300 shadow-sm placeholder-artexa-teal-400 text-artexa-teal-400 focus:outline-none sm:max-w-xs rounded-md" placeholder="Enter your email" />
+            <label for="email-address" class="sr-only">Email </label>
+            <input id="email-address" name="email-address" type="email" autocomplete="email" required="" class="w-full px-5 py-3 border border-blue-gray-300 shadow-sm placeholder-artexa-teal-400 text-artexa-teal-400 focus:outline-none sm:max-w-xs rounded-md" :placeholder="$t('newsletter.placeholder')" />
             <div class="mt-3 rounded-md shadow sm:mt-0 sm:ml-3 sm:flex-shrink-0">
               <button type="submit" class="w-full flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-artexa-white bg-artexa-red focus:outline-none">
-                Subscribe
+                {{ $t('newsletter.button') }}
               </button>
             </div>
           </form>
           <p class="mt-3 text-sm text-blue-gray-500">
-            We care about the protection of your data. Read our
+            {{ $t('newsletter.footer') }}
             {{ ' ' }}
-            <a href="#" class="font-medium underline">
-              Privacy Policy.
-            </a>
+            <router-link to="/privacy" class="font-medium underline">
+              {{ $t('newsletter.link') }}
+            </router-link>
           </p>
         </div>
       </section>
@@ -330,88 +330,88 @@ const offices = [
   { id: 1, city: 'Luxembourg', address: ['34 Rue principale', 'L8814 Bigonville'] },
 ]
 
-const supportLinks = [
-  {
-    name: 'Product advice',
-    href: 'mailto:info@artexa.agency?subject=Evaluating and need advice before you buy',
-    description:
-        'Evaluating our products and need advice before you buy?',
-    icon: NewspaperIcon,
-  },
-  {
-    name: 'Sales',
-    href: 'sales@artexa.agency?subject=Searching for the right products and pricing for your business',
-    description:
-      'We\'ll help you find the right products and pricing for your business.',
-    icon: PhoneIcon,
-  },
-  {
-    name: 'Technical Support',
-    href: 'mailto:support@artexa.agency?subject=Technical Support',
-    description:
-        'Already using our products and experiencing technical issues?',
-    icon: SupportIcon,
-  },
-]
-const faqs = [
-  {
-    id: 1,
-    question: "How much do you charge for a website?",
-    answer:
-        "Our website packages usually range from € 2500 – € 6000. However it really depends on what kind of website you need.",
-  },
-  {
-    id: 2,
-    question: 'Why are you so expensive?',
-    answer:
-        "The process we use to build your website takes a certain amount of time and a lot of planning and research. Unlike other agencies, we DON’T use templates. We build your website from scratch, which means you get a unique design tailored around your business. Buying a website from us should not just simply be seen as a business expense as your website is a sales tool that should earn you money.",
-  },
-  {
-    id: 3,
-    question: 'Why are you so cheap?',
-    answer:
-        'Yep. We’ve also been asked that question too. We spend a lot of time researching, planning the user’s journey through your site and then finally with the design and build. We’re typically cheaper than larger agencies because we work remotely which means you don’t pay for the water cooler or beanbag chairs also we’re a small team who take on a limited amount of clients each year. You won’t be talking to account managers, you’ll talk directly to the owner. This saves on staff costs.',
-  },
-  {
-    id: 4,
-    question: "How long does it take to build a website?",
-    answer:
-        'It takes approximately 6-10 weeks to build a website from start to finish, providing we have all the information from you. Generally speaking, the website will only take a long time if we are still waiting for text and images from yourself.',
-  },
-  {
-    id: 5,
-    question: 'How do we communicate throughout the website build?',
-    answer: 'Before we begin working together, we’ll usually have an initially meeting to discuss the project. Once we get started, most of the communication will take place over email. This makes the process a lot easier as we’ll have all of the information saved and can come back to it later. Once we’ve finished the project, we will book in your 1hr digital marketing training session.',
-  },
-  {
-    id: 6,
-    question: 'What will you need from me?',
-    answer:
-        "It really depends on what type of website you want. We’ll be able to discuss this on our discovery call before we start working together. Depending on which package we agree on we could need images of you and your team, images of your workplace, content for the website e.g. text, PDFs etc. , Staff Profiles... Some of this might already be on the existing website, in which case it can be transferred over to the new site.",
-  },
-  {
-    id: 7,
-    question: 'Do you offer a payment schedule?',
-    answer:
-        "Yes, we split the payment into two. The first 50% is usually taken once you have seen the mockup of your homepage and you’re happy to move forward. The following 50% is taken 30 days after this.",
-  },
-  {
-    id: 8,
-    question: 'Can I make the final payment when the site is ready to go live?',
-    answer:
-        "No. In the past we have found that projects can take a lot longer than expected to complete. We might be waiting for information from you and this can delay the process. Sometimes these delays can take months. This is why we always invoice 30 days after the original payment. At this point we’ll be well on our way with your new website and you’ll be able to see the progress.",
-  },
-  {
-    id: 9,
-    question: 'Will my website be mobile friendly?',
-    answer:
-        "Yes. Your website will be fully responsive and will look great on all devices. We don’t charge extra for this. It comes as standard.",
-  },
-
-]
-
-
 export default {
+
+  /* eslint-disable */
+
+  computed:{
+    supportLinks(){
+      return[
+
+        {
+          name: this.$t('supportLinks.name1'),
+          href: 'mailto:info@artexa.agency?subject=Evaluating and need advice before you buy',
+          description:this.$t('supportLinks.description1'),
+          icon: NewspaperIcon,
+        },
+        {
+          name: this.$t('supportLinks.name2'),
+          href: 'sales@artexa.agency?subject=Searching for the right products and pricing for your business',
+          description:this.$t('supportLinks.description2'),
+          icon: PhoneIcon,
+        },
+        {
+          name: this.$t('supportLinks.name3'),
+          href: 'mailto:support@artexa.agency?subject=Technical Support',
+          description:this.$t('supportLinks.description3'),
+          icon: SupportIcon,
+        },
+
+      ]
+    },
+
+    faqs(){
+      return[
+
+        {
+          id: 1,
+          question: this.$t('faqs.question1'),
+          answer:this.$t('faqs.answer1'),
+        },
+        {
+          id: 2,
+          question: this.$t('faqs.question2'),
+          answer:this.$t('faqs.answer2'),
+        },
+        {
+          id: 3,
+          question: this.$t('faqs.question3'),
+          answer:this.$t('faqs.answer3'),
+        },
+        {
+          id: 4,
+          question: this.$t('faqs.question4'),
+          answer:this.$t('faqs.answer4'),
+        },
+        {
+          id: 5,
+          question: this.$t('faqs.question5'),
+          answer: this.$t('faqs.answer5'),
+        },
+        {
+          id: 6,
+          question: this.$t('faqs.question6'),
+          answer: this.$t('faqs.answer6'),
+        },
+        {
+          id: 7,
+          question: this.$t('faqs.question7'),
+          answer:this.$t('faqs.answer7'),
+        },
+        {
+          id: 8,
+          question: this.$t('faqs.question8'),
+          answer:this.$t('faqs.answer8'),
+        },
+        {
+          id: 9,
+          question: this.$t('faqs.question9'),
+          answer:this.$t('faqs.answer9'),
+        },
+
+      ]
+    }
+  },
 
   name: 'ContactUs',
   data() {
@@ -506,8 +506,6 @@ export default {
 
 
     return {
-      supportLinks,
-      faqs,
       offices,
       beforeEnter,
       enter,

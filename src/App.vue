@@ -1,4 +1,4 @@
-<!-- This example requires Tailwind CSS v2.0+ -->
+
 <template>
   <TransitionRoot as="template" :show="mobileMenuOpen" id="header">
     <Dialog as="div" class="fixed inset-0 flex z-40 lg:hidden" @close="mobileMenuOpen = false">
@@ -19,7 +19,12 @@
           <TabGroup as="div" class="mt-2">
             <div class="border-b border-gray-200">
               <TabList class="-mb-px flex px-4 space-x-8">
-                <Tab as="template" v-for="category in navigationmobile.categories" :key="category.name" v-slot="{ selected }">
+                <Tab as="template" v-for="category in navigationmobileCompany.categories" :key="category.name" v-slot="{ selected }">
+                  <button :class="[selected ? 'text-teal-600 border-teal-600' : 'text-artexa-white border-transparent', 'flex-1 whitespace-nowrap py-4 px-1 border-b-2 text-base font-medium']">
+                    {{ category.name }}
+                  </button>
+                </Tab>
+                <Tab as="template" v-for="category in navigationmobilePortfolio.categories" :key="category.name" v-slot="{ selected }">
                   <button :class="[selected ? 'text-teal-600 border-teal-600' : 'text-artexa-white border-transparent', 'flex-1 whitespace-nowrap py-4 px-1 border-b-2 text-base font-medium']">
                     {{ category.name }}
                   </button>
@@ -27,13 +32,13 @@
               </TabList>
             </div>
             <TabPanels as="template">
-              <TabPanel v-for="category in navigationmobile.categories" :key="category.name" class="px-4 py-6 space-y-12">
+              <TabPanel v-for="category in navigationmobileCompany.categories" :key="category.name" class="px-4 py-6 space-y-12">
                 <div class="grid grid-cols-2 gap-x-4 gap-y-10">
                   <div v-for="item in category.featured" :key="item.name" class="group relative">
                     <div class="aspect-w-1 aspect-h-1  rounded-md bg-gray-100 overflow-hidden group-hover:opacity-75">
                       <img :src="item.imageSrc" :alt="item.imageAlt" class="object-center object-cover" />
                     </div>
-                    <router-link :to="item.href" class="mt-6 block text-sm font-medium text-artexa-white" @click="mobileMenuOpen = false">
+                    <router-link :to="item.href" target="_blank" class="mt-6 block text-sm font-medium text-artexa-white" @click="mobileMenuOpen = false">
                       <span class="absolute z-10 inset-0" aria-hidden="true" />
                       {{ item.name }}
                     </router-link>
@@ -41,14 +46,24 @@
                   </div>
                 </div>
               </TabPanel>
+
+              <TabPanel v-for="category in navigationmobilePortfolio.categories" :key="category.name" class="px-4 py-6 space-y-12">
+                <div class="grid grid-cols-2 gap-x-4 gap-y-10">
+                  <div v-for="item in category.featured" :key="item.name" class="group relative">
+                    <div class="aspect-w-1 aspect-h-1  rounded-md bg-gray-100 overflow-hidden group-hover:opacity-75">
+                      <img :src="item.imageSrc" :alt="item.imageAlt" class="object-center object-cover" />
+                    </div>
+                    <a :href="item.href" class="mt-6 block text-sm font-medium text-artexa-white" @click="mobileMenuOpen = false">
+                      <span class="absolute z-10 inset-0" aria-hidden="true" />
+                      {{ item.name }}
+                    </a>
+                    <p aria-hidden="true" class="mt-1 text-sm text-gray-500">{{ item.role }}</p>
+                  </div>
+                </div>
+              </TabPanel>
             </TabPanels>
           </TabGroup>
 
-          <div class="border-t border-gray-200 py-6 px-4 space-y-6">
-            <div v-for="page in navigationmobile.pages" :key="page.name" class="flow-root">
-              <router-link :to="page.href" class="-m-2 p-2 block font-medium text-gray-900">{{ page.name }}</router-link>
-            </div>
-          </div>
 
 
 
@@ -58,30 +73,6 @@
               <div class="inline-block">
                 <label class="sr-only">Languages</label>
                 <div class="-ml-2 group relative border-transparent rounded-md focus-within:ring-2 focus-within:ring-white">
-<!--                  <form class="ml-2">-->
-<!--                    <select v-model="$i18n.locale" id="language" name="location" class="block w-full pl-3 ml-2 pr-10 py-2 text-base border-white focus:outline-none  focus:border-white sm:text-sm rounded-md">-->
-<!--                      <option selected="selected" value="en">EN</option>-->
-<!--                      <option value="en">EN</option>-->
-<!--                    </select>-->
-<!--                  </form>-->
-
-
-
-
-<!--                  <form>-->
-<!--                    <div class="inline-block">-->
-<!--                      <label for="mobile-currency" class="sr-only">Currency</label>-->
-<!--                      <div class="-ml-2 group relative border-transparent rounded-md focus-within:ring-2 focus-within:ring-white">-->
-<!--                        <select v-model="$i18n.locale" id="mobile-currency" name="currency" class="bg-none border-transparent rounded-md py-0.5 pl-2 pr-5 flex items-center text-sm font-medium text-gray-700 group-hover:text-gray-800 focus:outline-none focus:ring-0 focus:border-transparent">-->
-<!--                          <option value="fr">fr</option>-->
-<!--                          <option value="en">EN</option>-->
-<!--                        </select>-->
-<!--                      </div>-->
-<!--                    </div>-->
-<!--                  </form>-->
-
-
-
                 </div>
               </div>
             </form>
@@ -161,47 +152,28 @@
                   </PopoverGroup>
                 </div>
 
-                <!-- Mobile menu and search (lg-) -->
+                <!-- Mobile menu (lg-) -->
                 <div class="flex-1 flex items-center lg:hidden">
                   <button type="button" class="-ml-2 p-2 text-artexa-white" @click="mobileMenuOpen = true">
                     <span class="sr-only">Open menu</span>
                     <MenuIcon class="h-6 w-6" aria-hidden="true" />
                   </button>
-
-                  <!-- Search -->
-<!--                  <a href="#" class="ml-2 p-2 text-artexa-white">-->
-<!--                    <span class="sr-only">Search</span>-->
-<!--                    <SearchIcon class="w-6 h-6" aria-hidden="true" />-->
-<!--                  </a>-->
                 </div>
 
                 <!-- Logo (lg-) -->
                 <router-link to="/" class="lg:hidden">
-                  <span class="sr-only">Workflow</span>
+                  <span class="sr-only">Artexa</span>
                   <img src="img/artexa_logo_anime.svg" alt="artexa_logo" class="h-12 w-auto" />
                 </router-link>
 
                 <div class="flex-1 flex items-center justify-end">
-<!--                  <a href="#" class="hidden text-sm font-medium text-artexa-white lg:block">-->
-<!--                    Search-->
-<!--                  </a>-->
 
                   <div class="flex items-center lg:ml-8">
-                    <!-- Help -->
+                    <!-- Mail -->
                     <router-link to="/contact" class="p-2 text-artexa-white lg:hidden">
-                      <span class="sr-only">Help</span>
+                      <span class="sr-only">Contact</span>
                       <MailIcon class="w-6 h-6" aria-hidden="true" />
                     </router-link>
-<!--                    <a href="#" class="hidden text-sm font-medium text-artexa-white lg:block">Help</a>-->
-
-                    <!-- Cart -->
-<!--                    <div class="ml-4 flow-root lg:ml-8">-->
-<!--                      <a href="#" class="group -m-2 p-2 flex items-center">-->
-<!--                        <ShoppingBagIcon class="flex-shrink-0 h-6 w-6 text-artexa-white" aria-hidden="true" />-->
-<!--                        <span class="ml-2 text-sm font-medium text-artexa-white">0</span>-->
-<!--                        <span class="sr-only">items in cart, view bag</span>-->
-<!--                      </a>-->
-<!--                    </div>-->
                   </div>
                 </div>
                 <div class="hidden w-3/12 lg:flex-1 lg:flex lg:items-center lg:justify-end">
@@ -345,7 +317,44 @@ const languages =
       },
      ]
 
-const navigationmobile = {
+
+const navigationmobilePortfolio = {
+  categories: [
+    {
+      name: 'Portfolio',
+      featured: [
+        {
+          name: 'Belgamobility',
+          href: 'https://www.belgamobility.com/',
+          imageSrc: 'img/logos/BELGA-MOBILITY.png',
+          imageAlt: 'Belgamobility project.',
+        },
+        {
+          name: 'Fernelmove',
+          href: 'http://fernelmove.be',
+          imageSrc: 'img/logos/FernelLogoFinal.svg',
+          imageAlt: 'social application developped for the municipality of Fernelmont.',
+        },
+        {
+          name: 'Fava Claudio architect',
+          href: 'https://www.favaclaudio.com',
+          imageSrc: 'img/logos/logo-small.png',
+          imageAlt: 'Fava Claudio architect website.',
+        },
+        {
+          name: 'Pizza Vino',
+          href: 'https://pizzavino.be',
+          imageSrc: 'img/logos/pizza-vino-logo.png',
+          imageAlt: 'Pizza vino web site.',
+        },
+      ],
+    },
+  ],
+}
+
+
+
+const navigationmobileCompany = {
   categories: [
     {
       name: 'Company',
@@ -370,36 +379,6 @@ const navigationmobile = {
           href: '/team',
           imageSrc: 'img/team_logo.png',
           imageAlt: 'Model wearing minimalist watch with black wristband and white watch face.',
-        },
-      ],
-    },
-    {
-      name: 'Portfolio',
-      featured: [
-        {
-          name: 'Belgamobility',
-          href: 'https://www.belgamobility.com/',
-          imageSrc: 'img/logos/BELGA-MOBILITY.png',
-          imageAlt: 'Hats and sweaters on wood shelves next to various colors of t-shirts on hangers.',
-        },
-        {
-          name: 'Fernelmove',
-          href: 'http://fernelmove.be',
-          imageSrc: 'img/logos/FernelLogoFinal.svg',
-          imageAlt: 'social application developped for the municipality of Fernelmont.',
-        },
-        {
-          name: 'Fava Claudio architect',
-          href: 'https://www.favaclaudio.com',
-          imageSrc: 'img/logos/logo-small.png',
-          imageAlt:
-              'Fava Claudio architect website.',
-        },
-        {
-          name: 'Pizza Vino',
-          href: 'https://pizzavino.be',
-          imageSrc: 'img/logos/pizza-vino-logo.png',
-          imageAlt: 'pizza vino web site.',
         },
       ],
     },
@@ -549,7 +528,8 @@ export default {
     const mobileMenuOpen = ref(false)
     return {
       mobileMenuOpen,
-      navigationmobile,
+      navigationmobilePortfolio,
+      navigationmobileCompany,
       navigation,
       footernavigation,
       languages,
