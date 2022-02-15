@@ -6,6 +6,7 @@ import Workflow from '../views/Workflow.vue'
 import Team from '../views/Team.vue'
 import Terms from '../views/Terms.vue'
 import Privacy from '../views/Privacy.vue'
+import Thanks from '../views/Thanks.vue'
 import PageNotFound from '../views/PageNotFound.vue'
 
 const routes = [
@@ -43,6 +44,11 @@ const routes = [
     path: '/workflow',
     name: 'Workflow',
     component: Workflow
+  },
+  {
+    path: '/thanks',
+    name: 'Thanks',
+    component: Thanks
   },
   {
     path: "/:catchAll(.*)",
