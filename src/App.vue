@@ -336,7 +336,7 @@ const navigationmobilePortfolio = {
           imageAlt: 'social application developped for the municipality of Fernelmont.',
         },
         {
-          name: 'Fava Claudio architect',
+          name: 'Fava Claudio Architect',
           href: 'https://www.favaclaudio.com',
           imageSrc: 'img/logos/logo-small.png',
           imageAlt: 'Fava Claudio architect website.',

@@ -258,7 +258,82 @@ function loadLocaleMessages() {
         footer:'We care about the protection of your data. Read our',
         link:'Privacy Policy',
 
-      }
+      },
+
+      // WORKFLOW PAGE
+
+      workheader:{
+
+        subtitle:'We design fluid user experience and anticipate the user journey with creative solutions as well as creating brand recognition with design systems. Our team is capable of delivering custom websites, mobile apps, e-commerces with a variety of tools & skill sets that allows you to be on top of the digital world. Optimizations & reviews are part of our culture. We constantly improve our products to increase conversion rates and our client happiness.',
+
+      },
+
+      workskills:{
+
+        overtitle:'OUR SKILLS',
+        title:'OUR SKILLS',
+        subtitle:'We create successful responsive website that are fast, easy to use, and build with the best practices. The main area of expertise is full-stack development HTML, CSS, JS, PHP, building small and medium web apps, animations. We have also experience with popular open-source CMS like Wordpress.',
+
+      },
+
+      workfeatures:{
+
+        overtitle:'DEPLOY FASTER',
+        title:'Everything you need to deploy your app',
+        subtitle:'We approach to website development fuses creativity, technology and data analysis, giving you the platform you need to reach new audiences and engage your existing customers.',
+
+        name1: 'Push to Deploy',
+        description1: 'Knowledge of Git & most common provider of Internet hosting for software development and version control.',
+
+        name2: 'Style',
+        description2: 'Knowledge of most common CSS framework, like Bootstrap & Tailwind, to easily implement user-friendly UIs.',
+
+        name3: 'Performant',
+        description3: 'Knowledge of VueJS framework, the most versatile & performant way to make blazing fast the Virtual DOM.',
+
+        name4: 'Advanced Security',
+        description4: 'Usage of Laravel framework, the recommended PHP framework for robust application security',
+
+        name5: 'Powerful API',
+        description5: 'API management, to simplify how you connect with your partners. (the Google Maps API is a popular example.)',
+
+        name6: 'Hosting',
+        description6: 'Administrate hosting service, manage your email accounts or setup a Wordpress instance.',
+
+      },
+
+      workmetrics:{
+
+        title:'We will help grow your business',
+        subtitle:'Since the commercialization of the Internet in the early 90s, Web development has undergone a profound change. If once the Internet pages were a bare set of text fields, today in the foreground there is an elaborate presentation of multimedia content. The original information platform has now become a means of entertainment. Internet users demand interactive web pages with a pleasing design that allows for intuitive use. In order to meet this need, we include dynamic content with the help of various tools and create customized websites for the user.',
+
+        emphasis1:'Certificates',
+        rest1:'Our main proof expertise is in everything related to web development industry acknowledgments and achievements',
+        emphasis2:'Audit',
+        rest2:'We will thoroughly examine your digital project to detect areas for correction and help you archieve your business goals.',
+
+      },
+
+      workBlogPosts:{
+
+        overtitle:'AT WORK',
+        title:'This is how we do it',
+        subtitle:'Depending on the type of project, the basic steps of building a website can vary. Not all websites are the same: to create a company website, an online catalog or an e-commerce, different types of management and planning are required. Consequently, even the implementation phases can increase or be divided in turn into sub-phases.',
+
+
+        title1: 'Roadmap',
+        preview1:'To define the vision of a product or service, I take the time to listen to you and understand your needs and those of your customers. I write a document with the technical specifications, some mockups, a program and a budget estimate.',
+
+
+        title2: 'Prototyping',
+        preview2: 'There is no universal and precise formula, because each project can have different characteristics. At the beginning we have to define objectives and potential critical issues, after which we move on to the conception of the product and then to the creation of a prototype.',
+
+
+        title3: 'Development',
+        preview3: 'Do you have the vision, feel the pull and all you need is software? We will work with you to develop this new functional and design product that your customers will love to use. And We\'ll help you get started.',
+
+      },
+
 
     },
 
@@ -509,7 +584,81 @@ function loadLocaleMessages() {
         footer:'Nous nous soucions de la protection de vos données. Lisez notre',
         link:'Politique de confidentialité',
 
-      }
+      },
+
+      // WORKFLOW PAGE
+
+      workheader:{
+
+        subtitle:'Nous concevons une expérience utilisateur fluide et anticipons le parcours de l\'utilisateur avec des solutions créatives, tout en créant une reconnaissance de la marque grâce à des systèmes de conception. Notre équipe est capable de fournir des sites web, des applications mobiles et des e-commerces personnalisés avec une variété d\'outils et de compétences qui vous permettent d\'être au sommet du monde numérique. Les optimisations et les révisions font partie de notre culture. Nous améliorons constamment nos produits pour augmenter les taux de conversion et le bonheur de nos clients.',
+
+      },
+
+      workskills:{
+
+        overtitle:'NOS COMPÉTENCES',
+        title:'Compétences et expérience',
+        subtitle:'Nous créons des sites web réactifs qui sont rapides, faciles à utiliser et construits avec les meilleures pratiques. Notre principal domaine d\'expertise est le développement complet HTML, CSS, JS, PHP, la création de petites et moyennes applications web, les animations. Nous avons également de l\'expérience avec les CMS open-source populaires comme Wordpress.',
+
+      },
+
+      workfeatures:{
+
+        overtitle:'DEPLOY FASTER',
+        title:'Tout ce dont vous avez besoin pour déployer votre application',
+        subtitle:'Notre approche du développement de sites web fusionne la créativité, la technologie et l\'analyse de données, vous offrant ainsi la plateforme dont vous avez besoin pour atteindre de nouveaux publics et engager vos clients existants.',
+
+        name1: 'Push to Deploy',
+        description1: 'Connaissance de Git et du fournisseur le plus courant d\'hébergement Internet pour le développement de logiciels et le contrôle des versions.',
+
+        name2: 'Style',
+        description2: 'Connaissance du cadre CSS le plus courant, comme Bootstrap et Tailwind, pour mettre en œuvre facilement des interfaces utilisateur conviviales.',
+
+        name3: 'Performant',
+        description3: 'Connaissance du framework VueJS, le moyen le plus polyvalent et le plus performant de rendre le DOM virtuel très rapide.',
+
+        name4: 'Advanced Security',
+        description4: 'Utilisation du framework Laravel, le framework PHP recommandé pour une sécurité robuste des applications.',
+
+        name5: 'Powerful API',
+        description5: 'La gestion des API, pour simplifier la manière dont vous vous connectez à vos partenaires. (l\'API de Google Maps est un exemple populaire.)',
+
+        name6: 'Hosting',
+        description6: 'Administrer un service d\'hébergement, gérer vos comptes de messagerie ou configurer une instance de Wordpress.',
+
+      },
+
+      workmetrics:{
+
+        title:'Nous vous aiderons à développer votre entreprise',
+        subtitle:'Depuis la commercialisation de l\'Internet au début des années 90, le développement du Web a subi un profond changement. Si, autrefois, les pages Internet étaient un ensemble dépouillé de champs de texte, on trouve aujourd\'hui au premier plan une présentation élaborée de contenu multimédia. La plate-forme d\'information initiale est devenue un moyen de divertissement. Les internautes exigent des pages web interactives, au design agréable et permettant une utilisation intuitive. Afin de répondre à ce besoin, nous incluons des contenus dynamiques à l\'aide de divers outils et créons des sites web personnalisés pour l\'utilisateur.',
+
+        emphasis1:'Certificats',
+        rest1:'Notre principale expertise en matière de preuves concerne tout ce qui a trait aux reconnaissances et aux réalisations du secteur du développement web.',
+        emphasis2:'Audit',
+        rest2:'Nous examinerons en détail votre projet numérique pour détecter les points à corriger et vous aider à atteindre vos objectifs commerciaux.',
+
+      },
+
+      workBlogPosts:{
+
+        overtitle:'AT WORK',
+        title:'C\'est comme ça qu\'on fait',
+        subtitle:'Les étapes de base de la création d\'un site web peuvent varier en fonction du type de projet. Tous les sites web ne sont pas identiques : pour créer un site d\'entreprise, un catalogue en ligne ou un site de commerce électronique, différents types de gestion et de planification sont nécessaires. Par conséquent, même les phases de réalisation peuvent augmenter ou être divisées à leur tour en sous-phases.',
+
+
+        title1: 'Roadmap',
+        preview1:'To define the vision of a product or service, I take the time to listen to you and understand your needs and those of your customers. I write a document with the technical specifications, some mockups, a program and a budget estimate.',
+
+
+        title2: 'Prototyping',
+        preview2: 'Il n\'existe pas de formule universelle et précise, car chaque projet peut avoir des caractéristiques différentes. Au début, nous devons définir les objectifs et les éventuels problèmes critiques, après quoi nous passons à la conception du produit, puis à la création d\'un prototype.',
+
+
+        title3: 'Development',
+        preview3: 'Vous avez la vision, vous ressentez l\'envie et tout ce dont vous avez besoin est un logiciel ? Nous allons travailler avec vous pour développer ce nouveau produit fonctionnel et design que vos clients vont adorer utiliser. Et nous vous aiderons à démarrer.',
+
+      },
 
 
     },
@@ -556,7 +705,7 @@ function loadLocaleMessages() {
 
       tech:{
         title:'Le nostre tecnologie',
-        subtitle:'Lo sviluppo di applicazioni web avanzate è la nostra specialità, e soddisferemo con successo tutte le vostre esigenze di sviluppo di applicazioni web, dai progetti di piccole dimensioni a quelli di più ampia portata. Per mantenere e migliorare le nostre applicazioni web, abbiamo esperienza in varie tecnologie di sviluppo web.',
+        subtitle:'Lo sviluppo di applicazioni web avanzate è la nostra specialità, soddisferemo con successo tutte le vostre esigenze, dai progetti di piccole dimensioni a quelli di più ampia portata. Per mantenerele e migliorarele, abbiamo esperienza in diverse tecnologie.',
       },
 
       homefeatures:{
@@ -761,7 +910,81 @@ function loadLocaleMessages() {
         footer:'Ci preoccupiamo della protezione dei tuoi dati. Leggi la nostra ',
         link:'Politica sulla privacy',
 
-      }
+      },
+
+      // WORKFLOW PAGE
+
+      workheader:{
+
+        subtitle:'Progettiamo un\'esperienza utente fluida anticipando le interazioni con soluzioni creative, vi aiuteremo a creare la riconoscibilità del marchio fornendo un design piacevole e intuitivo. Il nostro team è in grado di creare siti web personalizzati, applicazioni mobili ed e-commerce con una varietà di strumenti e set di funzionalità che vi permetteranno di essere in cima al mondo digitale. Ottimizzazioni e revisioni sono parte della nostra cultura. Miglioriamo costantemente i nostri prodotti per aumentare i tassi di conversione e la felicità dei vostri clienti.',
+
+      },
+
+      workskills:{
+
+        overtitle:'OUR SKILLS',
+        title:'Competenze ed esperienza',
+        subtitle:'Creiamo siti web responsive di successo che sono veloci, facili da usare e costruiti con le migliori pratiche. La principale area di competenza è lo sviluppo full-stack HTML, CSS, JS, PHP applicata alla costruzione di piccole e medie applicazioni web ed animazioni. Forniamo consulenza riguardante i più popolari CMS open-source come Wordpress.',
+
+      },
+
+      workfeatures:{
+
+        overtitle:'DEPLOY FASTER',
+        title:'Tutto ciò di cui hai bisogno per la tua app',
+        subtitle:'Il nostro approccio allo sviluppo di siti web fonde creatività, tecnologia e analisi dei dati, dandovi la piattaforma di cui avete bisogno per raggiungere un nuovo pubblico e coinvolgere i vostri clienti.',
+
+        name1: 'Push to Deploy',
+        description1: 'Conoscenza e utilizzo di Git per il controllo delle versioni software e dei più comuni fornitori di hosting su Internet.',
+
+        name2: 'Style',
+        description2: 'Conoscenza dei più comuni framework CSS, come Bootstrap e Tailwind, per implementare facilmente delle UI user-friendly.',
+
+        name3: 'Performant',
+        description3: 'Conoscenza del framework VueJS, il modo più versatile e performante per rendere incredibilmente veloce il Virtual DOM.',
+
+        name4: 'Advanced Security',
+        description4: 'Utilizzo di Laravel, il framework PHP raccomandato per una robusta sicurezza delle applicazioni.',
+
+        name5: 'Powerful API',
+        description5: 'Gestione delle API, per semplificare il modo in cui ti connetti con i tuoi partner. (l\'API di Google Maps è un esempio popolare.)',
+
+        name6: 'Hosting',
+        description6: 'Amministrazione del servizio di hosting e gestione dei tuoi account di posta elettronica.',
+
+      },
+
+      workmetrics:{
+
+        title:'Ti aiuteremo a far crescere il tuo business',
+        subtitle:'Dalla commercializzazione di Internet nei primi anni \'90, lo sviluppo del Web ha subito un profondo cambiamento. Se una volta le pagine Internet erano un nudo insieme di campi di testo, oggi in primo piano c\'è un\'elaborata presentazione di contenuti multimediali. La piattaforma informativa originale è diventata ora un mezzo di intrattenimento. Gli utenti di Internet richiedono pagine web interattive con un design piacevole che permetta un uso intuitivo. Per soddisfare questa esigenza, includiamo contenuti dinamici con l\'aiuto di vari strumenti e creiamo siti web personalizzati.',
+
+        emphasis1:'Certificates',
+        rest1:'Il nostro mestiere è tenerci aggiornati in tutto ciò che è legato al mondo dello sviluppo web, per questo il nostro team è costantemente impegnato nel conseguimento di formazioni.',
+        emphasis2:'Audit',
+        rest2:'Esamineremo a fondo il vostro progetto digitale per individuare le aree da correggere per aiutarvi a raggiungere i vostri obiettivi di business.',
+
+      },
+
+      workBlogPosts:{
+
+        overtitle:'AT WORK',
+        title:'Lo facciamo così',
+        subtitle:'A seconda del tipo di progetto, i passi fondamentali della costruzione di un sito web possono variare. Non tutti i siti web sono uguali: per creare un sito web aziendale, un catalogo online o un e-commerce, sono necessari diversi tipi di gestione e pianificazione. Di conseguenza, anche le fasi di realizzazione possono aumentare o essere suddivise a loro volta in sottofasi.',
+
+
+        title1: 'Roadmap',
+        preview1:'Per definire la visione di un prodotto o di un servizio, ci prendo il tempo di ascoltarvi e di capire i vostri bisogni e quelli dei vostri clienti. Scriviamo un documento con le specifiche tecniche, alcuni mockup, un programma e una stima del budget.',
+
+
+        title2: 'Prototyping',
+        preview2: 'Non esiste una formula universale e precisa, perché ogni progetto può avere caratteristiche diverse. All\'inizio bisogna definire gli obiettivi e le potenziali criticità, dopodiché si passa alla concezione del prodotto e quindi alla creazione di un prototipo.',
+
+
+        title3: 'Development',
+        preview3: 'Hai la visione, senti la spinta e tutto ciò di cui hai bisogno è un software? Lavoreremo con te per sviluppare questo nuovo prodotto funzionale e di design che i tuoi clienti ameranno usare.',
+
+      },
 
 
     },

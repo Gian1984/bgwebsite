@@ -283,38 +283,51 @@
       </div>
 
 
-
       <!-- Newsletter Section -->
+
       <div class="max-w-full bg-artexa-teal-400">
-      <section class="max-w-md mx-auto py-4 px-4 sm:max-w-3xl sm:px-6 lg:max-w-7xl lg:py-6 lg:px-8 lg:flex lg:items-center text-artexa-white" aria-labelledby="newsletter-heading">
-        <div class="lg:w-0 lg:flex-1">
-          <h2 class="text-3xl font-extrabold sm:text-4xl uppercase" id="newsletter-heading">
-            Newsletter
-          </h2>
-          <p class="max-w-3xl text-lg text-blue-gray-500">
-            {{ $t('newsletter.subtitle') }}
-          </p>
-        </div>
-        <div class="mt-8 lg:mt-0 lg:ml-8">
-          <form class="sm:flex">
-            <label for="email-address" class="sr-only">Email </label>
-            <input id="email-address" name="email-address" type="email" autocomplete="email" required="" class="w-full px-5 py-3 border border-blue-gray-300 shadow-sm placeholder-artexa-teal-400 text-artexa-teal-400 focus:outline-none sm:max-w-xs rounded-md" :placeholder="$t('newsletter.placeholder')" />
-            <div class="mt-3 rounded-md shadow sm:mt-0 sm:ml-3 sm:flex-shrink-0">
-              <button type="submit" class="w-full flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-artexa-white bg-artexa-red focus:outline-none">
-                {{ $t('newsletter.button') }}
-              </button>
+        <section class="max-w-md mx-auto py-4 px-4 sm:max-w-3xl sm:px-6 lg:max-w-7xl lg:py-6 lg:px-8 lg:flex lg:items-center text-artexa-white" aria-labelledby="newsletter-heading">
+          <div class="lg:w-0 lg:flex-1">
+            <h2 class="text-3xl font-extrabold sm:text-4xl uppercase" id="newsletter-heading">
+              Newsletter
+            </h2>
+            <p class="max-w-3xl text-lg text-blue-gray-500">
+              {{ $t('newsletter.subtitle') }}
+            </p>
+            <p class="mt-3 text-sm text-blue-gray-500">
+              {{ $t('newsletter.footer') }}
+              {{ ' ' }}
+              <router-link to="/privacy" class="font-medium underline">
+                {{ $t('newsletter.link') }}
+              </router-link>
+            </p>
+          </div>
+          <div class="mt-8 lg:mt-0 lg:ml-8">
+            <div id="mc_embed_signup">
+              <form action="https://agency.us14.list-manage.com/subscribe/post?u=943790f11f626d984a64ce3d8&amp;id=78adeb6072" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="sm:flex"  target="_blank" novalidate>
+                <div id="mc_embed_signup_scroll">
+
+                  <div class="mc-field-group">
+                    <input type="email" value="" name="EMAIL" class="required email w-full px-5 py-3 border border-blue-gray-300 shadow-sm placeholder-artexa-teal-400 text-artexa-teal-400 focus:outline-none sm:max-w-xs rounded-md" id="mce-EMAIL" :placeholder="$t('newsletter.placeholder')">
+                  </div>
+                  <div id="mce-responses" class="clear foot">
+                    <div class="response" id="mce-error-response" style="display:none"></div>
+                    <div class="response" id="mce-success-response" style="display:none"></div>
+                  </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                  <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_943790f11f626d984a64ce3d8_78adeb6072" tabindex="-1" value=""></div>
+                  <div class="optionalParent">
+                    <div class="clear foot flex-auto">
+                      <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class=" mt-2 w-full items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-artexa-white bg-artexa-red focus:outline-none hover:bg-artexa-teal-300 ">
+                      <p class="brandingLogo mt-2"><a href="http://eepurl.com/hUMzRX" title="Mailchimp - email marketing made easy and fun"><img src="https://eep.io/mc-cdn-images/template_images/branding_logo_text_light_dtp.svg" class="items-center justify-center"></a></p>
+                    </div>
+                  </div>
+                </div>
+              </form>
             </div>
-          </form>
-          <p class="mt-3 text-sm text-blue-gray-500">
-            {{ $t('newsletter.footer') }}
-            {{ ' ' }}
-            <router-link to="/privacy" class="font-medium underline">
-              {{ $t('newsletter.link') }}
-            </router-link>
-          </p>
-        </div>
-      </section>
+          </div>
+        </section>
       </div>
+
     </main>
   </div>
 
