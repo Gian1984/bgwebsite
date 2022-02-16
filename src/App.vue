@@ -190,7 +190,7 @@
 
             <form>
               <div>
-                <label for="desktop-currency" class="sr-only">Currency</label>
+                <label for="desktop-currency" class="sr-only">Languages</label>
                 <div class="-ml-2 group relative bg-gray-900 border-transparent rounded-md focus-within:ring-2 focus-within:ring-white">
                   <select v-model="$i18n.locale" id="desktop-currency" name="currency" class="bg-none bg-gray-900 border-transparent rounded-md py-0.5 pl-2 pr-5 flex items-center text-sm font-medium text-white group-hover:text-gray-100 focus:outline-none focus:ring-0 focus:border-transparent">
                     <option value="fr">FR</option>
