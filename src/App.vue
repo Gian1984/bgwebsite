@@ -215,7 +215,44 @@
 
   <footer class="bg-gray-900">
     <div class="max-w-7xl mx-auto py-12 px-4 overflow-hidden sm:px-6 lg:px-8">
-      <nav class="-mx-5 -my-2 flex flex-wrap justify-center" aria-label="Footer">
+
+
+
+      <div class="bg-gray-900">
+        <div class="max-w-7xl mx-auto py-4 px-4 sm:py-4 sm:px-6 lg:px-8">
+          <h2 class="text-3xl font-extrabold text-white mx-auto text-center">Here is a non-exhaustive list of our clients who trust us</h2>
+          <div class="flow-root mt-8 lg:mt-10">
+            <div class="-mt-4 -ml-8 flex flex-wrap justify-between lg:-ml-4">
+
+
+              <div class="mt-4 ml-8 flex flex-grow flex-shrink-0 lg:flex-grow-0 lg:ml-4">
+                <img class="h-12 mr-2" src="img/logos/BELGA-MOBILITY.png" alt="belgamobility logo" />
+                <p class="mt-2 text-xl font-base text-gray-400 text5 uppercase">Belgamobility</p>
+              </div>
+
+              <div class="mt-4 ml-8 flex flex-grow flex-shrink-0 lg:flex-grow-0 lg:ml-4">
+                <img class="h-12 mr-2" src="img/logos/fernelwhite.png" alt="claudio fava architetti logo" />
+                <p class="mt-2 text-xl font-base text-gray-400 text5 uppercase">Fernelmove</p>
+              </div>
+
+              <div class="mt-4 ml-8 flex flex-grow flex-shrink-0 lg:flex-grow-0 lg:ml-4">
+                <img class="h-10 mr-2" src="img/logos/logo_sfondo.png" alt="StaticKit" />
+                <p class="mt-2 text-xl font-base text-gray-400 text5 uppercase">Claudio Fava</p>
+              </div>
+
+              <div class="mt-4 ml-8 flex flex-grow flex-shrink-0 lg:flex-grow-0 lg:ml-4">
+                <img class="h-12 mr-2" src="img/logos/pizza-vino-white.png" alt="Transistor" />
+                <p class="mt-2 text-xl font-base text-gray-400 text5 uppercase">Pizza Vino</p>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+      <nav class="-mx-5 -my-2 flex flex-wrap justify-center mt-4" aria-label="Footer">
         <div v-for="item in footernavigation.main" :key="item.name" class="px-5 py-2">
           <a :href="item.href" class="text-base text-gray-500 hover:text-artexa-teal-400">
             {{ item.name }}
