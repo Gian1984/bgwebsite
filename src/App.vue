@@ -220,29 +220,29 @@
 
       <div class="bg-gray-900">
         <div class="max-w-7xl mx-auto py-4 px-4 sm:py-4 sm:px-6 lg:px-8">
-          <h2 class="text-3xl font-extrabold text-white mx-auto text-center">Here is a non-exhaustive list of our clients who trust us</h2>
+          <h2 class="text-3xl font-extrabold text-white mx-auto text-center">{{ $t('footer.title') }}</h2>
           <div class="flow-root mt-8 lg:mt-10">
             <div class="-mt-4 -ml-8 flex flex-wrap justify-between lg:-ml-4">
 
 
-              <div class="mt-4 ml-8 flex flex-grow flex-shrink-0 lg:flex-grow-0 lg:ml-4">
+              <div class="mt-4 ml-8 flex flex-grow flex-shrink-0 lg:flex-grow-0 lg:ml-4 justify-center">
                 <img class="h-12 mr-2" src="img/logos/BELGA-MOBILITY.png" alt="belgamobility logo" />
-                <p class="mt-2 text-xl font-base text-gray-400 text5 uppercase">Belgamobility</p>
+                <p class="mt-2 lg:text-xl font-base text-gray-400 text-base uppercase">Belgamobility</p>
               </div>
 
-              <div class="mt-4 ml-8 flex flex-grow flex-shrink-0 lg:flex-grow-0 lg:ml-4">
+              <div class="mt-4 ml-8 flex flex-grow flex-shrink-0 lg:flex-grow-0 lg:ml-4 justify-center">
                 <img class="h-12 mr-2" src="img/logos/fernelwhite.png" alt="claudio fava architetti logo" />
-                <p class="mt-2 text-xl font-base text-gray-400 text5 uppercase">Fernelmove</p>
+                <p class="mt-2 lg:text-xl font-base text-gray-400 text5 uppercase">Fernelmove</p>
               </div>
 
-              <div class="mt-4 ml-8 flex flex-grow flex-shrink-0 lg:flex-grow-0 lg:ml-4">
+              <div class="mt-4 ml-8 flex flex-grow flex-shrink-0 lg:flex-grow-0 lg:ml-4 justify-center">
                 <img class="h-10 mr-2" src="img/logos/logo_sfondo.png" alt="StaticKit" />
-                <p class="mt-2 text-xl font-base text-gray-400 text5 uppercase">Claudio Fava</p>
+                <p class="mt-2 lg:text-xl font-base text-gray-400 text5 uppercase">Claudio Fava</p>
               </div>
 
-              <div class="mt-4 ml-8 flex flex-grow flex-shrink-0 lg:flex-grow-0 lg:ml-4">
+              <div class="mt-4 ml-8 flex flex-grow flex-shrink-0 lg:flex-grow-0 lg:ml-4 justify-center">
                 <img class="h-12 mr-2" src="img/logos/pizza-vino-white.png" alt="Transistor" />
-                <p class="mt-2 text-xl font-base text-gray-400 text5 uppercase">Pizza Vino</p>
+                <p class="mt-2 lg:text-xl font-base text-gray-400 text5 uppercase">Pizza Vino</p>
               </div>
 
             </div>
@@ -289,11 +289,10 @@
           ]"
     >
       <template v-slot:header class="bg-white">
-        <header>Cher visiteur / Dear visitor </header>
+        <header>{{ $t('cookies.title') }}</header>
 
         <footer class="mt-1">
-          <p class="text-xs text-gray-500">En cliquant "Accept All" vous acceptez les <a href="/Terms" class="text-gold">conditions d'utilisation</a> ainsi que le <a href="/Privacy" class="text-gold">traitement des données personnelles</a> afin de pouvoir fournir le service.</p>
-          <p class="text-xs text-gray-500">By clicking "Accept All" you accept the <a href="/Terms" class="text-gold">Terms of use</a> as well as the <a href="/Privacy" class="text-gold">processing of personal data</a> in order to be able to provide the service.</p>
+          <p class="text-xs text-gray-500">{{ $t('cookies.click') }} <a href="/Terms" class="text-artexa-teal-400">{{ $t('cookies.terms') }}</a> {{ $t('cookies.and') }} <a href="/Privacy" class="text-artexa-teal-400">{{ $t('cookies.privacy') }}</a> {{ $t('cookies.service') }}</p>
         </footer>
       </template>
 
@@ -375,7 +374,7 @@ const navigationmobilePortfolio = {
         {
           name: 'Fava Claudio Architect',
           href: 'https://www.favaclaudio.com',
-          imageSrc: 'img/logos/logo-small.png',
+          imageSrc: 'img/logos/logo_fava_border.png',
           imageAlt: 'Fava Claudio architect website.',
         },
         {
@@ -442,7 +441,7 @@ const navigationmobileCompany = {
         {
           name: 'Fava Claudio Architect',
           href: 'https://www.favaclaudio.com',
-          imageSrc: 'img/logos/logo-small.png',
+          imageSrc: 'img/logos/logo_fava_border.png',
           imageAlt:
               'Fava Claudio architect website.',
         },
