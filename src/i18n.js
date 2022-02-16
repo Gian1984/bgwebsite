@@ -12,7 +12,7 @@ function loadLocaleMessages() {
     en:{
 
       header:{
-        button:'Start a new project'
+        button:'Get your free evaluation'
       },
 
       // HOME PAGE
@@ -341,7 +341,7 @@ function loadLocaleMessages() {
 
     fr:{
       header:{
-        button:'Nouveau projet'
+        button:'Obtenez votre évaluation gratuite'
       },
 
       // HOME PAGE
@@ -667,7 +667,7 @@ function loadLocaleMessages() {
 
     it:{
       header:{
-        button:'Nuovo progetto'
+        button:'Ottieni un prevntivo gratuitamente'
       },
 
       // HOME PAGE

@@ -24,7 +24,7 @@
           @before-enter="beforeEnter"
           @enter="enter"
       >
-      <p class="mt-6 max-w-3xl text-xl text-gray-300 text2 ">Upgrade your business starts with your website.</p>
+      <p class="mt-6 max-w-3xl text-xl text-gray-300 text2 ">The upgrade of your business starts with your website.</p>
       </transition>
       <transition
           appear
@@ -224,21 +224,21 @@ export default {
           description:this.$t('homeposts.description3'),
           imageUrl: 'img/coder.png',
         },
-        {
-          title: this.$t('homeposts.title4'),
-          description:this.$t('homeposts.description4'),
-          imageUrl: 'img/vitrine.png',
-        },
-        {
-          title: this.$t('homeposts.title5'),
-          description:this.$t('homeposts.description5'),
-          imageUrl: 'img/ecommerce.png',
-        },
-        {
-          title: this.$t('homeposts.title6'),
-          description:this.$t('homeposts.description6'),
-          imageUrl: 'img/languages.png',
-        },
+        // {
+        //   title: this.$t('homeposts.title4'),
+        //   description:this.$t('homeposts.description4'),
+        //   imageUrl: 'img/vitrine.png',
+        // },
+        // {
+        //   title: this.$t('homeposts.title5'),
+        //   description:this.$t('homeposts.description5'),
+        //   imageUrl: 'img/ecommerce.png',
+        // },
+        // {
+        //   title: this.$t('homeposts.title6'),
+        //   description:this.$t('homeposts.description6'),
+        //   imageUrl: 'img/languages.png',
+        // },
 
       ]
     },
