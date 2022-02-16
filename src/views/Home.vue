@@ -24,7 +24,7 @@
           @before-enter="beforeEnter"
           @enter="enter"
       >
-      <p class="mt-6 max-w-3xl text-xl text-gray-300 text2 ">Upgrade your business starts with your website.</p>
+      <p class="mt-6 max-w-3xl text-xl text-gray-300 text2 ">The upgrade your business starts with your website.</p>
       </transition>
       <transition
           appear
