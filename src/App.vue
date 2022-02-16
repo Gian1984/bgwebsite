@@ -38,7 +38,7 @@
                     <div class="aspect-w-1 aspect-h-1  rounded-md bg-gray-100 overflow-hidden group-hover:opacity-75">
                       <img :src="item.imageSrc" :alt="item.imageAlt" class="object-center object-cover" />
                     </div>
-                    <router-link :to="item.href" target="_blank" class="mt-6 block text-sm font-medium text-artexa-white" @click="mobileMenuOpen = false">
+                    <router-link :to="item.href" class="mt-6 block text-sm font-medium text-artexa-white" @click="mobileMenuOpen = false">
                       <span class="absolute z-10 inset-0" aria-hidden="true" />
                       {{ item.name }}
                     </router-link>
@@ -53,7 +53,7 @@
                     <div class="aspect-w-1 aspect-h-1  rounded-md bg-gray-100 overflow-hidden group-hover:opacity-75">
                       <img :src="item.imageSrc" :alt="item.imageAlt" class="object-center object-cover" />
                     </div>
-                    <a :href="item.href" class="mt-6 block text-sm font-medium text-artexa-white" @click="mobileMenuOpen = false">
+                    <a :href="item.href" target="_blank" class="mt-6 block text-sm font-medium text-artexa-white" @click="mobileMenuOpen = false">
                       <span class="absolute z-10 inset-0" aria-hidden="true" />
                       {{ item.name }}
                     </a>
