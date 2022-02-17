@@ -120,7 +120,7 @@ export default {
 
         {
           name: 'Bryan Gustin',
-          role: 'CEO - Full stack developer',
+          role: 'CEO - Fullstack developer',
           imageSrc:
               'img/bryanfond.png',
           imageAlt:"Bryan Gustin photo",
