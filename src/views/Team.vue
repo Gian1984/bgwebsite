@@ -120,7 +120,7 @@ export default {
 
         {
           name: 'Bryan Gustin',
-          role: 'Project manager',
+          role: 'CEO - Full stack developer',
           imageSrc:
               'img/bryanfond.png',
           imageAlt:"Bryan Gustin photo",
@@ -129,7 +129,7 @@ export default {
         },
         {
           name: 'Gianluca Tiengo',
-          role: 'Fullstack developer',
+          role: 'Project Manager - Fullstack developer',
           imageSrc:
               'img/gian.jpg',
           imageAlt:"Gianluca Tiengo photo",

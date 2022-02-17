@@ -190,7 +190,7 @@
 
             <form>
               <div>
-                <label for="desktop-currency" class="sr-only">Currency</label>
+                <label for="desktop-currency" class="sr-only">Languages</label>
                 <div class="-ml-2 group relative bg-gray-900 border-transparent rounded-md focus-within:ring-2 focus-within:ring-white">
                   <select v-model="$i18n.locale" id="desktop-currency" name="currency" class="bg-none bg-gray-900 border-transparent rounded-md py-0.5 pl-2 pr-5 flex items-center text-sm font-medium text-white group-hover:text-gray-100 focus:outline-none focus:ring-0 focus:border-transparent">
                     <option value="fr">FR</option>
@@ -215,7 +215,44 @@
 
   <footer class="bg-gray-900">
     <div class="max-w-7xl mx-auto py-12 px-4 overflow-hidden sm:px-6 lg:px-8">
-      <nav class="-mx-5 -my-2 flex flex-wrap justify-center" aria-label="Footer">
+
+
+
+      <div class="bg-gray-900">
+        <div class="max-w-7xl mx-auto py-4 px-4 sm:py-4 sm:px-6 lg:px-8">
+          <h2 class="text-3xl font-extrabold text-white mx-auto text-center">{{ $t('footer.title') }}</h2>
+          <div class="flow-root mt-8 lg:mt-10">
+            <div class="-mt-4 -ml-8 flex flex-wrap justify-between lg:-ml-4">
+
+
+              <div class="mt-4 ml-8 flex flex-grow flex-shrink-0 lg:flex-grow-0 lg:ml-4 justify-center">
+                <img class="h-12 mr-2" src="img/logos/BELGA-MOBILITY.png" alt="belgamobility logo" />
+                <p class="mt-2 lg:text-xl font-base text-gray-400 text-base uppercase">Belgamobility</p>
+              </div>
+
+              <div class="mt-4 ml-8 flex flex-grow flex-shrink-0 lg:flex-grow-0 lg:ml-4 justify-center">
+                <img class="h-12 mr-2" src="img/logos/fernelwhite.png" alt="claudio fava architetti logo" />
+                <p class="mt-2 lg:text-xl font-base text-gray-400 text5 uppercase">Fernelmove</p>
+              </div>
+
+              <div class="mt-4 ml-8 flex flex-grow flex-shrink-0 lg:flex-grow-0 lg:ml-4 justify-center">
+                <img class="h-10 mr-2" src="img/logos/logo_sfondo.png" alt="StaticKit" />
+                <p class="mt-2 lg:text-xl font-base text-gray-400 text5 uppercase">Claudio Fava</p>
+              </div>
+
+              <div class="mt-4 ml-8 flex flex-grow flex-shrink-0 lg:flex-grow-0 lg:ml-4 justify-center">
+                <img class="h-12 mr-2" src="img/logos/pizza-vino-white.png" alt="Transistor" />
+                <p class="mt-2 lg:text-xl font-base text-gray-400 text5 uppercase">Pizza Vino</p>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+      <nav class="-mx-5 -my-2 flex flex-wrap justify-center mt-4" aria-label="Footer">
         <div v-for="item in footernavigation.main" :key="item.name" class="px-5 py-2">
           <a :href="item.href" class="text-base text-gray-500 hover:text-artexa-teal-400">
             {{ item.name }}
@@ -252,11 +289,10 @@
           ]"
     >
       <template v-slot:header class="bg-white">
-        <header>Cher visiteur / Dear visitor </header>
+        <header>{{ $t('cookies.title') }}</header>
 
         <footer class="mt-1">
-          <p class="text-xs text-gray-500">En cliquant "Accept All" vous acceptez les <a href="/Terms" class="text-gold">conditions d'utilisation</a> ainsi que le <a href="/Privacy" class="text-gold">traitement des données personnelles</a> afin de pouvoir fournir le service.</p>
-          <p class="text-xs text-gray-500">By clicking "Accept All" you accept the <a href="/Terms" class="text-gold">Terms of use</a> as well as the <a href="/Privacy" class="text-gold">processing of personal data</a> in order to be able to provide the service.</p>
+          <p class="text-xs text-gray-500">{{ $t('cookies.click') }} <a href="/Terms" class="text-artexa-teal-400">{{ $t('cookies.terms') }}</a> {{ $t('cookies.and') }} <a href="/Privacy" class="text-artexa-teal-400">{{ $t('cookies.privacy') }}</a> {{ $t('cookies.service') }}</p>
         </footer>
       </template>
 
@@ -338,7 +374,7 @@ const navigationmobilePortfolio = {
         {
           name: 'Fava Claudio Architect',
           href: 'https://www.favaclaudio.com',
-          imageSrc: 'img/logos/logo-small.png',
+          imageSrc: 'img/logos/logo_fava_border.png',
           imageAlt: 'Fava Claudio architect website.',
         },
         {
@@ -405,7 +441,7 @@ const navigationmobileCompany = {
         {
           name: 'Fava Claudio Architect',
           href: 'https://www.favaclaudio.com',
-          imageSrc: 'img/logos/logo-small.png',
+          imageSrc: 'img/logos/logo_fava_border.png',
           imageAlt:
               'Fava Claudio architect website.',
         },

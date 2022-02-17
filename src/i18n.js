@@ -25,7 +25,7 @@ function loadLocaleMessages() {
 
 
         title1: 'Scoping',
-        description1: 'Here we look at what is needed for the project. We start with an exploratory workshop to discover all the needs and assess your existing website. The workshop will include factors such as how you envisage the user journey? What is the objective of the site and the functionality required? What integrations are required? Once we have all the information we will set out a UX journey and create a full set of wireframes mapping out the user\'s journey around the site.',
+        description1: 'Here we look at what is needed for the project. We start with an exploratory meeting to discover all the needs and assess your existing website. We will analyze factors such as how you envisage the user journey? What is the objective of the site and the functionality required? What integrations are required? Once we have all the information we will set out a UX journey and create a full set of wireframes mapping out the user\'s journey around the site.',
 
 
         title2: 'Design',
@@ -43,8 +43,8 @@ function loadLocaleMessages() {
         title5: 'E-commerce Websites',
         description5: 'In addition to designing a beautiful, trendy and modern-looking website that fits with your brand, we will also take care of all technical aspects of the e-commerce side to ensure that everything works without issues. We can set up smooth payment systems, integrations and subscriptions.',
 
-        title6: 'Multilingual Websites',
-        description6: 'One of the perks of having an international team working is that we have over 3 native languages spoken in-house and therefore can provide you with multilingual websites if needed. Our multilingual websites will be able to allow users to change their languages for themselves.',
+        title6: 'Web Application',
+        description6: 'We deliver web-based applications that help organizations to keep pace with constantly changing business needs. Such applications boast quick and easy access from anywhere on the Internet, ensure lower hardware and software costs, allow faster time to market, and provide flexible integration with other systems.',
 
       },
 
@@ -181,15 +181,17 @@ function loadLocaleMessages() {
       // CONTACT PAGE
       supportLinks:{
 
+        contact:'Contact us',
+
         name1: 'Product advice',
         description1: 'Evaluating our products and need advice before you buy?',
 
         name2: 'Sales',
-        description2: 'We\'ll help you find the right products and pricing for your business.',
+        description2: 'We\'ll help you find the best way to better represent your business at the right price.',
 
 
         name3: 'Technical Support',
-        description3: 'Already using our products and experiencing technical issues?',
+        description3: 'As your partner we do a lot, but what\'s more important we\'re at your side 6/7.',
 
       },
 
@@ -334,6 +336,21 @@ function loadLocaleMessages() {
 
       },
 
+      // FOOTER
+
+      footer:{
+        title:'Many prestigious clients have already trusted us'
+      },
+
+      cookies:{
+        title:'Dear visitor',
+        click:'By clicking "Accept All" you accept the',
+        terms:'Terms of use',
+        and:'as well as the',
+        privacy:'processing of personal data',
+        service:'in order to be able to provide the service.',
+      }
+
 
     },
 
@@ -371,8 +388,8 @@ function loadLocaleMessages() {
         title5: 'Sites web de E-commerce',
         description5: 'En plus de la conception d\'un site web magnifique, tendance et moderne qui correspond à votre marque, nous nous occupons également de tous les aspects techniques du commerce électronique afin de garantir que tout fonctionne sans problème. Nous pouvons mettre en place des systèmes de paiement, des intégrations et des abonnements.',
 
-        title6: 'Sites web multilingues',
-        description6: 'L\'un des avantages d\'avoir une équipe internationale est que nous parlons plus de trois langues maternelles en interne et que nous pouvons donc vous fournir des sites web multilingues si nécessaire. Nos sites multilingues pourront permettre aux utilisateurs de changer de langue par eux-mêmes',
+        title6: 'Application web',
+        description6: 'Nous fournissons des applications basées sur le Web qui aident les organisations à s\'adapter à l\'évolution constante de leurs besoins. Ces applications offrent un accès rapide et facile de n\'importe où sur Internet, garantissent des coûts matériels et logiciels réduits, permettent une mise sur le marché plus rapide et offrent une intégration flexible avec d\'autres systèmes.',
 
       },
 
@@ -506,15 +523,17 @@ function loadLocaleMessages() {
       // CONTACT PAGE
       supportLinks:{
 
+        contact:'Nous contacter',
+
         name1: 'Conseils sur les produits',
         description1: 'Vous évaluez nos produits et avez besoin de conseils avant d\'acheter ?',
 
         name2: 'Ventes',
-        description2: 'Nous vous aiderons à trouver les produits et les prix qui conviennent à votre entreprise.',
+        description2: 'Nous vous aiderons à trouver la meilleur façon de représenter votre entreprise au bon prix.',
 
 
         name3: 'Support technique',
-        description3: 'Vous utilisez déjà nos produits et rencontrez des problèmes techniques ?',
+        description3: 'En tant que partenaire, nous faisons beaucoup, mais le plus important, c\'est que nous sommes à vos côtés 6/7.',
 
       },
 
@@ -660,6 +679,21 @@ function loadLocaleMessages() {
 
       },
 
+      // FOOTER
+
+      footer:{
+        title:'De nombreux clients prestigieux nous ont déjà fait confiance'
+      },
+
+      cookies:{
+        title:'Cher visiteur',
+        click:'En cliquant "Accept All" vous acceptez les',
+        terms:'conditions d\'utilisation',
+        and:'ainsi que le',
+        privacy:'traitement des données personnelles',
+        service:'afin de pouvoir fournir le service.',
+      }
+
 
     },
 
@@ -667,7 +701,7 @@ function loadLocaleMessages() {
 
     it:{
       header:{
-        button:'Ottieni un prevntivo gratuitamente'
+        button:'Ottieni un preventivo gratuito'
       },
 
       // HOME PAGE
@@ -679,7 +713,7 @@ function loadLocaleMessages() {
 
 
         title1: 'Obbietivi',
-        description1: 'Esaminiamo ciò che è necessario per il progetto. Iniziamo con un workshop esplorativo per scoprire tutti i bisogni e valutare il vostro sito web esistente. Il workshop includerà fattori come il modo in cui immaginate il viaggio dell\'utente, l\'obiettivo del sito, le funzionalità richieste e quali integrazioni sono necessarie. Una volta raccolte tutte le informazioni, definiremo un percorso UX e creeremo una serie completa di wireframes per tracciare il percorso dell\'utente all\'interno del sito.',
+        description1: 'Esaminiamo ciò che è necessario per il progetto. Iniziamo con un meeting esplorativo per scoprire tutti i bisogni e valutare il vostro sito web esistente. Discuteremo diversi fattori, tra i quali: il modo in cui immaginate il percorso dell\'utente, l\'obiettivo del sito, le funzionalità richieste e quali integrazioni sono necessarie. Una volta raccolte tutte le informazioni, definiremo un percorso UX e creeremo una serie completa di wireframes per tracciare il percorso dell\'utente all\'interno del sito.',
 
 
         title2: 'Design',
@@ -697,8 +731,8 @@ function loadLocaleMessages() {
         title5: 'Siti E-commerce',
         description5: 'Oltre a progettare un sito web bello, trendy e dall\'aspetto moderno che si adatti al vostro marchio, ci occuperemo anche di tutti gli aspetti tecnici del lato e-commerce per garantire che tutto funzioni senza problemi. Possiamo impostare sistemi di pagamento fluidi, integrazioni e abbonamenti.',
 
-        title6: 'Siti Multilingua',
-        description6: 'Uno dei vantaggi di avere un team internazionale che lavora è che abbiamo più di 3 lingue native parlate in casa e quindi possiamo fornirvi siti web multilingue se necessario. I nostri siti web multilingue saranno in grado di permettere agli utenti di cambiare la loro lingua di maniera autonoma.',
+        title6: 'Web Application',
+        description6: 'Forniamo applicazioni basate sul web che aiutano le organizzazioni a tenere il passo con le esigenze di business in costante cambiamento. Tali applicazioni vantano un accesso facile e veloce da qualsiasi punto di Internet, assicurano costi hardware e software più bassi, permettono un time to market più veloce e forniscono un\'integrazione flessibile con altri sistemi.',
 
       },
 
@@ -832,15 +866,17 @@ function loadLocaleMessages() {
       // CONTACT PAGE
       supportLinks:{
 
+        contact:'Contattaci',
+
         name1: 'Consigli sui prodotti',
         description1: 'Stai valutando i nostri prodotti e hai bisogno di consigli prima di comprare?',
 
         name2: 'Vendite',
-        description2: 'Ti aiuteremo a trovare i prodotti e i prezzi giusti per il tuo business.',
+        description2: 'Ti aiuteremo a trovare il modo migliore per rappresentare la tua azienda al giusto prezzo.',
 
 
         name3: 'Supporto tecnico',
-        description3: 'Stai già usando i nostri prodotti e hai problemi tecnici?',
+        description3: 'Come vostro partner ci impegnamo molto, ma la cosa più importante è che siamo al vostro fianco 6/7.',
 
       },
 
@@ -985,6 +1021,19 @@ function loadLocaleMessages() {
         preview3: 'Hai la visione, senti la spinta e tutto ciò di cui hai bisogno è un software? Lavoreremo con te per sviluppare questo nuovo prodotto funzionale e di design che i tuoi clienti ameranno usare.',
 
       },
+
+      footer:{
+        title:'Molti clienti prestigiosi hanno già riposto la loro fiducia in noi'
+      },
+
+      cookies:{
+        title:'Gentile visitatore',
+        click:'cliccando su "Accept All" accetti le',
+        terms:'condizioni d\'utilizzo',
+        and:'e il ',
+        privacy:'trattamento dei dati personali',
+        service:'al fine di poter erogare il servizio.',
+      }
 
 
     },

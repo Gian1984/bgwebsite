@@ -35,7 +35,7 @@
                 <p class="mt-4 text-base text-blue-gray-500">{{ link.description }}</p>
               </div>
               <div class="p-6 bg-blue-gray-50 rounded-bl-2xl rounded-br-2xl md:px-8">
-                <a :href="link.href" class="text-base font-medium text-artexa-teal-400 hover:text-teal-600">Contact us<span aria-hidden="true"> &rarr;</span></a>
+                <a :href="link.href" class="text-base font-medium text-artexa-teal-400 hover:text-teal-600">{{ $t('supportLinks.contact') }}<span aria-hidden="true"> &rarr;</span></a>
               </div>
             </div>
           </div>

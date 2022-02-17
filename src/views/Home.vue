@@ -33,7 +33,7 @@
       >
       <a href="/contact" class="mt-4 inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md shadow-sm text-artexa-white bg-artexa-teal-400 hover:bg-artexa-red focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
         <span>{{ $t("header.button") }} </span>
-        <PlusSmIcon class="-mr-1 ml-2 h-5 w-5" aria-hidden="true" />
+        <ArrowCircleRightIcon class="-mr-1 ml-2 h-5 w-5" aria-hidden="true" />
       </a>
       </transition>
          </div>
@@ -137,10 +137,9 @@
 
 
 <script>
-import { CheckIcon } from '@heroicons/vue/outline'
+import { CheckIcon, ArrowCircleRightIcon } from '@heroicons/vue/outline'
 import gsap from 'gsap'
 import {ScrollTrigger} from 'gsap/ScrollTrigger'
-import { PlusSmIcon } from '@heroicons/vue/solid'
 
 
 const galleries = [
@@ -208,38 +207,36 @@ export default {
 
     posts(){
       return[
-
-        {
-          title: this.$t('homeposts.title1'),
-          description: this.$t('homeposts.description1'),
-          imageUrl: 'img/scoping.png',
-        },
-        {
-          title: this.$t('homeposts.title2'),
-          description:this.$t('homeposts.description2'),
-          imageUrl: 'img/design.png',
-        },
-        {
-          title: this.$t('homeposts.title3'),
-          description:this.$t('homeposts.description3'),
-          imageUrl: 'img/coder.png',
-        },
         // {
-        //   title: this.$t('homeposts.title4'),
-        //   description:this.$t('homeposts.description4'),
-        //   imageUrl: 'img/vitrine.png',
+        //   title: this.$t('homeposts.title1'),
+        //   description: this.$t('homeposts.description1'),
+        //   imageUrl: 'img/scoping.png',
         // },
         // {
-        //   title: this.$t('homeposts.title5'),
-        //   description:this.$t('homeposts.description5'),
-        //   imageUrl: 'img/ecommerce.png',
+        //   title: this.$t('homeposts.title2'),
+        //   description:this.$t('homeposts.description2'),
+        //   imageUrl: 'img/design.png',
         // },
         // {
-        //   title: this.$t('homeposts.title6'),
-        //   description:this.$t('homeposts.description6'),
-        //   imageUrl: 'img/languages.png',
+        //   title: this.$t('homeposts.title3'),
+        //   description:this.$t('homeposts.description3'),
+        //   imageUrl: 'img/coder.png',
         // },
-
+        {
+          title: this.$t('homeposts.title4'),
+          description:this.$t('homeposts.description4'),
+          imageUrl: 'img/vitrine.png',
+        },
+        {
+          title: this.$t('homeposts.title5'),
+          description:this.$t('homeposts.description5'),
+          imageUrl: 'img/ecommerce.png',
+        },
+        {
+          title: this.$t('homeposts.title6'),
+          description:this.$t('homeposts.description6'),
+          imageUrl: 'img/languages.png',
+        },
       ]
     },
 
@@ -278,8 +275,8 @@ export default {
 
 
   components: {
+    ArrowCircleRightIcon,
     CheckIcon,
-    PlusSmIcon,
   },
 
   setup() {
