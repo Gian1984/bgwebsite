@@ -24,7 +24,7 @@
           @before-enter="beforeEnter"
           @enter="enter"
       >
-      <p class="mt-6 max-w-3xl text-xl text-gray-300 text2 ">The upgrade your business starts with your website.</p>
+      <p class="mt-6 max-w-3xl text-xl text-gray-300 text2 ">The upgrade of your business starts with your website.</p>
       </transition>
       <transition
           appear
@@ -207,7 +207,6 @@ export default {
 
     posts(){
       return[
-
         // {
         //   title: this.$t('homeposts.title1'),
         //   description: this.$t('homeposts.description1'),
@@ -238,7 +237,6 @@ export default {
           description:this.$t('homeposts.description6'),
           imageUrl: 'img/languages.png',
         },
-
       ]
     },
 

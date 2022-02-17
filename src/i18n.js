@@ -12,7 +12,7 @@ function loadLocaleMessages() {
     en:{
 
       header:{
-        button:'Get a quote for free'
+        button:'Get your free evaluation'
       },
 
       // HOME PAGE
@@ -358,7 +358,7 @@ function loadLocaleMessages() {
 
     fr:{
       header:{
-        button:'Obtenez un devis gratuit'
+        button:'Obtenez votre évaluation gratuite'
       },
 
       // HOME PAGE
