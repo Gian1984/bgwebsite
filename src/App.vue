@@ -227,7 +227,7 @@
 
               <div class="mt-4 ml-8 flex flex-grow flex-shrink-0 lg:flex-grow-0 lg:ml-4 justify-center">
                 <img class="h-12 mr-2" src="img/logos/BELGA-MOBILITY.png" alt="belgamobility logo" />
-                <p class="mt-2 lg:text-xl font-base text-gray-400 text-base uppercase">Belgamobility</p>
+                <p class="mt-2 lg:text-xl font-base text-gray-400 text-base uppercase">Belga Mobility</p>
               </div>
 
               <div class="mt-4 ml-8 flex flex-grow flex-shrink-0 lg:flex-grow-0 lg:ml-4 justify-center">
