@@ -235,7 +235,7 @@ export default {
         {
           title: this.$t('homeposts.title6'),
           description:this.$t('homeposts.description6'),
-          imageUrl: 'img/languages.png',
+          imageUrl: 'img/coder.png',
         },
       ]
     },
