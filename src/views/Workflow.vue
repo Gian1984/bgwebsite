@@ -5,28 +5,26 @@
 
 
 
-        <div class="relative pb-32 bg-gray-800 pt-40">
-          <div class="absolute inset-0">
-            <img class="w-full h-full object-cover" src="img/header_workflow.webp" alt="artexa workflow header" />
-            <div class="absolute inset-0 bg-gray-900 opacity-50" aria-hidden="true" />
-          </div>
-          <div class="relative max-w-7xl mx-auto py-24 px-4 sm:py-32 sm:px-6 lg:px-8">
-            <transition
-                appear
-                @before-enter="beforeSlide"
-                @enter="slide"
-            >
-              <img class="h-24" src="img/artexa.png" alt="artexa logo"/>
-            </transition>
-            <h1 class="mt-6 text-4xl tracking-tight font-extrabold text-white sm:mt-5 sm:text-6xl lg:mt-6 xl:text-6xl">
+        <div class="w-full h-screen bg-cover" style="background-image: url('img/header_workflow.webp');">
+          <div class="w-full h-screen" style="background: rgba(17,24,39,0.5);">
+            <div class="max-w-7xl mx-auto h-screen px-4 sm:px-6 lg:px-8">
+              <div style="height: 100vh; display: flex; flex-direction: column; align-items: baseline; justify-content: center;">
               <transition
                   appear
-                  @before-enter="beforeEnter"
-                  @enter="enter"
+                  @before-enter="beforeSlide"
+                  @enter="slide"
               >
-                <h1 class="text-4xl font-extrabold tracking-tight text-teal-500 md:text-5xl lg:text-6xl">We believe in design</h1>
+                <img class="h-24" src="img/artexa.png" alt="artexa logo"/>
               </transition>
-            </h1>
+              <h1 class="mt-6 text-4xl tracking-tight font-extrabold text-white sm:mt-5 sm:text-6xl lg:mt-6 xl:text-6xl">
+                <transition
+                    appear
+                    @before-enter="beforeEnter"
+                    @enter="enter"
+                >
+                  <h1 class="text-4xl font-extrabold tracking-tight text-teal-500 md:text-5xl lg:text-6xl">We believe in design</h1>
+                </transition>
+              </h1>
               <transition
                   appear
                   @before-enter="beforeEnter"
@@ -36,7 +34,8 @@
                   {{ $t('workheader.subtitle') }}
                 </p>
               </transition>
-
+            </div>
+</div>
           </div>
         </div>
 

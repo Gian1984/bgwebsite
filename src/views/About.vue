@@ -1,25 +1,17 @@
 <template>
-  <div class="relative pb-32 bg-gray-800 pt-40">
-    <div class="absolute inset-0">
-      <img class="w-full h-full object-cover" src="img/header_one.webp" />
-      <div class="absolute inset-0 bg-gray-900 opacity-50" aria-hidden="true" />
-    </div>
-    <div class="relative max-w-7xl mx-auto py-24 px-4 sm:py-32 sm:px-6 lg:px-8">
-      <transition
-          appear
-          @before-enter="beforeSlide"
-          @enter="slide"
-      >
-        <img class="h-24" src="img/artexa.png"/>
-      </transition>
-      <h1 class="mt-6 text-4xl font-extrabold tracking-tight text-white md:text-5xl lg:text-6xl">Web Development Company</h1>
-      <p class="mt-6 max-w-3xl text-xl text-gray-300">Take the software path to your digital future.</p>
+  <div class="w-full h-screen bg-cover" style="background-image: url('img/header_one.webp');">
+    <div class="w-full h-screen" style="background: rgba(17,24,39,0.5);">
+      <div class="max-w-7xl mx-auto h-screen px-4 sm:px-6 lg:px-8">
+        <div style="height: 100vh; display: flex; flex-direction: column; align-items: baseline; justify-content: center;">
+          <transition appear @before-enter="beforeSlide" @enter="slide">
+            <img class="h-24" src="img/artexa.png"/>
+          </transition>
+          <h1 class="mt-6 text-4xl font-extrabold tracking-tight text-white md:text-5xl lg:text-6xl">Web Development Company</h1>
+          <p class="mt-6 max-w-3xl text-xl text-gray-300">Take the software path to your digital future.</p>
+        </div>
+      </div>
     </div>
   </div>
-
-
-
-
 
   <div class="bg-gray-50">
     <div class="max-w-7xl mx-auto py-12 px-4 sm:py-12 sm:px-6 lg:px-8">
