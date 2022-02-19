@@ -7,7 +7,7 @@
             <img class="h-24" src="img/artexa.png"/>
           </transition>
           <h1 class="mt-6 text-4xl font-extrabold tracking-tight text-white md:text-5xl lg:text-6xl">Web Development Company</h1>
-          <p class="mt-6 max-w-3xl text-xl text-gray-300">Take the software path to your digital future.</p>
+          <p class="mt-6 max-w-3xl text-xl text-gray-300">We support you in your digital transformation.</p>
         </div>
       </div>
     </div>
