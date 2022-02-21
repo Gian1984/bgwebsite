@@ -84,7 +84,7 @@ function loadLocaleMessages() {
       // ABOUT PAGE
 
       teamcore:{
-        title:'About US',
+        title:'About us',
         subtitle:'We are talented creatives that take business seriously.',
 
         desc1:'Our team of experts is made up of creatives with technical know-how, strategists who think outside the box, and developers who push innovation.',

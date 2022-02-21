@@ -1,46 +1,29 @@
 <template>
-  <div class="relative pb-32 bg-gray-800 pt-40">
-    <div class="absolute inset-0">
-      <img class="w-full h-full object-cover" src="../../public/img/responsivetest.webp" alt="web-dev-home" />
-      <div class="absolute inset-0 bg-gray-900 opacity-50" aria-hidden="true" />
+  <div class="w-full h-screen bg-cover" style="background-image: url('img/responsivetest.webp');">
+    <div class="w-full h-screen" style="background: rgba(17,24,39,0.5);">
+      <div class="max-w-7xl mx-auto h-screen px-4 sm:px-6 lg:px-8">
+        <div style="height: 100vh; display: flex; flex-direction: column; align-items: baseline; justify-content: center;">
+          <transition appear @before-enter="beforeSlide" @enter="slide">
+            <img class="h-24" src="img/artexa.png" alt="artexa logo"/>
+          </transition>
+          <transition appear @before-enter="beforeEnter" @enter="enter">
+            <h1 class="mt-6 text-4xl font-extrabold tracking-tight text-white md:text-5xl lg:text-6xl text1">Web Development Company</h1>
+          </transition>
+          <transition appear @before-enter="beforeEnter" @enter="enter">
+            <p class="mt-6 max-w-3xl text-xl text-gray-300 text2 ">The upgrade of your business starts with your website.</p>
+          </transition>
+          <transition appear @before-enter="beforeEnter" @enter="enter">
+            <a href="/contact" class="mt-4 inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md shadow-sm text-artexa-white bg-artexa-teal-400 hover:bg-artexa-red focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+              <span>{{ $t("header.button") }} </span>
+              <ArrowCircleRightIcon class="-mr-1 ml-2 h-5 w-5" aria-hidden="true" />
+            </a>
+          </transition>
+        </div>
+      </div>
     </div>
-    <div class="relative max-w-7xl mx-auto py-24 px-4 sm:py-32 sm:px-6 lg:px-8">
-      <transition
-          appear
-          @before-enter="beforeSlide"
-          @enter="slide"
-      >
-      <img class="h-24" src="img/artexa.png" alt="artexa logo"/>
-      </transition>
-      <transition
-          appear
-          @before-enter="beforeEnter"
-          @enter="enter"
-      >
-      <h1 class="mt-6 text-4xl font-extrabold tracking-tight text-white md:text-5xl lg:text-6xl text1">Web Development Company</h1>
-      </transition>
-      <transition
-          appear
-          @before-enter="beforeEnter"
-          @enter="enter"
-      >
-      <p class="mt-6 max-w-3xl text-xl text-gray-300 text2 ">The upgrade of your business starts with your website.</p>
-      </transition>
-      <transition
-          appear
-          @before-enter="beforeEnter"
-          @enter="enter"
-      >
-      <a href="/contact" class="mt-4 inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md shadow-sm text-artexa-white bg-artexa-teal-400 hover:bg-artexa-red focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
-        <span>{{ $t("header.button") }} </span>
-        <ArrowCircleRightIcon class="-mr-1 ml-2 h-5 w-5" aria-hidden="true" />
-      </a>
-      </transition>
-         </div>
   </div>
 
 <!--  first block post  -->
-
   <div class="relative pt-16 pb-20 px-4 sm:px-6 lg:pt-24 lg:pb-28 lg:px-8">
     <div class="absolute inset-0">
       <div class="bg-white h-1/3 sm:h-2/3" />

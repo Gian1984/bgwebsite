@@ -1,19 +1,15 @@
-<template>
-  <div class="relative pb-32 bg-gray-800 pt-40">
-    <div class="absolute inset-0">
-      <img class="w-full h-full object-cover" src="img/team_header.webp" alt="team header"/>
-      <div class="absolute inset-0 bg-gray-900 opacity-50" aria-hidden="true" />
-    </div>
-    <div class="relative max-w-7xl mx-auto py-24 px-4 sm:py-32 sm:px-6 lg:px-8">
-      <transition
-          appear
-          @before-enter="beforeSlide"
-          @enter="slide"
-      >
-        <img class="h-24" src="img/artexa.png" alt="artexa logo"/>
-      </transition>
-      <h1 class="mt-6 text-4xl font-extrabold tracking-tight text-white md:text-5xl lg:text-6xl">Web Development Company</h1>
-      <p class="mt-6 max-w-3xl text-xl text-gray-300">Growth and learning is in our DNA</p>
+<template> 
+  <div class="w-full h-screen bg-cover" style="background-image: url('img/team_header.webp');">
+    <div class="w-full h-screen" style="background: rgba(17,24,39,0.5);">
+      <div class="max-w-7xl mx-auto h-screen px-4 sm:px-6 lg:px-8">
+        <div style="height: 100vh; display: flex; flex-direction: column; align-items: baseline; justify-content: center;">
+          <transition appear @before-enter="beforeSlide" @enter="slide">
+            <img class="h-24" src="img/artexa.png" alt="artexa logo"/>
+          </transition>
+          <h1 class="mt-6 text-4xl font-extrabold tracking-tight text-white md:text-5xl lg:text-6xl">Web Development Company</h1>
+          <p class="mt-6 max-w-3xl text-xl text-gray-300">Growth and learning is in our DNA</p>
+        </div>
+      </div>
     </div>
   </div>
 
@@ -71,6 +67,7 @@
   <div class="bg-white">
     <div class="max-w-7xl mx-auto py-24 px-4 sm:px-6 lg:px-8">
       <div class="sm:flex sm:flex-col sm:align-center">
+
         <div class="text-center">
           <h2 class="text-3xl tracking-tight font-extrabold text-gray-900 sm:text-4xl">
             {{ $t('team.title') }}
@@ -79,6 +76,7 @@
             {{ $t('team.subtitle') }}
           </p>
         </div>
+        
       </div>
       <div class="mt-12 space-y-4 sm:mt-16 sm:space-y-0 sm:grid sm:grid-cols-2 sm:gap-6 lg:max-w-4xl lg:mx-auto xl:max-w-none xl:mx-0 xl:grid-cols-2">
         <div v-for="tier in team" :key="tier.name" class="shadow-xl divide-y divide-gray-200 shadow-lg ">
@@ -110,6 +108,7 @@
       </div>
     </div>
   </div>
+
 
 
 
@@ -291,5 +290,6 @@ export default {
   },
 
 }
+
 
 </script>

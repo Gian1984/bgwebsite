@@ -83,12 +83,12 @@
   </TransitionRoot>
 
   <!-- Hero section -->
-  <div class="fixed z-50 w-full bg-gray-900">
+  <div class="fixed z-50 w-full ">
     <!-- Decorative image and overlay -->
-    <div aria-hidden="true" class="absolute inset-0 overflow-hidden">
+    <!-- <div aria-hidden="true" class="absolute inset-0 overflow-hidden">
       <img src="https://tailwindui.com/img/ecommerce-images/home-page-01-hero-full-width.jpg" alt="" class="w-full h-full object-center object-cover" />
-    </div>
-    <div aria-hidden="true" class="absolute inset-0 bg-gray-900 opacity-50" />
+    </div> -->
+    <div aria-hidden="true" class="absolute inset-0 bg-gray-900 opacity-50 backdrop-blur-sm" />
 
     <!-- Navigation -->
     <header class="relative z-10">
@@ -105,11 +105,11 @@
                 <div class="hidden w-3/12 lg:flex-1 lg:flex lg:items-center">
                   <router-link to="/">
                     <span class="sr-only">Workflow</span>
-                    <img class="h-12 w-auto" src="img/artexa_logo_anime.svg" alt="artexa_logo" />
+                    <img class="h-12 w-auto" src="img/artexa_round_anime_logo2.svg" alt="artexa_logo" />
                   </router-link>
                 </div>
 
-                <div class="hidden h-full lg:flex w-11/12 justify-center">
+                <div class="hidden h-full lg:flex w-10/12 justify-center">
                   <!-- Flyout menus -->
                   <PopoverGroup class="px-4 bottom-0 inset-x-0">
                     <div class="h-full flex justify-center space-x-8">
@@ -163,7 +163,7 @@
                 <!-- Logo (lg-) -->
                 <router-link to="/" class="lg:hidden">
                   <span class="sr-only">Artexa</span>
-                  <img src="img/artexa_logo_anime.svg" alt="artexa_logo" class="h-12 w-auto" />
+                  <img src="img/artexa_round_anime_logo2.svg" alt="artexa_logo" class="h-12 w-auto" />
                 </router-link>
 
                 <div class="flex-1 flex items-center justify-end">
@@ -180,14 +180,27 @@
                   <router-link to="/contact">
                     <MailIcon class="h-5 w-5 text-artexa-white hover:text-artexa-teal-400"/>
                   </router-link>
+                  <!-- LANGUES DESKTOP -->
+                  <form>
+                    <div>
+                      <label for="desktop-currency" class="sr-only">Languages</label>
+                      <div class="ml-2 group relative bg-transparent border-transparent rounded-md outline-none focus:outline-none">
+                        <select v-model="$i18n.locale" id="desktop-currency" name="currency" class="bg-none bg-transparent border-transparent rounded-md py-0.5 pl-2 pr-1 flex items-center text-sm font-medium text-white group-hover:text-gray-100 outline-none focus:outline-none focus:border-transparent">
+                          <option value="fr">FR</option>
+                          <option value="en">EN</option>
+                          <option value="it">IT</option>
+                        </select>
+                      </div>
+                    </div>
+                  </form>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div class="bg-gray-900">
+        <!-- RESPONSIVE LANGUES-->
+        <div class="bg-gray-900 lg:hidden">
           <div class="max-w-7xl mx-auto h-10 px-4 flex items-center justify-between sm:px-6 lg:px-8">
-
             <form>
               <div>
                 <label for="desktop-currency" class="sr-only">Languages</label>
@@ -404,6 +417,13 @@ const navigationmobileCompany = {
           imageAlt: 'Close up of Basic Tee fall bundle with off-white, ochre, olive, and black tees.',
         },
         {
+          name: 'Photo',
+          role: '',
+          href: '/photo',
+          imageSrc: 'img/team_logo.png',
+          imageAlt: 'Model wearing minimalist watch with black wristband and white watch face.',
+        },
+        {
           name: 'Team',
           role: '',
           href: '/team',
@@ -451,6 +471,7 @@ const navigationmobileCompany = {
   pages: [
     { name: 'About', href: '/about' },
     { name: 'Services', href: '/workflow' },
+    { name: 'Photo', href: '/photo' },
     { name: 'Team', href: '/team' },
   ],
 }
@@ -459,6 +480,7 @@ const footernavigation = {
   main: [
     { name: 'About', href: '/about' },
     { name: 'Services', href: '/workflow' },
+    { name: 'Photo', href: '/photo' },
     { name: 'Team', href: '/team' },
     { name: 'Contact', href: '/contact' },
     { name: 'Terms', href: '/terms' },

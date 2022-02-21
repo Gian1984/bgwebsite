@@ -1,21 +1,19 @@
 <template>
   <div>
     <!-- Header -->
-    <div class="relative pb-32 bg-gray-800 pt-24">
-      <div class="absolute inset-0">
-        <img class="w-full h-full object-cover" src="img/header_tower.webp" alt="coding" />
-        <div class="absolute inset-0 bg-artexa-white mix-blend-multiply" aria-hidden="true" />
-      </div>
-      <div class="relative max-w-7xl mx-auto py-32 px-4 sm:py-36 sm:px-6 lg:px-8">
-        <transition
-            appear
-            @before-enter="beforeSlide"
-            @enter="slide"
-        >
-          <img class="h-24" src="img/artexa.png"/>
-        </transition>
-        <h1 class="mt-4 text-4xl font-extrabold tracking-tight text-gray-700 md:text-5xl lg:text-6xl">Get in touch</h1>
-        <p class="mt-6 max-w-3xl text-xl text-gray-600">We're here to help and answer any question you might have.<br>We look forward to hearing from you.</p>
+
+
+    <div class="w-full h-screen bg-cover" style="background-image: url('img/header_tower.webp');">
+      <div class="w-full h-screen" style="background: rgba(17,24,39,0.1);">
+        <div class="max-w-7xl mx-auto h-screen px-4 sm:px-6 lg:px-8">
+          <div style="height: 100vh; display: flex; flex-direction: column; align-items: baseline; justify-content: center;">
+            <transition appear @before-enter="beforeSlide" @enter="slide">
+              <img class="h-24" src="img/artexa.png"/>
+            </transition>
+            <h1 class="mt-4 text-4xl font-extrabold tracking-tight text-gray-700 md:text-5xl lg:text-6xl">Get in touch</h1>
+            <p class="mt-6 max-w-3xl text-xl text-gray-600">We're here to help and answer any question you might have.<br>We look forward to hearing from you.</p>
+          </div>
+        </div>
       </div>
     </div>
 

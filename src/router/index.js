@@ -4,6 +4,7 @@ import About from '../views/About.vue'
 import Contact from '../views/Contact.vue'
 import Workflow from '../views/Workflow.vue'
 import Team from '../views/Team.vue'
+import Photo from '../views/Photo.vue'
 import Terms from '../views/Terms.vue'
 import Privacy from '../views/Privacy.vue'
 import Thanks from '../views/Thanks.vue'
@@ -29,6 +30,11 @@ const routes = [
     path: '/team',
     name: 'Team',
     component: Team
+  },
+  {
+    path: '/photo',
+    name: 'Photo',
+    component: Photo
   },
   {
     path: '/terms',
