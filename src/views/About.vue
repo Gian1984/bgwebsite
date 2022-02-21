@@ -6,8 +6,12 @@
           <transition appear @before-enter="beforeSlide" @enter="slide">
             <img class="h-24" src="img/artexa.png"/>
           </transition>
-          <h1 class="mt-6 text-4xl font-extrabold tracking-tight text-white md:text-5xl lg:text-6xl">Web Development Company</h1>
-          <p class="mt-6 max-w-3xl text-xl text-gray-300">We support you in your digital transformation.</p>
+          <transition appear @before-enter="beforeEnter" @enter="enter">
+            <h1 class="mt-6 text-4xl font-extrabold tracking-tight text-white md:text-5xl lg:text-6xl">Web Development Company</h1>
+          </transition>
+          <transition appear @before-enter="beforeEnter" @enter="enter">
+            <p class="mt-6 max-w-3xl text-xl text-gray-300">We support you in your digital transformation.</p>
+          </transition>
         </div>
       </div>
     </div>
@@ -30,7 +34,7 @@
           <div aria-hidden="true" class="bg-gradient-to-b from-transparent to-black opacity-50" />
         </div>
         <div class="group aspect-w-2 aspect-h-1 overflow-hidden sm:relative sm:aspect-none sm:h-full">
-          <img src="img/light.png" alt="team_light" class="object-center object-cover group-hover:opacity-75 sm:absolute sm:inset-0 sm:w-full sm:h-full" />
+          <img src="img/teams.webp" alt="team_light" class="object-center object-cover group-hover:opacity-75 sm:absolute sm:inset-0 sm:w-full sm:h-full" />
           <div aria-hidden="true" class="bg-gradient-to-b from-transparent to-black opacity-50 sm:absolute sm:inset-0" />
           <div class="p-3 flex items-end sm:absolute sm:inset-0">
             <div>
@@ -44,7 +48,7 @@
           </div>
         </div>
         <div class="group aspect-w-2 aspect-h-1 overflow-hidden sm:relative sm:aspect-none sm:h-full">
-          <img src="https://tailwindui.com/img/ecommerce-images/home-page-03-category-02.jpg" alt="Walnut desk organizer set with white modular trays, next to porcelain mug on wooden desk." class="object-center object-cover group-hover:opacity-75 sm:absolute sm:inset-0 sm:w-full sm:h-full" />
+          <img src="img/working.webp" alt="Walnut desk organizer set with white modular trays, next to porcelain mug on wooden desk." class="object-center object-cover group-hover:opacity-75 sm:absolute sm:inset-0 sm:w-full sm:h-full" />
           <div aria-hidden="true" class="bg-gradient-to-b from-transparent to-black opacity-50 sm:absolute sm:inset-0" />
           <div class="p-3 flex items-end sm:absolute sm:inset-0">
             <div>
@@ -219,14 +223,17 @@ export default {
     }
 
     const slide = (el, done) => {
-    gsap.to(el, {
-    opacity: 1,
-    y: 0,
-    duration: 1.5,
-    onComplete: done,
-    delay: el.dataset.index * 0.2,
-    rotation: 360,
-    })
+      gsap.from(el,{
+        rotation: 180
+      })
+      gsap.to(el, {
+        opacity: 1,
+        y: 0,
+        duration: 1.5,
+        onComplete: done,
+        delay: el.dataset.index * 0.1,
+        rotation: 360,
+      })
   }
 
   return {

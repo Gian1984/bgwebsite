@@ -293,12 +293,15 @@ export default {
     }
 
     const slide = (el, done) => {
+      gsap.from(el,{
+        rotation: 180
+      })
       gsap.to(el, {
         opacity: 1,
         y: 0,
         duration: 1.5,
         onComplete: done,
-        delay: el.dataset.index * 0.2,
+        delay: el.dataset.index * 0.1,
         rotation: 360,
       })
     }
