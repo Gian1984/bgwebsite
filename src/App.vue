@@ -234,32 +234,26 @@
       <div class="bg-gray-900">
         <div class="max-w-7xl mx-auto py-4 px-4 sm:py-4 sm:px-6 lg:px-8">
           <h2 class="text-3xl font-extrabold text-white mx-auto text-center">{{ $t('footer.title') }}</h2>
-          <div class="flow-root mt-8 lg:mt-10">
-            <div class="-mt-4 -ml-8 flex flex-wrap justify-between lg:-ml-4">
 
-
-              <div class="mt-4 ml-8 flex flex-grow flex-shrink-0 lg:flex-grow-0 lg:ml-4 justify-center">
-                <img class="h-12 mr-2" src="img/logos/BELGA-MOBILITY.png" alt="belgamobility logo" />
-                <p class="mt-2 lg:text-xl font-base text-gray-400 text-base uppercase">Belga Mobility</p>
-              </div>
-
-              <div class="mt-4 ml-8 flex flex-grow flex-shrink-0 lg:flex-grow-0 lg:ml-4 justify-center">
-                <img class="h-12 mr-2" src="img/logos/fernelwhite.png" alt="claudio fava architetti logo" />
-                <p class="mt-2 lg:text-xl font-base text-gray-400 text5 uppercase">Fernelmove</p>
-              </div>
-
-              <div class="mt-4 ml-8 flex flex-grow flex-shrink-0 lg:flex-grow-0 lg:ml-4 justify-center">
-                <img class="h-10 mr-2" src="img/logos/logo_sfondo.png" alt="StaticKit" />
-                <p class="mt-2 lg:text-xl font-base text-gray-400 text5 uppercase">Claudio Fava</p>
-              </div>
-
-              <div class="mt-4 ml-8 flex flex-grow flex-shrink-0 lg:flex-grow-0 lg:ml-4 justify-center">
-                <img class="h-12 mr-2" src="img/logos/pizza-vino-white.png" alt="Transistor" />
-                <p class="mt-2 lg:text-xl font-base text-gray-400 text5 uppercase">Pizza Vino</p>
-              </div>
-
+          <div class="grid grid-cols-2 gap-8 md:grid-cols-6 lg:grid-cols-4 mt-10">
+            <div class="col-span-1 flex justify-center md:col-span-2 lg:col-span-1">
+              <img class="h-12 mr-2" src="img/logos/BELGA-MOBILITY.png" alt="belgamobility logo" />
+              <p class="mt-2 lg:text-xl font-base text-gray-400 text-base uppercase">BMobility</p>
+            </div>
+            <div class="col-span-1 flex justify-center md:col-span-2 lg:col-span-1">
+              <img class="h-12 mr-2" src="img/logos/fernelwhite.png" alt="claudio fava architetti logo" />
+              <p class="mt-2 lg:text-xl font-base text-gray-400 text5 uppercase">FernelMove</p>
+            </div>
+            <div class="col-span-1 flex justify-center md:col-span-2 lg:col-span-1">
+              <img class="h-10 mr-2" src="img/logos/logo_sfondo.png" alt="StaticKit" />
+              <p class="mt-2 lg:text-xl font-base text-gray-400 text5 uppercase">ClaudioFava</p>
+            </div>
+            <div class="col-span-1 flex justify-center md:col-span-3 lg:col-span-1">
+              <img class="h-12 mr-2" src="img/logos/pizza-vino-white.png" alt="Transistor" />
+              <p class="mt-2 lg:text-xl font-base text-gray-400 text5 uppercase">PizzaVino</p>
             </div>
           </div>
+
         </div>
       </div>
 
