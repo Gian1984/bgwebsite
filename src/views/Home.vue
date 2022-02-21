@@ -88,7 +88,7 @@
             {{$t('tech.subtitle')}}
           </p>
         </div>
-        <div class="relative  sm:rounded-2xl sm:overflow-hidden">
+        <div class="relative  sm:rounded-2xl sm:overflow-hidden hidden md:block">
           <div class=" flow-root">
             <div class="-my-2">
               <div class="box-content py-2 relative h-80 overflow-x-auto xl:overflow-visible">
@@ -105,6 +105,17 @@
             </div>
           </div>
         </div>
+
+
+        <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8 md:hidden">
+          <div class="grid grid-cols-2 gap-8 md:grid-cols-6 lg:grid-cols-5">
+            <div v-for="category in galleries" :key="category.name" class="col-span-1 flex justify-center md:col-span-2 lg:col-span-1">
+              <img class="h-24 object-center object-cover" :src="category.imageSrc" alt="tech illustration" />
+            </div>
+          </div>
+        </div>
+
+
       </div>
     </div>
   </div>

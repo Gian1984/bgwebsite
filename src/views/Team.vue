@@ -18,50 +18,104 @@
   </div>
 
 
-<div class="bg-white mt-12">
-  <div class="mx-auto py-12 px-4 sm:px-6 lg:px-8 lg:py-12">
-    <div class="space-y-12">
-      <div class="text-center">
-        <h2 class="text-3xl tracking-tight font-extrabold text-gray-900 sm:text-4xl">
-          {{ $t('team.title') }}
-        </h2>
-        <p class="mt-3 max-w-2xl mx-auto text-xl text-gray-500 sm:mt-4 ">
-          {{ $t('team.subtitle') }}
-        </p>
-      </div>
-      <ul role="list" class="space-y-4 sm:grid sm:grid-cols-2 sm:gap-6 sm:space-y-0 lg:grid-cols-2 lg:gap-24">
-        <li v-for="person in team" :key="person.name" class="py-10 px-6 bg-gray-200 text-center xl:px-10 xl:text-left">
-          <div class="space-y-6 xl:space-y-10">
-            <img class="mx-auto h-56 w-56 xl:w-80 xl:h-80" :src="person.imageSrc" :alt="person.imageAlt" />
-            <div class="space-y-2 xl:flex xl:items-center xl:justify-between">
-              <div class="font-medium text-lg leading-6 space-y-1">
-                <h2 class="max-w-lg text-xl text-black sm:max-w-3xl">{{ person.name }}</h2>
-                <p class="text-artexa-teal-400 pb-10">{{ person.role }}</p>
-                <p class="hidden lg:block max-w-lg font-extralight text-base text-gray-700 sm:max-w-3xl pr-2  lg:border-r lg:border-gray-700 text-left">
-                  {{ person.description }}
-                </p>
-                <p class="lg:hidden max-w-lg font-extralight text-base text-gray-700 sm:max-w-3xl pr-2 pt-2 pb-2 border-b border-gray-700 text-left">
-                  {{ person.description }}
-                </p>
-              </div>
+<!--<div class="bg-white mt-12">-->
+<!--  <div class="mx-auto py-12 px-4 sm:px-6 lg:px-8 lg:py-12">-->
+<!--    <div class="space-y-12">-->
+<!--      <div class="text-center">-->
+<!--        <h2 class="text-3xl tracking-tight font-extrabold text-gray-900 sm:text-4xl">-->
+<!--          {{ $t('team.title') }}-->
+<!--        </h2>-->
+<!--        <p class="mt-3 max-w-2xl mx-auto text-xl text-gray-500 sm:mt-4 ">-->
+<!--          {{ $t('team.subtitle') }}-->
+<!--        </p>-->
+<!--      </div>-->
+<!--      <ul role="list" class="space-y-4 sm:grid sm:grid-cols-2 sm:gap-6 sm:space-y-0 lg:grid-cols-2 lg:gap-24">-->
+<!--        <li v-for="person in team" :key="person.name" class="py-10 px-6 bg-gray-200 text-center xl:px-10 xl:text-left">-->
+<!--          <div class="space-y-6 xl:space-y-10">-->
+<!--            <img class="mx-auto h-56 w-56 xl:w-80 xl:h-80" :src="person.imageSrc" :alt="person.imageAlt" />-->
+<!--            <div class="space-y-2 xl:flex xl:items-center xl:justify-between">-->
+<!--              <div class="font-medium text-lg leading-6 space-y-1">-->
+<!--                <h2 class="max-w-lg text-xl text-black sm:max-w-3xl">{{ person.name }}</h2>-->
+<!--                <p class="text-artexa-teal-400 pb-10">{{ person.role }}</p>-->
+<!--                <p class="hidden lg:block max-w-lg font-extralight text-base text-gray-700 sm:max-w-3xl pr-2  lg:border-r lg:border-gray-700 text-left">-->
+<!--                  {{ person.description }}-->
+<!--                </p>-->
+<!--                <p class="lg:hidden max-w-lg font-extralight text-base text-gray-700 sm:max-w-3xl pr-2 pt-2 pb-2 border-b border-gray-700 text-left">-->
+<!--                  {{ person.description }}-->
+<!--                </p>-->
+<!--              </div>-->
 
-              <ul role="list" class="flex justify-center space-x-5 pl-2 mt-4">
-                <li>
-                  <a :href="person.linkedinUrl" target="_blank" class="text-gray-400 hover:text-blue-700">
-                    <span class="sr-only">LinkedIn</span>
-                    <svg class="w-5 h-5" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20">
-                      <path fill-rule="evenodd" d="M16.338 16.338H13.67V12.16c0-.995-.017-2.277-1.387-2.277-1.39 0-1.601 1.086-1.601 2.207v4.248H8.014v-8.59h2.559v1.174h.037c.356-.675 1.227-1.387 2.526-1.387 2.703 0 3.203 1.778 3.203 4.092v4.711zM5.005 6.575a1.548 1.548 0 11-.003-3.096 1.548 1.548 0 01.003 3.096zm-1.337 9.763H6.34v-8.59H3.667v8.59zM17.668 1H2.328C1.595 1 1 1.581 1 2.298v15.403C1 18.418 1.595 19 2.328 19h15.34c.734 0 1.332-.582 1.332-1.299V2.298C19 1.581 18.402 1 17.668 1z" clip-rule="evenodd" />
-                    </svg>
-                  </a>
-                </li>
-              </ul>
-            </div>
+<!--              <ul role="list" class="flex justify-center space-x-5 pl-2 mt-4">-->
+<!--                <li>-->
+<!--                  <a :href="person.linkedinUrl" target="_blank" class="text-gray-400 hover:text-blue-700">-->
+<!--                    <span class="sr-only">LinkedIn</span>-->
+<!--                    <svg class="w-5 h-5" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20">-->
+<!--                      <path fill-rule="evenodd" d="M16.338 16.338H13.67V12.16c0-.995-.017-2.277-1.387-2.277-1.39 0-1.601 1.086-1.601 2.207v4.248H8.014v-8.59h2.559v1.174h.037c.356-.675 1.227-1.387 2.526-1.387 2.703 0 3.203 1.778 3.203 4.092v4.711zM5.005 6.575a1.548 1.548 0 11-.003-3.096 1.548 1.548 0 01.003 3.096zm-1.337 9.763H6.34v-8.59H3.667v8.59zM17.668 1H2.328C1.595 1 1 1.581 1 2.298v15.403C1 18.418 1.595 19 2.328 19h15.34c.734 0 1.332-.582 1.332-1.299V2.298C19 1.581 18.402 1 17.668 1z" clip-rule="evenodd" />-->
+<!--                    </svg>-->
+<!--                  </a>-->
+<!--                </li>-->
+<!--              </ul>-->
+<!--            </div>-->
+<!--          </div>-->
+<!--        </li>-->
+<!--      </ul>-->
+<!--    </div>-->
+<!--  </div>-->
+<!--</div>-->
+
+
+
+
+
+
+  <div class="bg-white">
+    <div class="max-w-7xl mx-auto py-24 px-4 sm:px-6 lg:px-8">
+      <div class="sm:flex sm:flex-col sm:align-center">
+        <div class="text-center">
+          <h2 class="text-3xl tracking-tight font-extrabold text-gray-900 sm:text-4xl">
+            {{ $t('team.title') }}
+          </h2>
+          <p class="mt-3 max-w-2xl mx-auto text-xl text-gray-500 sm:mt-4 ">
+            {{ $t('team.subtitle') }}
+          </p>
+        </div>
+      </div>
+      <div class="mt-12 space-y-4 sm:mt-16 sm:space-y-0 sm:grid sm:grid-cols-2 sm:gap-6 lg:max-w-4xl lg:mx-auto xl:max-w-none xl:mx-0 xl:grid-cols-2">
+        <div v-for="tier in team" :key="tier.name" class="shadow-xl divide-y divide-gray-200 shadow-lg ">
+          <div class="p-6">
+            <img class="mx-auto h-56 w-56" :src="tier.imageSrc" :alt="tier.imageAlt" />
+            <h2 class="text-lg leading-6 font-medium text-gray-900 mt-4">{{ tier.name }}</h2>
+            <p class="text-artexa-teal-400 text-xs">{{ tier.role }}</p>
+            <p class="mt-6 text-sm text-gray-500">{{ tier.description }}</p>
           </div>
-        </li>
-      </ul>
+          <div class="pt-2 pb-4 px-6">
+            <ul role="list" class="flex justify-center space-x-5 pl-2 mt-4">
+              <li>
+                <a :href="tier.linkedinUrl" target="_blank" class="text-gray-400 hover:text-blue-700">
+                  <span class="sr-only">LinkedIn</span>
+                  <svg class="w-5 h-5" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M16.338 16.338H13.67V12.16c0-.995-.017-2.277-1.387-2.277-1.39 0-1.601 1.086-1.601 2.207v4.248H8.014v-8.59h2.559v1.174h.037c.356-.675 1.227-1.387 2.526-1.387 2.703 0 3.203 1.778 3.203 4.092v4.711zM5.005 6.575a1.548 1.548 0 11-.003-3.096 1.548 1.548 0 01.003 3.096zm-1.337 9.763H6.34v-8.59H3.667v8.59zM17.668 1H2.328C1.595 1 1 1.581 1 2.298v15.403C1 18.418 1.595 19 2.328 19h15.34c.734 0 1.332-.582 1.332-1.299V2.298C19 1.581 18.402 1 17.668 1z" clip-rule="evenodd" />
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a :href="tier.mailTo" target="_blank" class="text-gray-400 hover:text-blue-700">
+                  <span class="sr-only">MailTo</span>
+                  <MailOpenIcon class="w-5 h-5"></MailOpenIcon>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
-</div>
+
+
+
+
+
+
 
   <div class="relative my-12">
     <div class="absolute inset-0 py-12">
@@ -110,6 +164,7 @@
 
 <script>
 import gsap from "gsap";
+import { MailOpenIcon } from '@heroicons/vue/outline'
 
 
 export default {
@@ -126,6 +181,7 @@ export default {
           imageAlt:"Bryan Gustin photo",
           description:this.$t('team.description1'),
           linkedinUrl: 'https://www.linkedin.com/in/bryangustin/',
+          mailTo:'mailto:bryan.gustin@artexa.agency?subject=Mail from Artexa.Agency',
         },
         {
           name: 'Gianluca Tiengo',
@@ -135,6 +191,27 @@ export default {
           imageAlt:"Gianluca Tiengo photo",
           description:this.$t('team.description2'),
           linkedinUrl: 'https://www.linkedin.com/in/gianluca-tiengo/',
+          mailTo:'mailto:gianluca.tiengo@artexa.agency?subject=Mail from Artexa.Agency',
+        },
+        {
+          name: 'Ahmad Hendi',
+          role: 'Content Creator - Community Manager',
+          imageSrc:
+              'img/amhad.webp',
+          imageAlt:"Ahmad Hendi photo",
+          description:this.$t('team.description3'),
+          linkedinUrl: 'https://www.linkedin.com/in/ahmad-hendi-/',
+          mailTo:'mailto:ahmad.hendi@artexa.agency?subject=Mail from Artexa.Agency',
+        },
+        {
+          name: 'Didier Cadieux',
+          role: 'Sales Manager',
+          imageSrc:
+              'img/sales.webp',
+          imageAlt:"Didier Cadieux",
+          description:this.$t('team.description4'),
+          linkedinUrl: '',
+          mailTo:'mailto:sales@artexa.agency?subject=Mail from Artexa.Agency',
         },
 
       ]
@@ -166,6 +243,10 @@ export default {
       ]
     }
 
+  },
+
+  components:{
+    MailOpenIcon,
   },
 
   setup() {
