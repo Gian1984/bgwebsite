@@ -416,13 +416,13 @@ const navigationmobileCompany = {
           imageSrc: 'img/services_logo.png',
           imageAlt: 'Close up of Basic Tee fall bundle with off-white, ochre, olive, and black tees.',
         },
-        {
-          name: 'Photo',
-          role: '',
-          href: '/photo',
-          imageSrc: 'img/team_logo.png',
-          imageAlt: 'Model wearing minimalist watch with black wristband and white watch face.',
-        },
+        // {
+        //   name: 'Photo',
+        //   role: '',
+        //   href: '/photo',
+        //   imageSrc: 'img/team_logo.png',
+        //   imageAlt: 'Model wearing minimalist watch with black wristband and white watch face.',
+        // },
         {
           name: 'Team',
           role: '',
@@ -471,7 +471,7 @@ const navigationmobileCompany = {
   pages: [
     { name: 'About', href: '/about' },
     { name: 'Services', href: '/workflow' },
-    { name: 'Photo', href: '/photo' },
+    // { name: 'Photo', href: '/photo' },
     { name: 'Team', href: '/team' },
   ],
 }
@@ -480,7 +480,7 @@ const footernavigation = {
   main: [
     { name: 'About', href: '/about' },
     { name: 'Services', href: '/workflow' },
-    { name: 'Photo', href: '/photo' },
+    // { name: 'Photo', href: '/photo' },
     { name: 'Team', href: '/team' },
     { name: 'Contact', href: '/contact' },
     { name: 'Terms', href: '/terms' },
