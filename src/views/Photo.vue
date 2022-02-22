@@ -1,13 +1,13 @@
 <template>
     <!-- Hero section -->
-    <header class="relative overflow-hidden h-screen">
+    <header class="relative overflow-hidden h-screen pt-24 mb-12">
       <div class="w-screen pt-16 pb-80 sm:pt-24 sm:pb-40 lg:pt-40 lg:pb-48">
         <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 sm:static">
 
           <div class="sm:max-w-lg">
               <img class="h-24" src="img/artexa.png" alt="artexa logo"/>
-            <h1 class="text-4xl font font-extrabold tracking-tight text-gray-900 sm:text-6xl">Company photos and videos</h1>
-            <p class="mt-4 text-xl text-gray-500">Corporate photos and videos enhance the attractiveness of your website.</p>
+            <h1 class="mt-6 text-4xl font font-extrabold tracking-tight text-gray-900 sm:text-6xl">Company photos and videos</h1>
+            <p class="mt-6 text-xl text-gray-500">Corporate photos and videos enhance the attractiveness of your website.</p>
           </div>
           <div>
             <div class="mt-10">
@@ -16,30 +16,30 @@
                 <div class="absolute transform sm:left-1/2 sm:top-0 sm:translate-x-8 lg:left-1/2 lg:top-1/2 lg:-translate-y-1/2 lg:translate-x-8">
                   <div class="flex items-center space-x-6 lg:space-x-8">
                     <div class="flex-shrink-0 grid grid-cols-1 gap-y-6 lg:gap-y-8">
-                      <div class="w-44 h-64 overflow-hidden sm:opacity-0 lg:opacity-100">
-                        <img src="https://tailwindui.com/img/ecommerce-images/home-page-03-hero-image-tile-01.jpg" alt="" class="w-full h-full object-center object-cover" />
+                      <div class="w-52 h-52 overflow-hidden sm:opacity-0 lg:opacity-100">
+                        <img src="https://tailwindui.com/img/ecommerce-images/home-page-03-hero-image-tile-01.jpg" alt="" class="w-52 h-52 object-center object-cover" />
                       </div>
-                      <div class="w-44 h-64 overflow-hidden">
-                        <img src="https://tailwindui.com/img/ecommerce-images/home-page-03-hero-image-tile-02.jpg" alt="" class="w-full h-full object-center object-cover" />
-                      </div>
-                    </div>
-                    <div class="flex-shrink-0 grid grid-cols-1 gap-y-6 lg:gap-y-8">
-                      <div class="w-44 h-64 overflow-hidden">
-                        <img src="https://tailwindui.com/img/ecommerce-images/home-page-03-hero-image-tile-03.jpg" alt="" class="w-full h-full object-center object-cover" />
-                      </div>
-                      <div class="w-44 h-64 overflow-hidden">
-                        <img src="https://tailwindui.com/img/ecommerce-images/home-page-03-hero-image-tile-04.jpg" alt="" class="w-full h-full object-center object-cover" />
-                      </div>
-                      <div class="w-44 h-64 overflow-hidden">
-                        <img src="https://tailwindui.com/img/ecommerce-images/home-page-03-hero-image-tile-05.jpg" alt="" class="w-full h-full object-center object-cover" />
+                      <div class="w-52 h-52 overflow-hidden">
+                        <img src="https://tailwindui.com/img/ecommerce-images/home-page-03-hero-image-tile-02.jpg" alt="" class="w-52 h-52 object-center object-cover" />
                       </div>
                     </div>
                     <div class="flex-shrink-0 grid grid-cols-1 gap-y-6 lg:gap-y-8">
-                      <div class="w-44 h-64 overflow-hidden">
-                        <img src="https://tailwindui.com/img/ecommerce-images/home-page-03-hero-image-tile-06.jpg" alt="" class="w-full h-full object-center object-cover" />
+                      <div class="w-52 h-52 overflow-hidden">
+                        <img src="https://tailwindui.com/img/ecommerce-images/home-page-03-hero-image-tile-03.jpg" alt="" class="w-52 h-52 object-center object-cover" />
                       </div>
-                      <div class="w-44 h-64 overflow-hidden">
-                        <img src="https://tailwindui.com/img/ecommerce-images/home-page-03-hero-image-tile-07.jpg" alt="" class="w-full h-full object-center object-cover" />
+                      <div class="w-52 h-52 overflow-hidden">
+                        <img src="https://tailwindui.com/img/ecommerce-images/home-page-03-hero-image-tile-04.jpg" alt="" class="w-52 h-52 object-center object-cover" />
+                      </div>
+                      <div class="w-52 h-52 overflow-hidden">
+                        <img src="https://tailwindui.com/img/ecommerce-images/home-page-03-hero-image-tile-05.jpg" alt="" class="w-52 h-52 object-center object-cover" />
+                      </div>
+                    </div>
+                    <div class="flex-shrink-0 grid grid-cols-1 gap-y-6 lg:gap-y-8">
+                      <div class="w-52 h-52 overflow-hidden">
+                        <img src="https://tailwindui.com/img/ecommerce-images/home-page-03-hero-image-tile-06.jpg" alt="" class="w-52 h-52 object-center object-cover" />
+                      </div>
+                      <div class="w-52 h-52 overflow-hidden">
+                        <img src="https://tailwindui.com/img/ecommerce-images/home-page-03-hero-image-tile-07.jpg" alt="" class="w-52 h-52 object-center object-cover" />
                       </div>
                     </div>
                   </div>
@@ -76,7 +76,7 @@
                 <div class="mt-16 grid grid-cols-1 gap-y-10 gap-x-8 lg:grid-cols-3">
                     <div class="wrapper bg-white antialiased text-gray-900">
                         <div>
-                            <img src="../../public/img/fun.webp" alt=" random image" class="w-full object-cover object-center shadow-md">    
+                            <img src="../../public/img/fun.webp" alt=" random image" class="w-full object-cover object-center shadow-md">
                             <div class="relative px-4 -mt-16">
                                 <div class="bg-white p-6 shadow-lg">
                                     <h4 class="mt-1 text-xl font-semibold leading-tight truncate">Photos professional</h4>
@@ -85,14 +85,14 @@
                                     <div class="mt-4">
                                         <span class="text-teal-600 text-md font-semibold">From €1200 </span>
                                         <span class="text-sm text-gray-600">(20 shots)</span>
-                                    </div>  
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="wrapper bg-white antialiased text-gray-900">
                         <div>
-                            <img src="../../public/img/integrity.png" alt="random image" class="w-full object-cover object-center shadow-md">    
+                            <img src="../../public/img/integrity.png" alt="random image" class="w-full object-cover object-center shadow-md">
                             <div class="relative px-4 -mt-16  ">
                                 <div class="bg-white p-6 shadow-lg">
                                     <h4 class="mt-1 text-xl font-semibold leading-tight truncate">Video of your company</h4>
@@ -101,14 +101,14 @@
                                     <div class="mt-4">
                                         <span class="text-teal-600 text-md font-semibold">From €1500 </span>
                                         <span class="text-sm text-gray-600">(1 min video)</span>
-                                    </div>  
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="wrapper bg-white antialiased text-gray-900">
                         <div>
-                            <img src="../../public/img/creativity.webp" alt=" random image" class="w-full object-cover object-center shadow-md">    
+                            <img src="../../public/img/creativity.webp" alt=" random image" class="w-full object-cover object-center shadow-md">
                             <div class="relative px-4 -mt-16  ">
                                 <div class="bg-white p-6 shadow-lg">
                                     <h4 class="mt-1 text-xl font-semibold leading-tight truncate">Pro photos & video banner</h4>
@@ -117,12 +117,12 @@
                                     <div class="mt-4">
                                         <span class="text-teal-600 text-md font-semibold">From €2300 </span>
                                         <span class="text-sm text-gray-600">(2O shots + 30sec video)</span>
-                                    </div>  
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    
+
                 </div>
             </div>
         </div>
