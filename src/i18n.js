@@ -12,7 +12,10 @@ function loadLocaleMessages() {
     en:{
 
       header:{
-        button:'Get your free evaluation'
+        button:'I want a website'
+      },
+      header1:{
+        button:'I want a Video'
       },
 
       // HOME PAGE
@@ -358,7 +361,10 @@ function loadLocaleMessages() {
 
     fr:{
       header:{
-        button:'Obtenez votre évaluation gratuite'
+        button:'Je veux un site'
+      },
+      header1:{
+        button:'Je veux une vidéo'
       },
 
       // HOME PAGE
@@ -701,7 +707,10 @@ function loadLocaleMessages() {
 
     it:{
       header:{
-        button:'Ottieni un preventivo gratuito'
+        button:'Voglio un sito internet'
+      },
+      header1:{
+        button:'Voglio un video'
       },
 
       // HOME PAGE

@@ -1,10 +1,14 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import Home from '../views/Home.vue'
 import About from '../views/About.vue'
+import Websites from '../views/Websites.vue'
+import Showcasewebsite from '../views/Showcasewebsite.vue'
+import Ecommerce from '../views/Ecommerce.vue'
+import Intranet from '../views/Intranet.vue'
 import Contact from '../views/Contact.vue'
 import Workflow from '../views/Workflow.vue'
 import Team from '../views/Team.vue'
-import Photo from '../views/Photo.vue'
+import Video from '../views/Video.vue'
 import Terms from '../views/Terms.vue'
 import Privacy from '../views/Privacy.vue'
 import Thanks from '../views/Thanks.vue'
@@ -22,6 +26,26 @@ const routes = [
     component: About
   },
   {
+    path: '/websites',
+    name: 'Websites',
+    component: Websites
+  },
+  {
+    path: '/showcasewebsite',
+    name: 'Showcasewebsite',
+    component: Showcasewebsite
+  },
+  {
+    path: '/ecommerce',
+    name: 'Ecommerce',
+    component: Ecommerce
+  },
+  {
+    path: '/intranet',
+    name: 'Intranet',
+    component: Intranet
+  },
+  {
     path: '/contact',
     name: 'Contact',
     component: Contact
@@ -32,9 +56,9 @@ const routes = [
     component: Team
   },
   {
-    path: '/photo',
-    name: 'Photo',
-    component: Photo
+    path: '/video',
+    name: 'Video',
+    component: Video
   },
   {
     path: '/terms',

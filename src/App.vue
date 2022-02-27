@@ -1,4 +1,3 @@
-
 <template>
   <TransitionRoot as="template" :show="mobileMenuOpen" id="header">
     <Dialog as="div" class="fixed inset-0 flex z-40 lg:hidden" @close="mobileMenuOpen = false">
@@ -416,16 +415,16 @@ const navigationmobileCompany = {
           imageAlt: 'Models sitting back to back, wearing Basic Tee in black and bone.',
         },
         {
-          name: 'Services',
+          name: 'Websites',
           role: '',
-          href: '/workflow',
+          href: '/websites',
           imageSrc: 'img/services_logo.png',
           imageAlt: 'Close up of Basic Tee fall bundle with off-white, ochre, olive, and black tees.',
         },
         {
-          name: 'Photo',
+          name: 'Video',
           role: '',
-          href: '/photo',
+          href: '/video',
           imageSrc: 'img/team_logo.png',
           imageAlt: 'Model wearing minimalist watch with black wristband and white watch face.',
         },
@@ -476,8 +475,8 @@ const navigationmobileCompany = {
   ],
   pages: [
     { name: 'About', href: '/about' },
-    { name: 'Services', href: '/workflow' },
-    { name: 'Photo', href: '/photo' },
+    { name: 'Websites', href: '/websites' },
+    { name: 'Video', href: '/video' },
     { name: 'Team', href: '/team' },
   ],
 }
@@ -485,8 +484,8 @@ const navigationmobileCompany = {
 const footernavigation = {
   main: [
     { name: 'About', href: '/about' },
-    { name: 'Services', href: '/workflow' },
-    { name: 'Photo', href: '/photo' },
+    { name: 'Websites', href: '/websites' },
+    { name: 'Video', href: '/video' },
     { name: 'Team', href: '/team' },
     { name: 'Contact', href: '/contact' },
     { name: 'Terms', href: '/terms' },
