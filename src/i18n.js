@@ -264,6 +264,75 @@ function loadLocaleMessages() {
         link:'Privacy Policy',
 
       },
+      // WEBSITES PAGE
+
+      websiteshero:{
+
+        title:'We create websites',
+        subtitle:'The upgrade of your business starts with your website.',
+        
+      },
+
+      websitesguide:{
+
+        title:'The guide to the creation of websites',
+        subtitle:'Depending on your objectives, we determine together which type of website is adapted to your current objectives and needs. You already have a website and want to redo it? Artexa also accompanies you in the redesign of your website.',
+      
+        name1: 'Create a showcase website',
+        description1: 'A showcase site is nothing more or less than your digital business card. It is mainly used to present an activity, products or services. It is perfect for any type of business as long as you don\'t make online sales.',
+        imageAlt1: '',
+
+        name2: 'Create an e-commerce',
+        description2: 'An e-commerce can be used alone or in addition to a physical store. Its advantage is that it costs less than a store where you have to pay rent, insurance, electricity. Moreover, you do not have the constraint to go every day in your store, it is it which comes to you that you are at home or elsewhere.',
+        imageAlt2: '',
+
+        name3: 'Create an intranet',
+        description3: 'An intranet is a company\'s internal site that allows all employees to have a private user space and interact with the company. Like for example a page for employees to request their vacations.',
+        imageAlt3: '',
+
+        button: 'Contact us',
+      },
+
+      websitesprocess:{
+
+        title:'This is how we do it',
+        subtitle:'Depending on the type of project, the basic steps of building a website can vary. Not all websites are the same: to create a company website, an online catalog or an e-commerce, different types of management and planning are required. Consequently, even the implementation phases can increase or be divided in turn into sub-phases.',
+
+        name1: 'Roadmap',
+        step1: 'Step 1',
+        description1: 'To define the vision of a product or service, I take the time to listen to you and understand your needs and those of your customers. I write a document with the technical specifications, some mockups, a program and a budget estimate.',
+        imageAlt1: '',
+
+        name2: 'Prototyping',
+        step2: 'Step 2',
+        description2: 'There is no universal and precise formula, because each project can have different characteristics. At the beginning we have to define objectives and potential critical issues, after which we move on to the conception of the product and then to the creation of a prototype.',
+        imageAlt2: '',
+
+        name3: 'Development',
+        step3: 'Step 3',
+        description3: 'Do you have the vision, feel the pull and all you need is software? We will work with you to develop this new functional and design product that your customers will love to use. And We\'ll help you get started.',
+        imageAlt3: '',
+
+
+      },
+
+      websiteswork:{
+
+        title:'Work with us',
+
+        title1: 'Our skills',
+        preview1:'We create successful responsive website that are fast, easy to use, and build with the best practices. The main area of expertise is full-stack development HTML, CSS, JS, PHP, building small and medium web apps, animations. We have also experience with popular open-source CMS like Wordpress.',
+        imageAlt1: '',
+
+        title2: 'We believe in design',
+        preview2: 'We design fluid user experience and anticipate the user journey with creative solutions as well as creating brand recognition with design systems. Our team is capable of delivering custom websites, mobile apps, e-commerces with a variety of tools & skill sets that allows you to be on top of the digital world. Optimizations & reviews are part of our culture. We constantly improve our products to increase conversion rates and our client happiness.',
+        imageAlt2: '',
+
+        title3: 'We will help grow your business',
+        preview3: 'Since the commercialization of the Internet in the early 90s, Web development has undergone a profound change. If once the Internet pages were a bare set of text fields, today in the foreground there is an elaborate presentation of multimedia content. The original information platform has now become a means of entertainment. Internet users demand interactive web pages with a pleasing design that allows for intuitive use. In order to meet this need, we include dynamic content with the help of various tools and create customized websites for the user.',
+        imageAlt3: '',
+
+      },
 
       // WORKFLOW PAGE
 
@@ -358,6 +427,11 @@ function loadLocaleMessages() {
     },
 
 
+//  ||||||||||  ||||||||||  ||||||||||  |||     ||  ||||||||||  ||      || 
+//  ||          ||      ||  ||          || ||   ||  ||          ||      ||
+//  ||||||      ||||||||||  ||||||      ||  ||  ||  ||          ||||||||||
+//  ||          ||  |||     ||          ||   || ||  ||          ||      ||
+//  ||          ||   |||||  ||||||||||  ||     |||  ||||||||||  ||      ||
 
     fr:{
       header:{
@@ -611,6 +685,76 @@ function loadLocaleMessages() {
 
       },
 
+      // WEBSITES PAGE
+
+      websiteshero:{
+
+        title:'Nous créons des sites web',
+        subtitle:'La modernisation de votre entreprise commence par votre site web.',
+        
+      },
+
+      websitesguide:{
+
+        title:'Le guide de la création de sites web',
+        subtitle:'En fonction de vos objectifs, nous déterminons ensemble quel type de site web est adapté à vos objectifs et besoins actuels. Vous avez déjà un site web et vous souhaitez le refaire ? Artexa vous accompagne également dans la refonte de votre site web.',
+      
+        name1: 'Créer un site vitrine',
+        description1: 'Un site vitrine n\'est ni plus ni moins que votre carte de visite numérique. Il est principalement utilisé pour présenter une activité, des produits ou des services. Il convient parfaitement à tout type d\'entreprise, à condition que vous ne fassiez pas de vente en ligne.',
+        imageAlt1: 'Créer un site vitrine',
+
+        name2: 'Créer un e-commerce',
+        description2: 'Un e-commerce peut être utilisé seul ou en complément d\'un magasin physique. Son avantage est qu\'il coûte moins cher qu\'un magasin où vous devez payer un loyer, une assurance, l\'électricité. De plus, vous n\'avez pas la contrainte de vous rendre tous les jours dans votre magasin, c\'est lui qui vient à vous que vous soyez chez vous ou ailleurs.',
+        imageAlt2: 'Créer un e-commerce',
+
+        name3: 'Créer un intranet',
+        description3: 'Un intranet est le site interne d\'une entreprise qui permet à tous les employés de disposer d\'un espace privé et d\'interagir avec l\'entreprise. Comme par exemple une page permettant aux employés de demander leurs vacances.',
+        imageAlt3: 'Créer un intranet',
+
+        button: 'Contactez nous',
+      },
+
+      websitesprocess:{
+
+        title:'Voici comment nous procédons',
+        subtitle:'Les étapes de base de la création d\'un site Web peuvent varier en fonction du type de projet. Tous les sites Web ne sont pas identiques : pour créer un site d\'entreprise, un catalogue en ligne ou un site de commerce électronique, différents types de gestion et de planification sont nécessaires. Par conséquent, même les phases de réalisation peuvent augmenter ou être divisées à leur tour en sous-phases.',
+
+        name1: 'Feuille de route',
+        step1: 'Étape 1',
+        description1: 'To define the vision of a product or service, I take the time to listen to you and understand your needs and those of your customers. I write a document with the technical specifications, some mockups, a program and a budget estimate.',
+        imageAlt1: 'Étape 1',
+
+        name2: 'Prototyping',
+        step2: 'Étape 2',
+        description2: 'Il n\'existe pas de formule universelle et précise, car chaque projet peut avoir des caractéristiques différentes. Au début, nous devons définir les objectifs et les éventuels problèmes critiques, après quoi nous passons à la conception du produit, puis à la création d\'un prototype.',
+        imageAlt2: 'Étape 2',
+
+        name3: 'Development',
+        step3: 'Étape 3',
+        description3: 'Vous avez la vision, vous ressentez l\'envie et tout ce dont vous avez besoin est un logiciel ? Nous travaillerons avec vous pour développer ce nouveau produit fonctionnel et design que vos clients aimeront utiliser. Et nous vous aiderons à démarrer.',
+        imageAlt3: 'Étape 3',
+
+
+      },
+
+      websiteswork:{
+
+        title:'Travailler avec nous',
+
+        title1: 'Nos compétences',
+        preview1:'Nous créons des sites web réactifs qui sont rapides, faciles à utiliser, et construits avec les meilleures pratiques. Le principal domaine d\'expertise est le développement full-stack HTML, CSS, JS, PHP, la construction de petites et moyennes applications web, les animations. Nous avons également de l\'expérience avec les CMS open-source populaires comme Wordpress.',
+        imageAlt1: 'Nos compétences',
+
+        title2: 'Nous croyons au design',
+        preview2: 'Nous concevons une expérience utilisateur fluide et anticipons le parcours de l\'utilisateur avec des solutions créatives, tout en créant une reconnaissance de la marque grâce à des systèmes de conception. Notre équipe est capable de fournir des sites web personnalisés, des applications mobiles, des e-commerces avec une variété d\'outils et de compétences qui vous permettent d\'être au sommet du monde numérique. Les optimisations et les révisions font partie de notre culture. Nous améliorons constamment nos produits pour augmenter les taux de conversion et le bonheur de nos clients.',
+        imageAlt2: 'Nous croyons au design',
+
+        title3: 'Nous vous aiderons à développer votre entreprise',
+        preview3: 'Depuis la commercialisation de l\'Internet au début des années 90, le développement du Web a subi un profond changement. Si les pages Internet n\'étaient autrefois qu\'un ensemble dépouillé de champs de texte, on trouve aujourd\'hui au premier plan une présentation élaborée de contenu multimédia. La plate-forme d\'information initiale est devenue un moyen de divertissement. Les internautes exigent des pages web interactives, au design agréable et permettant une utilisation intuitive. Pour répondre à ce besoin, nous incluons du contenu dynamique à l\'aide de divers outils et créons des sites Web personnalisés pour l\'utilisateur.',
+        imageAlt3: 'Nous vous aiderons à développer votre entreprise',
+
+      },
+
       // WORKFLOW PAGE
 
       workheader:{
@@ -703,8 +847,11 @@ function loadLocaleMessages() {
 
     },
 
-
-
+//  ||||||||||  ||||||||||     ||||      ||          ||||||||||  ||||||||||  |||   ||
+//      ||          ||       ||    ||    ||              ||      ||          ||||  ||
+//      ||          ||      ||||||||||   ||              ||      ||||||      || || ||
+//      ||          ||     ||        ||  ||              ||      ||          ||  ||||
+//  ||||||||||      ||    ||          || ||||||||||  ||||||||||  ||||||||||  ||   |||
     it:{
       header:{
         button:'Voglio un sito internet'
@@ -954,6 +1101,76 @@ function loadLocaleMessages() {
         button:'Iscriviti',
         footer:'Ci preoccupiamo della protezione dei tuoi dati. Leggi la nostra ',
         link:'Politica sulla privacy',
+
+      },
+
+       // WEBSITES PAGE
+
+       websiteshero:{
+
+        title:'Creiamo siti web',
+        subtitle:'L\'aggiornamento del tuo business inizia con il tuo sito web.',
+        
+      },
+
+      websitesguide:{
+
+        title:'La guida alla creazione di siti web',
+        subtitle:'A seconda dei vostri obiettivi, determiniamo insieme quale tipo di sito web è adatto ai vostri obiettivi e bisogni attuali. Hai già un sito web e vuoi rifarlo? Artexa ti accompagna anche nella riprogettazione del tuo sito web.',
+      
+        name1: 'Creare un sito web vetrina',
+        description1: 'Un sito vetrina non è né più né meno che il vostro biglietto da visita digitale. È principalmente utilizzato per presentare un\'attività, prodotti o servizi. È perfetto per qualsiasi tipo di attività, a condizione che non si facciano vendite online.',
+        imageAlt1: 'Creare un sito web vetrina',
+
+        name2: 'Creare un e-commerce',
+        description2: 'Un e-commerce può essere usato da solo o in aggiunta a un negozio fisico. Il suo vantaggio è che costa meno di un negozio dove bisogna pagare affitto, assicurazione, elettricità. Inoltre, non avete il vincolo di andare tutti i giorni nel vostro negozio, è esso che viene a voi che siete a casa o altrove.',
+        imageAlt2: 'Creare un e-commerce',
+
+        name3: 'Creare una intranet',
+        description3: 'Una intranet è un sito interno di un\'azienda che permette a tutti i dipendenti di avere uno spazio utente privato e di interagire con l\'azienda. Come per esempio una pagina per i dipendenti per richiedere le loro vacanze.',
+        imageAlt3: 'Creare una intranet',
+
+        button: 'Contattateci',
+      },
+
+      websitesprocess:{
+
+        title:'Ecco come lo facciamo',
+        subtitle:'A seconda del tipo di progetto, i passi fondamentali della costruzione di un sito web possono variare. Non tutti i siti web sono uguali: per creare un sito web aziendale, un catalogo online o un e-commerce, sono necessari diversi tipi di gestione e pianificazione. Di conseguenza, anche le fasi di realizzazione possono aumentare o essere divise a loro volta in sottofasi.',
+
+        name1: 'Tabella di marcia',
+        step1: 'Passo 1',
+        description1: 'Per definire la visione di un prodotto o di un servizio, mi prendo il tempo di ascoltarvi e di capire i vostri bisogni e quelli dei vostri clienti. Scrivo un documento con le specifiche tecniche, alcuni mockup, un programma e una stima del budget.',
+        imageAlt1: 'Passo 1',
+
+        name2: 'Prototipazione',
+        step2: 'Passo 2',
+        description2: 'Non esiste una formula universale e precisa, perché ogni progetto può avere caratteristiche diverse. All\'inizio bisogna definire gli obiettivi e le potenziali criticità, dopo di che si passa alla concezione del prodotto e poi alla creazione di un prototipo.',
+        imageAlt2: 'Passo 2',
+
+        name3: 'Sviluppo',
+        step3: 'Passo 3',
+        description3: 'Hai la visione, senti l\'attrazione e tutto ciò di cui hai bisogno è un software? Lavoreremo con te per sviluppare questo nuovo prodotto funzionale e di design che i tuoi clienti ameranno usare. E ti aiuteremo ad iniziare.',
+        imageAlt3: 'Passo 3',
+
+
+      },
+
+      websiteswork:{
+
+        title:'Lavora con noi',
+
+        title1: 'Le nostre competenze',
+        preview1:'Creiamo siti web responsive di successo che sono veloci, facili da usare e costruiti con le migliori pratiche. La principale area di competenza è lo sviluppo full-stack HTML, CSS, JS, PHP, la costruzione di piccole e medie applicazioni web, le animazioni. Abbiamo anche esperienza con popolari CMS open-source come Wordpress.',
+        imageAlt1: 'Le nostre competenze',
+
+        title2: 'Crediamo nel design',
+        preview2: 'Progettiamo un\'esperienza utente fluida e anticipiamo il viaggio dell\'utente con soluzioni creative, oltre a creare il riconoscimento del marchio con sistemi di design. Il nostro team è in grado di consegnare siti web personalizzati, applicazioni mobili, e-commercializzazione con una varietà di strumenti e set di abilità che ti permette di essere in cima al mondo digitale. Ottimizzazioni e revisioni sono parte della nostra cultura. Miglioriamo costantemente i nostri prodotti per aumentare i tassi di conversione e la felicità dei nostri clienti.',
+        imageAlt2: 'Crediamo nel design',
+
+        title3: 'Vi aiuteremo a far crescere il vostro business',
+        preview3: 'Dalla commercializzazione di Internet nei primi anni 90, lo sviluppo del Web ha subito un profondo cambiamento. Se una volta le pagine Internet erano un insieme spoglio di campi di testo, oggi in primo piano c\'è un\'elaborata presentazione di contenuti multimediali. La piattaforma informativa originale è diventata ora un mezzo di intrattenimento. Gli utenti di Internet richiedono pagine web interattive con un design piacevole che permetta un uso intuitivo. Per soddisfare questo bisogno, includiamo contenuti dinamici con l\'aiuto di vari strumenti e creiamo siti web personalizzati per l\'utente.',
+        imageAlt3: 'Vi aiuteremo a far crescere il vostro business',
 
       },
 

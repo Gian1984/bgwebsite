@@ -87,7 +87,7 @@
     <!-- <div aria-hidden="true" class="absolute inset-0 overflow-hidden">
       <img src="https://tailwindui.com/img/ecommerce-images/home-page-01-hero-full-width.jpg" alt="" class="w-full h-full object-center object-cover" />
     </div> -->
-    <div aria-hidden="true" class="absolute inset-0 bg-gray-900 opacity-50 backdrop-blur-sm" />
+    <div aria-hidden="true" class="absolute inset-0 bg-artexa-teal-400 opacity-50 backdrop-blur-sm" />
 
     <!-- Navigation -->
     <header class="relative z-10">
