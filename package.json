@@ -13,6 +13,7 @@
     "@headlessui/vue": "^1.4.3",
     "@heroicons/vue": "^1.0.5",
     "@kazupon/vue-i18n-loader": "^0.5.0",
+    "@tailwindcss/aspect-ratio": "^0.4.0",
     "core-js": "^3.6.5",
     "gsap": "^3.9.1",
     "vue": "^3.0.0",

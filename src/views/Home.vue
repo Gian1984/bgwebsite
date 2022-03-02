@@ -7,15 +7,21 @@
             <img class="h-24" src="img/artexa.png" alt="artexa logo"/>
           </transition>
           <transition appear @before-enter="beforeEnter" @enter="enter">
-            <h1 class="mt-6 text-4xl font-extrabold tracking-tight text-white md:text-5xl lg:text-6xl text1">Web Development Company</h1>
+            <h1 class="mt-6 text-4xl font-extrabold tracking-tight text-white md:text-5xl lg:text-6xl text1">We create websites</h1>
           </transition>
           <transition appear @before-enter="beforeEnter" @enter="enter">
             <p class="mt-6 max-w-3xl text-xl text-gray-300 text2 ">The upgrade of your business starts with your website.</p>
           </transition>
           <transition appear @before-enter="beforeEnter" @enter="enter">
-            <a href="/contact" class="mt-4 inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md shadow-sm text-artexa-white bg-artexa-teal-400 hover:bg-artexa-red focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+            <a href="/websites" class="mt-4 inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md shadow-sm text-artexa-white bg-artexa-teal-400 hover:bg-artexa-red focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
               <span>{{ $t("header.button") }} </span>
               <ArrowCircleRightIcon class="-mr-1 ml-2 h-5 w-5 animate-bounce" aria-hidden="true" />
+            </a>
+          </transition>
+          <transition appear @before-enter="beforeEnter" @enter="enter">
+            <a href="/video" class="mt-4 inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md shadow-sm text-artexa-white bg-artexa-teal-400 hover:bg-artexa-red focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+              <span>{{ $t("header1.button") }} </span>
+              <ArrowCircleRightIcon class="-mr-1 ml-2 h-5 w-5" aria-hidden="true" />
             </a>
           </transition>
         </div>
