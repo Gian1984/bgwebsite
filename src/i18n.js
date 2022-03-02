@@ -275,20 +275,20 @@ function loadLocaleMessages() {
 
       websitesguide:{
 
-        title:'The guide to the creation of websites',
-        subtitle:'Depending on your objectives, we determine together which type of website is adapted to your current objectives and needs. You already have a website and want to redo it? Artexa also accompanies you in the redesign of your website.',
+        title:'Websites & Apps',
+        subtitle:'We are a world class digital agency, who can develop a wide range of websites such as brochure, e-commerce and multilingual websites for B2B and B2C audiences. All the websites we create are responsive websites which automatically adjust to the device they are being viewed on. We create custom websites that are linked to a back end that can be easily updated by you or your team.',
       
-        name1: 'Create a showcase website',
-        description1: 'A showcase site is nothing more or less than your digital business card. It is mainly used to present an activity, products or services. It is perfect for any type of business as long as you don\'t make online sales.',
-        imageAlt1: '',
+        name1: 'Brochure Websites',
+        description1: 'We design and develop responsive brochure websites to showcase your products and services in alignment with your brand essence, your target audience and your preferences. Our websites follow the latest design trends to ensure they’re up to date for years to come.',
+        imageAlt1: 'Brochure Websites',
 
-        name2: 'Create an e-commerce',
+        name2: 'E-commerce',
         description2: 'An e-commerce can be used alone or in addition to a physical store. Its advantage is that it costs less than a store where you have to pay rent, insurance, electricity. Moreover, you do not have the constraint to go every day in your store, it is it which comes to you that you are at home or elsewhere.',
-        imageAlt2: '',
+        imageAlt2: 'E-commerce',
 
-        name3: 'Create an intranet',
+        name3: 'Intranet',
         description3: 'An intranet is a company\'s internal site that allows all employees to have a private user space and interact with the company. Like for example a page for employees to request their vacations.',
-        imageAlt3: '',
+        imageAlt3: 'Intranet',
 
         button: 'Contact us',
       },
@@ -445,8 +445,8 @@ function loadLocaleMessages() {
 
       homeposts:{
 
-        title:'Websites & Apps',
-        subtitle:'Nous sommes une agence numérique de classe mondiale, qui peut développer une large gamme de sites web tels que des brochures, des sites de commerce électronique et des sites multilingues pour des publics B2B et B2C. Tous les sites que nous créons sont des sites réactifs qui s\'adaptent automatiquement à l\'appareil sur lequel ils sont consultés. Nous créons des sites web personnalisés qui sont liés à un back-end qui peut être facilement mis à jour par vous ou votre équipe.',
+        title:'Sites web & Apps',
+        subtitle:'Nous sommes une agence numérique de classe mondiale, qui peut développer une large gamme de sites web tels que des sites vitrine, des sites de e-commerce et des sites multilingues pour des publics B2B et B2C. Tous les sites que nous créons sont des sites responsives qui s\'adaptent automatiquement aux différents types d\'écrans. Nous créons des sites web personnalisés qui sont liés à un back-end qui peut être facilement mis à jour par vous ou votre équipe.',
 
 
         title1: 'Goal',
@@ -462,7 +462,7 @@ function loadLocaleMessages() {
 
 
         title4: 'Sites Vitrine',
-        description4: 'Nous concevons et développons des sites web vitrine réactifs pour présenter vos produits et services en accord avec l\'essence de votre marque, votre public cible et vos préférences. Nos sites web suivent les dernières tendances en matière de design afin de garantir qu\'ils restent d\'actualité pendant des années',
+        description4: 'Nous concevons et développons des sites web vitrine réactifs pour présenter vos produits et services en accord avec l\'essence de votre marque, votre public cible et vos préférences. Nos sites web suivent les dernières tendances en matière de design afin de garantir qu\'ils restent d\'actualité pendant des années.',
 
 
         title5: 'Sites web de E-commerce',
@@ -696,18 +696,18 @@ function loadLocaleMessages() {
 
       websitesguide:{
 
-        title:'Le guide de la création de sites web',
-        subtitle:'En fonction de vos objectifs, nous déterminons ensemble quel type de site web est adapté à vos objectifs et besoins actuels. Vous avez déjà un site web et vous souhaitez le refaire ? Artexa vous accompagne également dans la refonte de votre site web.',
+        title:'Sites web & Apps',
+        subtitle:'Nous sommes une agence numérique de classe mondiale, qui peut développer une large gamme de sites web tels que des sites vitrine, des sites de e-commerce et des sites multilingues pour des publics B2B et B2C. Tous les sites que nous créons sont des sites responsives qui s\'adaptent automatiquement aux différents types d\'écrans. Nous créons des sites web personnalisés qui sont liés à un back-end qui peut être facilement mis à jour par vous ou votre équipe.',
       
-        name1: 'Créer un site vitrine',
-        description1: 'Un site vitrine n\'est ni plus ni moins que votre carte de visite numérique. Il est principalement utilisé pour présenter une activité, des produits ou des services. Il convient parfaitement à tout type d\'entreprise, à condition que vous ne fassiez pas de vente en ligne.',
+        name1: 'Sites Vitrine',
+        description1: 'Nous concevons et développons des sites web vitrine responsive pour présenter vos produits et services en accord avec l\'essence de votre marque, votre public cible et vos préférences. Nos sites web suivent les dernières tendances en matière de design afin de garantir qu\'ils restent d\'actualité pendant des années.',
         imageAlt1: 'Créer un site vitrine',
 
-        name2: 'Créer un e-commerce',
+        name2: 'E-commerce',
         description2: 'Un e-commerce peut être utilisé seul ou en complément d\'un magasin physique. Son avantage est qu\'il coûte moins cher qu\'un magasin où vous devez payer un loyer, une assurance, l\'électricité. De plus, vous n\'avez pas la contrainte de vous rendre tous les jours dans votre magasin, c\'est lui qui vient à vous que vous soyez chez vous ou ailleurs.',
         imageAlt2: 'Créer un e-commerce',
 
-        name3: 'Créer un intranet',
+        name3: 'Intranet',
         description3: 'Un intranet est le site interne d\'une entreprise qui permet à tous les employés de disposer d\'un espace privé et d\'interagir avec l\'entreprise. Comme par exemple une page permettant aux employés de demander leurs vacances.',
         imageAlt3: 'Créer un intranet',
 
@@ -724,12 +724,12 @@ function loadLocaleMessages() {
         description1: 'To define the vision of a product or service, I take the time to listen to you and understand your needs and those of your customers. I write a document with the technical specifications, some mockups, a program and a budget estimate.',
         imageAlt1: 'Étape 1',
 
-        name2: 'Prototyping',
+        name2: 'Prototypage',
         step2: 'Étape 2',
         description2: 'Il n\'existe pas de formule universelle et précise, car chaque projet peut avoir des caractéristiques différentes. Au début, nous devons définir les objectifs et les éventuels problèmes critiques, après quoi nous passons à la conception du produit, puis à la création d\'un prototype.',
         imageAlt2: 'Étape 2',
 
-        name3: 'Development',
+        name3: 'Développement',
         step3: 'Étape 3',
         description3: 'Vous avez la vision, vous ressentez l\'envie et tout ce dont vous avez besoin est un logiciel ? Nous travaillerons avec vous pour développer ce nouveau produit fonctionnel et design que vos clients aimeront utiliser. Et nous vous aiderons à démarrer.',
         imageAlt3: 'Étape 3',
@@ -881,7 +881,7 @@ function loadLocaleMessages() {
 
 
         title4: 'Siti vetrina',
-        description4: 'Progettiamo e sviluppiamo siti web vetrina responsive per mostrare i vostri prodotti e servizi in linea con l\'essenza del vostro marchio, il vostro pubblico di riferimento e le vostre preferenze. I nostri siti web seguono le ultime tendenze del design per garantire che siano aggiornati per gli anni a venire',
+        description4: 'Progettiamo e sviluppiamo siti web vetrina responsive per mostrare i vostri prodotti e servizi in linea con l\'essenza del vostro marchio, il vostro pubblico di riferimento e le vostre preferenze. I nostri siti web seguono le ultime tendenze del design per garantire che siano aggiornati per gli anni a venire.',
 
 
         title5: 'Siti E-commerce',
@@ -1115,18 +1115,18 @@ function loadLocaleMessages() {
 
       websitesguide:{
 
-        title:'La guida alla creazione di siti web',
-        subtitle:'A seconda dei vostri obiettivi, determiniamo insieme quale tipo di sito web è adatto ai vostri obiettivi e bisogni attuali. Hai già un sito web e vuoi rifarlo? Artexa ti accompagna anche nella riprogettazione del tuo sito web.',
+        title:'Siti web & App',
+        subtitle:'Siamo un\'agenzia digitale di classe europea, che può sviluppare una vasta gamma di siti web come brochure, e-commerce e siti multilingue per il pubblico B2B e B2C. Tutti i siti web che creiamo sono siti responsive che si adattano automaticamente al dispositivo su cui vengono visualizzati. Creiamo siti web personalizzati che sono collegati a un back end che può essere facilmente aggiornato da voi o dal vostro team.',
       
-        name1: 'Creare un sito web vetrina',
-        description1: 'Un sito vetrina non è né più né meno che il vostro biglietto da visita digitale. È principalmente utilizzato per presentare un\'attività, prodotti o servizi. È perfetto per qualsiasi tipo di attività, a condizione che non si facciano vendite online.',
+        name1: 'Siti vetrina',
+        description1: 'Progettiamo e sviluppiamo siti web vetrina responsive per mostrare i vostri prodotti e servizi in linea con l\'essenza del vostro marchio, il vostro pubblico di riferimento e le vostre preferenze. I nostri siti web seguono le ultime tendenze del design per garantire che siano aggiornati per gli anni a venire.',
         imageAlt1: 'Creare un sito web vetrina',
 
-        name2: 'Creare un e-commerce',
+        name2: 'E-commerce',
         description2: 'Un e-commerce può essere usato da solo o in aggiunta a un negozio fisico. Il suo vantaggio è che costa meno di un negozio dove bisogna pagare affitto, assicurazione, elettricità. Inoltre, non avete il vincolo di andare tutti i giorni nel vostro negozio, è esso che viene a voi che siete a casa o altrove.',
         imageAlt2: 'Creare un e-commerce',
 
-        name3: 'Creare una intranet',
+        name3: 'Intranet',
         description3: 'Una intranet è un sito interno di un\'azienda che permette a tutti i dipendenti di avere uno spazio utente privato e di interagire con l\'azienda. Come per esempio una pagina per i dipendenti per richiedere le loro vacanze.',
         imageAlt3: 'Creare una intranet',
 
