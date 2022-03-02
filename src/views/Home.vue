@@ -15,7 +15,7 @@
           <transition appear @before-enter="beforeEnter" @enter="enter">
             <a href="/websites" class="mt-4 inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md shadow-sm text-artexa-white bg-artexa-teal-400 hover:bg-artexa-red focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
               <span>{{ $t("header.button") }} </span>
-              <ArrowCircleRightIcon class="-mr-1 ml-2 h-5 w-5" aria-hidden="true" />
+              <ArrowCircleRightIcon class="-mr-1 ml-2 h-5 w-5 animate-bounce" aria-hidden="true" />
             </a>
           </transition>
           <transition appear @before-enter="beforeEnter" @enter="enter">
@@ -77,7 +77,7 @@
             {{$t('tech.subtitle')}}
           </p>
         </div>
-        <div class="relative  sm:rounded-2xl sm:overflow-hidden">
+        <div class="relative  sm:rounded-2xl sm:overflow-hidden hidden md:block">
           <div class=" flow-root">
             <div class="-my-2">
               <div class="box-content py-2 relative h-80 overflow-x-auto xl:overflow-visible">
@@ -94,6 +94,17 @@
             </div>
           </div>
         </div>
+
+
+        <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8 md:hidden">
+          <div class="grid grid-cols-2 gap-8 md:grid-cols-6 lg:grid-cols-5">
+            <div v-for="category in galleries" :key="category.name" class="col-span-1 flex justify-center md:col-span-2 lg:col-span-1">
+              <img class="h-24 object-center object-cover" :src="category.imageSrc" alt="tech illustration" />
+            </div>
+          </div>
+        </div>
+
+
       </div>
     </div>
   </div>
@@ -291,6 +302,9 @@ export default {
     }
 
     const slide = (el, done) => {
+      gsap.from(el,{
+        rotation: 180
+      })
       gsap.to(el, {
         opacity: 1,
         y: 0,

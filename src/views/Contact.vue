@@ -32,7 +32,7 @@
                 <h3 class="text-xl font-medium text-blue-gray-900">{{ link.name }}</h3>
                 <p class="mt-4 text-base text-blue-gray-500">{{ link.description }}</p>
               </div>
-              <div class="p-6 bg-blue-gray-50 rounded-bl-2xl rounded-br-2xl md:px-8">
+              <div class="p-6 bg-blue-gray-50 rounded-bl-2xl rounded-br-2xl md:px-8 transition transform hover:-translate-y-1 motion-reduce:transition-none motion-reduce:hover:transform-none ">
                 <a :href="link.href" class="text-base font-medium text-artexa-teal-400 hover:text-teal-600">{{ $t('supportLinks.contact') }}<span aria-hidden="true"> &rarr;</span></a>
               </div>
             </div>
@@ -197,7 +197,7 @@
                         </div>
                       </div>
                       <div class="sm:col-span-2 sm:flex sm:justify-end">
-                        <button type="submit" class="mt-2 w-full inline-flex items-center justify-center px-6 py-3 border border-transparent rounded-md shadow-sm text-base font-medium text-artexa-white bg-gray-800 hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-artexa-teal-400 sm:w-auto">
+                        <button type="submit" class="transition transform hover:-translate-y-1 motion-reduce:transition-none motion-reduce:hover:transform-non mt-2 w-full inline-flex items-center justify-center px-6 py-3 border border-transparent rounded-md shadow-sm text-base font-medium text-artexa-white bg-gray-800 hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-artexa-teal-400 sm:w-auto">
                           {{ $t('form.button') }}
                         </button>
                       </div>
@@ -268,7 +268,7 @@
             <dl class="space-y-10 md:space-y-0 md:grid md:grid-cols-2 md:grid-rows-2 md:gap-x-8 md:gap-y-12">
               <div v-for="faq in faqs" :key="faq.id">
                 <dt class="text-lg font-medium text-artexa-teal-400 flex">
-                  <Chevron-double-right-icon class="absolute h-6 w-6 text-teal-500"/>
+                  <Chevron-double-right-icon class="absolute h-6 w-6 text-teal-500 animate-bounce"/>
                   <p class="ml-9 text-lg leading-6 font-medium text-teal-500">{{ faq.question }}</p>
                 </dt>
                 <dd class="mt-2 text-base text-blue-gray-500">
@@ -505,12 +505,15 @@ export default {
     }
 
     const slide = (el, done) => {
+      gsap.from(el,{
+        rotation: 180
+      })
       gsap.to(el, {
         opacity: 1,
         y: 0,
         duration: 1.5,
         onComplete: done,
-        delay: el.dataset.index * 0.2,
+        delay: el.dataset.index * 0.1,
         rotation: 360,
       })
     }

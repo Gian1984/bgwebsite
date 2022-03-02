@@ -147,10 +147,13 @@ function loadLocaleMessages() {
         title:'Our Team',
         subtitle:'Artexa is a Luxembourg-based creative team working with ambitious tech companies around the world. Every day, we build products, brands and websites that help our partners stand out, connect with customers and grow faster.',
 
-        description1:"Having been brought up in a small community, I started to ask myself about other ways of living at an early age. At 18, I started to travel. New cultures, new landscapes and languages soon sparked my curiosity exponentially. Curiosity became passion. Slowly, technologies started to fascinate me, but I didn't realise it immediately. In the meantime, I tried to find a profession that suited me, a profession in which I could find myself. All I knew is that I wanted freedom to move and live where I wanted, to continue to learn more and live new experiences. Whilst brainstorming with my close ones, I realised coding is a language and a sub-culture in itself, which I could learn, and apply all around the world while earning my life. As I became conscious of that, my career path became clear... to learn and pursue a career as a web developper.",
+        description1:"Having been brought up in a small community, I started to ask myself about other ways of living at an early age. At 18, I started to travel. New cultures, new landscapes and languages. I realised coding is a language and a sub-culture in itself, which I could learn, and apply all around the world while earning my life.",
 
-        description2: "I'm a web developer from Turin, Italy and currently living in Brussels. I enjoy building everything from small websites to rich interactive apps. I create successful responsive website that are fast, easy to use, and build with the best practices. The main area of expertise is full-stack development HTML, CSS, JS, PHP, building small and medium web apps, animations. I have also experience with popular open-source CMS like Wordpress. My favorite frameworks are VueJs / Laravel / Tailwnd, but in this area learning something new is part of everyday life. My approach to website development fuses creativity, technology and data analysis, giving you the platform you need to reach new audiences and engage your customers.",
+        description2: "I'm a web developer from Turin, Italy and currently living in Brussels. I enjoy building everything from small websites to rich interactive apps. I create successful responsive website that are fast, easy to use and build with the best practices. My favorite frameworks are VueJs / Laravel / Tailwnd.",
 
+        description3:"A long experience with social networks has allowed me to understand how to manage them professionally and how to use them in the workplace. 5+ years of experience in photography and videography + 10 years of experience working with Adobe Cloud, especially Photoshop.",
+
+        description4:"Building bridges between people, processes and technology and aiming for closing the gap between customer/supplier and between technical and non-technical people. Business is like dating - all you need is one \"yes\". You need one \"yes\" that will be loyal to you and to your business for the long term.",
       },
 
       banner:{
@@ -568,9 +571,14 @@ function loadLocaleMessages() {
         title:'Notre équipe',
         subtitle:'Artexa est une équipe créative basée au Luxembourg qui travaille avec des entreprises technologiques ambitieuses du monde entier. Chaque jour, nous construisons des produits, des marques et des sites web qui aident nos partenaires à se démarquer, à se connecter avec leurs clients et à se développer plus rapidement.',
 
-        description1:'Ayant grandi dans une petite communauté, j\'ai commencé à me poser des questions sur d\'autres modes de vie dès mon plus jeune âge. À 18 ans, j\'ai commencé à voyager. De nouvelles cultures, de nouveaux paysages et de nouvelles langues ont rapidement suscité ma curiosité de façon exponentielle. La curiosité est devenue passion. Lentement, les technologies ont commencé à me fasciner, mais je ne m\'en suis pas rendu compte immédiatement. En attendant, j\'ai essayé de trouver un métier qui me convenait, un métier dans lequel je pourrais me trouver. Tout ce que je savais, c\'est que je voulais la liberté de bouger et de vivre où je voulais, de continuer à en apprendre davantage et à vivre de nouvelles expériences. En faisant un brainstorming avec mes proches, j\'ai réalisé que le codage est un langage et une sous-culture en soi, que je pourrais apprendre et appliquer partout dans le monde tout en gagnant ma vie. Au fur et à mesure que j\'en ai pris conscience, mon cheminement de carrière est devenu clair ... pour apprendre et poursuivre une carrière de développeur Web',
+        description1:'Ayant grandi dans une petite communauté, j\'ai commencé à me poser des questions sur d\'autres modes de vie dès mon plus jeune âge. À 18 ans, j\'ai commencé à voyager. De nouvelles cultures, de nouveaux paysages et de nouvelles langues. J\'ai réalisé que le codage est un langage et une sous-culture en soi, que je pourrais apprendre et appliquer partout dans le monde tout en gagnant ma vie.',
 
-        description2: 'Je suis un développeur web de Turin, en Italie et je vis actuellement à Bruxelles. J\'aime tout créer, des petits sites web aux applications interactives. Je crée des site web responsive, performant, facile à utiliser et construit avec les meilleures pratiques. Le principal domaine d\'expertise est le développement full-stack HTML, CSS, JS, PHP. Création d\'applications web de petite et moyenne taille, animations. J\'ai également de l\'expérience avec les CMS open source populaires comme Wordpress. Mes frameworks préférés sont VueJs / Laravel / Tailwnd, mais dans ce domaine, apprendre quelque chose de nouveau fait partie de la vie de tous les jours. Mon approche du développement de sites web fusionne créativité, technologie et analyse de données, vous offrant la plate-forme dont vous avez besoin pour atteindre de nouveaux publics et engager vos clients.',
+        description2: 'Je suis un développeur web de Turin, en Italie et je vis actuellement à Bruxelles. J\'aime tout créer, des petits sites web aux applications interactives. Je crée des site web responsive, performant, facile à utiliser et construit avec les meilleures pratiques. Le principal domaine d\'expertise est le développement full-stack HTML, CSS, JS, PHP. Mes frameworks préférés sont VueJs / Laravel / Tailwnd.',
+
+        description3:"Une longue expérience avec les réseaux sociaux m'a permis de comprendre comment les gérer professionnellement et comment les outiliser pour le travail. Plus de 5 ans d'expérience en photographie et vidéographie + 10 ans d'expérience de travail avec Adobe Cloud, en particulier Photoshop.",
+
+        description4:'Construire des liens entre les personnes, les processus et la technologie. Toujours chercher à combler la distance entre le client et le fournisseur et entre les personnes techniques et non techniques. Les affaires, c\'est comme les rendez-vous galants : tout ce dont vous avez besoin, c\'est d\'un "oui". Vous avez besoin d\'un "oui" qui vous sera fidèle, à vous et à votre entreprise, sur le long terme.',
+
       },
 
       banner:{
@@ -981,14 +989,18 @@ function loadLocaleMessages() {
 
       // TEAM PAGE
 
-      team:{
+      team: {
 
-        title:'Il nostro team',
-        subtitle:'Artexa è un team creativo con sede in Lussemburgo che lavora con ambiziose aziende tecnologiche in tutto il mondo. Ogni giorno, costruiamo prodotti, marchi e siti web che aiutano i nostri partner a distinguersi, a connettersi con i clienti e a crescere più velocemente.',
+        title: 'Il nostro team',
+        subtitle: 'Artexa è un team creativo con sede in Lussemburgo che lavora con ambiziose aziende tecnologiche in tutto il mondo. Ogni giorno, costruiamo prodotti, marchi e siti web che aiutano i nostri partner a distinguersi, a connettersi con i clienti e a crescere più velocemente.',
 
-        description1:'Essendo cresciuto in una piccola comunità, ho iniziato a interrogarmi su altri modi di vivere in giovane età. A 18 anni ho iniziato a viaggiare. Nuove culture, nuovi paesaggi e lingue hanno presto acceso la mia curiosità in modo esponenziale. La curiosità è diventata passione. Lentamente, le tecnologie iniziarono ad affascinarmi, ma non me ne resi conto immediatamente. Nel frattempo, ho cercato di trovare una professione adatta a me, una professione in cui potessi ritrovarmi. Sapevo solo che volevo la libertà di muovermi e vivere dove volevo, per continuare a imparare di più e vivere nuove esperienze. Mentre facevo brainstorming con i miei cari, ho capito che la programmazione è un linguaggio e una sottocultura in sé da poter applicare in tutto il mondo mentre mi guadagno la vita. Quando ho preso coscienza di questo, il mio percorso di carriera è diventato chiaro... imparare e perseguire una carriera come sviluppatore web',
+        description1: 'Essendo cresciuto in una piccola comunità, ho iniziato a interrogarmi su altri modi di vivere in giovane età. A 18 anni ho iniziato a viaggiare. Nuove culture, nuovi paesaggi e lingue. Ben presto mi sono reso conto che la programmazione è un linguaggio e una sottocultura in sé da poter applicare in tutto il mondo. Quando ho preso coscienza di questo, il mio percorso di carriera è diventato chiaro.',
 
-        description2: 'Sono uno sviluppatore web nato a Torino, attualmente a Bruxelles. Mi piace creare qualsiasi cosa, dai piccoli siti web alle app interattive. Creo siti web responsive che sono veloci, facili da usare e realizzati con le migliori pratiche. La principale area di competenza è lo sviluppo full-stack HTML, CSS, JS, PHP. Costruzione di app web di piccole e medie dimensioni, animazioni. Ho anche esperienza con popolari CMS open-source come Wordpress. I miei framework di riferimento sono VueJs / Laravel / Tailwnd, ma in questo campo imparare qualcosa di nuovo fa parte della vita di tutti i giorni. Il mio approccio allo sviluppo di siti Web fonde creatività, tecnologia e analisi dei dati, offrendoti la piattaforma di cui hai bisogno per raggiungere un nuovo pubblico e coinvolgere i tuoi clienti.',
+        description2: 'Sono uno sviluppatore web nato a Torino, attualmente a Bruxelles. Mi piace creare qualsiasi cosa, dai piccoli siti web alle app interattive. Creo siti web responsive che sono veloci, facili da usare e realizzati con le migliori pratiche. La principale area di competenza è lo sviluppo full-stack HTML, CSS, JS, PHP. I miei framework di riferimento sono VueJs / Laravel / Tailwnd.',
+
+        description3:'Una lunga esperienza i sociali mi ha dato la possibilità di capire come gestirle professionalmente e come utilizzarle per il lavoro. Più di 5 anni di esperienza in fotografia e videografia + 10 anni di esperienza di lavoro con Adobe Cloud, in particolarePhotoshop"',
+
+        description4:'Costruire collegamenti tra persone e tecnologia. Cercare sempre di colmare la distanza tra cliente e fornitore e tra persone tecniche e non tecniche. Gli affari sono come gli appuntamenti: tutto ciò di cui hai bisogno è un "sì". Avete bisogno di un "sì" che rimanga con voi e con il vostro business a lungo termine.',
 
       },
 
