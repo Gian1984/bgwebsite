@@ -4,7 +4,7 @@
       <div class="max-w-7xl mx-auto h-screen px-4 sm:px-6 lg:px-8">
         <div style="height: 100vh; display: flex; flex-direction: column; align-items: baseline; justify-content: center;">
           <transition appear @before-enter="beforeSlide" @enter="slide">
-            <img class="h-24" src="img/artexa.png"/>
+            <img class="h-24" src="img/artexa.png" alt="artexa-logo"/>
           </transition>
           <transition appear @before-enter="beforeEnter" @enter="enter">
             <h1 class="mt-6 text-4xl font-extrabold tracking-tight text-white md:text-5xl lg:text-6xl">Web Development Company</h1>
@@ -74,7 +74,7 @@
         <div v-for="perk in perks" :key="perk.name" class="sm:flex">
           <div class="sm:flex-shrink-0">
             <div class="flow-root">
-              <img class="w-28 h-24 mx-auto" :src="perk.imageSrc" alt="" />
+              <img class="w-28 h-24 mx-auto" :src="perk.imageSrc" alt="Our core values" />
             </div>
           </div>
           <div class="mt-3 sm:mt-0 sm:ml-3">
@@ -106,7 +106,7 @@
       <Carousel :items-to-show="2.5" :wrap-around="true">
         <Slide v-for="slide in slides" :key="slide" class="relative p-6 flex flex-col overflow-hidden " style=" height: 530px !important; width: 530px !important;" >
           <span aria-hidden="true" class="absolute inset-0" >
-            <img :src="slide.imageSrc" alt="" class=" .carousel__item space-x-4" />
+            <img :src="slide.imageSrc" alt="Our-core values" class=" .carousel__item space-x-4" />
           </span>
           <span class="relative mt-64 text-right text-2xl font-bold text-white uppercase ml-64">{{ slide.name }}</span>
           <span class="relative text-center text-sm text-white ml-64">{{ slide.desc }}</span>

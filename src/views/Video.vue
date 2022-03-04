@@ -20,29 +20,29 @@
                   <div class="flex items-center space-x-6 lg:space-x-8">
                     <div class="flex-shrink-0 grid grid-cols-1 gap-y-6 lg:gap-y-8">
                       <div class="w-44 h-64 overflow-hidden sm:opacity-0 lg:opacity-100">
-                        <img src="https://tailwindui.com/img/ecommerce-images/home-page-03-hero-image-tile-01.jpg" alt="" class="w-full h-full object-center object-cover" />
+                        <img src="https://tailwindui.com/img/ecommerce-images/home-page-03-hero-image-tile-01.jpg" alt="photo sample" class="w-full h-full object-center object-cover" />
                       </div>
                       <div class="w-44 h-64 overflow-hidden">
-                        <img src="https://tailwindui.com/img/ecommerce-images/home-page-03-hero-image-tile-02.jpg" alt="" class="w-full h-full object-center object-cover" />
-                      </div>
-                    </div>
-                    <div class="flex-shrink-0 grid grid-cols-1 gap-y-6 lg:gap-y-8">
-                      <div class="w-44 h-64 overflow-hidden">
-                        <img src="https://tailwindui.com/img/ecommerce-images/home-page-03-hero-image-tile-03.jpg" alt="" class="w-full h-full object-center object-cover" />
-                      </div>
-                      <div class="w-44 h-64 overflow-hidden">
-                        <img src="https://tailwindui.com/img/ecommerce-images/home-page-03-hero-image-tile-04.jpg" alt="" class="w-full h-full object-center object-cover" />
-                      </div>
-                      <div class="w-44 h-64 overflow-hidden">
-                        <img src="https://tailwindui.com/img/ecommerce-images/home-page-03-hero-image-tile-05.jpg" alt="" class="w-full h-full object-center object-cover" />
+                        <img src="https://tailwindui.com/img/ecommerce-images/home-page-03-hero-image-tile-02.jpg" alt="photo sample" class="w-full h-full object-center object-cover" />
                       </div>
                     </div>
                     <div class="flex-shrink-0 grid grid-cols-1 gap-y-6 lg:gap-y-8">
                       <div class="w-44 h-64 overflow-hidden">
-                        <img src="https://tailwindui.com/img/ecommerce-images/home-page-03-hero-image-tile-06.jpg" alt="" class="w-full h-full object-center object-cover" />
+                        <img src="https://tailwindui.com/img/ecommerce-images/home-page-03-hero-image-tile-03.jpg" alt="photo sample" class="w-full h-full object-center object-cover" />
                       </div>
                       <div class="w-44 h-64 overflow-hidden">
-                        <img src="https://tailwindui.com/img/ecommerce-images/home-page-03-hero-image-tile-07.jpg" alt="" class="w-full h-full object-center object-cover" />
+                        <img src="https://tailwindui.com/img/ecommerce-images/home-page-03-hero-image-tile-04.jpg" alt="photo sample" class="w-full h-full object-center object-cover" />
+                      </div>
+                      <div class="w-44 h-64 overflow-hidden">
+                        <img src="https://tailwindui.com/img/ecommerce-images/home-page-03-hero-image-tile-05.jpg" alt="photo sample" class="w-full h-full object-center object-cover" />
+                      </div>
+                    </div>
+                    <div class="flex-shrink-0 grid grid-cols-1 gap-y-6 lg:gap-y-8">
+                      <div class="w-44 h-64 overflow-hidden">
+                        <img src="https://tailwindui.com/img/ecommerce-images/home-page-03-hero-image-tile-06.jpg" alt="photo sample" class="w-full h-full object-center object-cover" />
+                      </div>
+                      <div class="w-44 h-64 overflow-hidden">
+                        <img src="https://tailwindui.com/img/ecommerce-images/home-page-03-hero-image-tile-07.jpg" alt="photo sample" class="w-full h-full object-center object-cover" />
                       </div>
                     </div>
                   </div>
@@ -63,7 +63,7 @@
       <div aria-hidden="true" class="hidden absolute inset-0 sm:flex sm:flex-col">
         <div class="flex-1 relative w-full bg-gray-800">
           <div class="absolute inset-0 overflow-hidden">
-            <img src="../../public/img/photographer1.jpg" alt="" class="w-full h-full object-center object-cover" />
+            <img src="../../public/img/photographer1.jpg" alt="photographer in action" class="w-full h-full object-center object-cover" />
           </div>
           <div class="absolute inset-0 bg-gray-900 opacity-50" />
         </div>
@@ -75,7 +75,7 @@
         <div aria-hidden="true" class="absolute inset-0 flex flex-col sm:hidden">
           <div class="flex-1 relative w-full bg-gray-800">
             <div class="absolute inset-0 overflow-hidden">
-              <img src="../../public/img/photographer1.jpg" alt="" class="w-full h-full object-center object-cover" />
+              <img src="../../public/img/photographer1.jpg" alt="photographer in action" class="w-full h-full object-center object-cover" />
             </div>
             <div class="absolute inset-0 bg-gray-900 opacity-50" />
           </div>
@@ -119,7 +119,7 @@
       </section>
     </div>
 
-       
+
 
         <!-- BANNER -->
         <div class="bg-white pt-12 lg:pt-24">

@@ -64,15 +64,9 @@
   </div>
 
 
-
-
-
-
-
-
   <div class="relative my-12">
     <div class="absolute inset-0 py-12">
-      <img class="w-full h-full object-cover" src="https://images.unsplash.com/photo-1525130413817-d45c1d127c42?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1920&q=60&&sat=-100" alt="" />
+      <img class="w-full h-full object-cover" src="https://images.unsplash.com/photo-1525130413817-d45c1d127c42?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1920&q=60&&sat=-100" alt="people at work" />
       <div class="absolute inset-0 bg-artexa-teal-400 mix-blend-multiply" aria-hidden="true" />
     </div>
     <div class="relative max-w-7xl mx-auto py-24 px-4 sm:py-32 sm:px-6 lg:px-8">
@@ -91,13 +85,13 @@
             <p class="mt-4 text-gray-500">{{ $t('incentives.subtitle') }}</p>
           </div>
           <div class="aspect-w-3 aspect-h-2 bg-gray-100 rounded-lg overflow-hidden">
-            <img src="https://tailwindui.com/img/ecommerce-images/incentives-07-hero.jpg" alt="" class="object-center object-cover" />
+            <img src="https://tailwindui.com/img/ecommerce-images/incentives-07-hero.jpg" alt="e-commerce" class="object-center object-cover" />
           </div>
         </div>
         <div class="mt-16 grid grid-cols-1 gap-y-10 gap-x-8 lg:grid-cols-4 text-center">
           <div v-for="incentive in incentives" :key="incentive.name" class="sm:flex lg:block">
             <div class="sm:flex-shrink-0 items-center">
-              <img class="w-16 h-16 mx-auto" :src="incentive.imageSrc" alt="" />
+              <img class="w-16 h-16 mx-auto" :src="incentive.imageSrc" alt="more than a web agency image" />
             </div>
             <div class="mt-4 sm:mt-0 sm:ml-6 lg:mt-6 lg:ml-0">
               <h3 class="text-sm font-medium text-gray-900">
